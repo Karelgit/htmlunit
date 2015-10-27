@@ -15,5 +15,19 @@
             <artifactId>htmlunit</artifactId>
             <version>2.18</version>
         </dependency>
+
+        <!--kryo序列化-->
+        <dependency>
+            <groupId>com.esotericsoftware.kryo</groupId>
+            <artifactId>kryo</artifactId>
+            <version>2.21</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.hazelcast</groupId>
+            <artifactId>hazelcast</artifactId>
+            <version>3.5.3</version>
+        </dependency>
+
     </dependencies>
 </project>

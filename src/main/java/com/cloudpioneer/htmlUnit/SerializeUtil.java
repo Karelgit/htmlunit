@@ -7,61 +7,53 @@ package com.cloudpioneer.htmlUnit;
  * @version
  */
 
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
+import com.esotericsoftware.kryo.Kryo;
+import com.esotericsoftware.kryo.Registration;
+import com.esotericsoftware.kryo.io.Input;
+import com.esotericsoftware.kryo.io.Output;
+import com.gargoylesoftware.htmlunit.html.HtmlPage;
+
+import java.io.*;
 
 /**
  * Created by Administrator on 2015/10/27.
  */
 
     public class SerializeUtil {
-        public static final String TAG = "SerializeUtil";
+    public static final String TAG = "SerializeUtil";
 
-        /**
-         * 序列化
-         *
-         * @param object
-         * @return
-         * @throws IOException
-         */
-        public static byte[] serialize(Object object) throws IOException {
-            ObjectOutputStream oos = null;
-            ByteArrayOutputStream baos = null;
-            try {
-                // 序列化
-                baos = new ByteArrayOutputStream();
-                oos = new ObjectOutputStream(baos);
-                oos.writeObject(object);
-                byte[] bytes = baos.toByteArray();
-                return bytes;
-            } catch (Exception e) {
-                e.printStackTrace();
-                System.out.println( "序列化对象发生错误，返回NULL");
-                return null;
-            }
-        }
-
-        /**
-         * 反序列化
-         *
-         * @param bytes
-         * @return
-         */
-        public static Object unserialize(byte[] bytes) {
-            ByteArrayInputStream bais = null;
-            try {
-                // 反序列化
-                bais = new ByteArrayInputStream(bytes);
-                ObjectInputStream ois = new ObjectInputStream(bais);
-                return ois.readObject();
-            } catch (Exception e) {
-                e.printStackTrace();
-                System.out.println("反序列化对象发生错误，返回NULL");
-                return null;
-            }
-        }
+    /**
+     * 序列化
+     *
+     * @param object
+     * @return
+     * @throws IOException
+     */
+    public static byte[] serialize(Object object) throws IOException {
+        Kryo kryo = new Kryo();
+        Registration registration = kryo.register(HtmlPage.class);
+        Output output = null;
+        output = new Output(1,4096);
+        kryo.writeObject(output, object);
+        byte[] bb = output.toBytes();
+        output.flush();
+        return bb;
     }
+
+    /**
+     * 反序列化
+     *
+     * @param bytes
+     * @return
+     */
+    public static Object unserialize(byte[] bytes) {
+        Kryo kryo = new Kryo();
+        Registration registration = kryo.register(HtmlPage.class);
+        Input input = null;
+        input = new Input(bytes);
+        HtmlPage hp = (HtmlPage) kryo.readObject(input, registration.getType());
+        input.close();
+        return hp;
+    }
+}
 

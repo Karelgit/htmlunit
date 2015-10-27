@@ -1,25 +1,39 @@
 package com.cloudpioneer.htmlUnit;
 
+import com.cloudpioneer.htmlUnit.util.Student;
+import com.esotericsoftware.kryo.Kryo;
+import com.esotericsoftware.kryo.Registration;
+import com.esotericsoftware.kryo.io.Input;
+import com.esotericsoftware.kryo.io.Output;
 import com.gargoylesoftware.htmlunit.*;
 import com.gargoylesoftware.htmlunit.html.DomElement;
 import com.gargoylesoftware.htmlunit.html.HtmlAnchor;
 import com.gargoylesoftware.htmlunit.html.HtmlDivision;
 import com.gargoylesoftware.htmlunit.html.HtmlPage;
 import com.gargoylesoftware.htmlunit.javascript.background.JavaScriptJobManager;
+import com.hazelcast.nio.ObjectDataInput;
+import com.hazelcast.nio.ObjectDataOutput;
+import com.hazelcast.nio.serialization.Data;
+import com.hazelcast.nio.serialization.ObjectDataOutputStream;
 import org.apache.commons.logging.LogFactory;
 import sun.util.locale.LanguageTag;
 
 import java.io.*;
 import java.net.URL;
+import java.nio.Buffer;
+import java.nio.ByteOrder;
 import java.util.*;
+import java.util.zip.DeflaterInputStream;
+import java.util.zip.DeflaterOutputStream;
+import java.util.zip.InflaterInputStream;
 
 /**
  * Created by Administrator on 2015/10/15.
  */
-public class testYouku implements WebWindow{
+public class testYouku implements WebWindow {
 
     // save the pop up window
-    final static LinkedList<WebWindow> windows   = new
+    final static LinkedList<WebWindow> windows = new
             LinkedList<WebWindow>();
 
     // get the main page
@@ -50,14 +64,16 @@ public class testYouku implements WebWindow{
     }*/
 
     // get the popup page
-    private static  HtmlPage getPopupPage()
-    {
+    private static HtmlPage getPopupPage() {
         WebWindow latestWindow = windows.getLast();
         return (HtmlPage) latestWindow.getEnclosedPage();
     }
 
 
     public static void testYouku() throws Exception {
+
+        Kryo kryo = new Kryo();
+        Registration registration = kryo.register(HtmlPage.class);
 
         String zsUrl = "http://www.gzzs.gov.cn/NewOpen/NewOpenMList.aspx?cid=0&pid=62";
         String url = "http://gz.hrss.gov.cn/col/col41/index.html";
@@ -85,11 +101,11 @@ public class testYouku implements WebWindow{
 //        webClient.setAjaxController(new NicelyResynchronizingAjaxController());
 
         webClient.getOptions().setJavaScriptEnabled(true);
-        webClient.setJavaScriptTimeout(3600*1000);
+        webClient.setJavaScriptTimeout(3600 * 1000);
         webClient.getOptions().setRedirectEnabled(true);
         webClient.getOptions().setThrowExceptionOnScriptError(true);
         webClient.getOptions().setThrowExceptionOnFailingStatusCode(true);
-        webClient.getOptions().setTimeout(3600*1000);
+        webClient.getOptions().setTimeout(3600 * 1000);
         webClient.waitForBackgroundJavaScript(600 * 1000);
 //      webClient.waitForBackgroundJavaScript(600*1000);
         webClient.setAjaxController(new NicelyResynchronizingAjaxController());
@@ -118,9 +134,9 @@ public class testYouku implements WebWindow{
         elements.add("html/body/form/div[3]/div/div[2]/div[2]/div/div/table/tbody/tr/td/a[12]");
         elements.add("html/body/form/div[3]/div/div[2]/div[2]/div/div/table/tbody/tr/td/a[13]");*/
 
-        List links = (List) page.getByXPath ("//*[@id=\"300\"]/table/tbody/tr/td/table/tbody/tr/td[4]/div");
+        List links = (List) page.getByXPath("//*[@id=\"300\"]/table/tbody/tr/td/table/tbody/tr/td[4]/div");
 
-        Map<Integer,HtmlPage> map = new HashMap<Integer, HtmlPage>();
+        Map<Integer, HtmlPage> map = new HashMap<Integer, HtmlPage>();
 
         List<String> fistXpath = new LinkedList<String>();
         fistXpath.add("//*[@id=\"300\"]/table/tbody/tr/td/table/tbody/tr/td[8]/div");
@@ -131,8 +147,120 @@ public class testYouku implements WebWindow{
         DomElement e3 = ((DomElement) page.getByXPath(fistXpath.get(0)).get(0));
         HtmlPage pg3 = e3.click();
 
-        SerializeUtil su = new SerializeUtil();
-        byte[] b =  su.serialize(pg3);
+
+        ObjectDataOutput objectDataOutput = new ObjectDataOutput() {
+            public void writeByteArray(byte[] bytes) throws IOException {
+
+            }
+
+            public void writeCharArray(char[] chars) throws IOException {
+
+            }
+
+            public void writeIntArray(int[] ints) throws IOException {
+
+            }
+
+            public void writeLongArray(long[] longs) throws IOException {
+
+            }
+
+            public void writeDoubleArray(double[] doubles) throws IOException {
+
+            }
+
+            public void writeFloatArray(float[] floats) throws IOException {
+
+            }
+
+            public void writeShortArray(short[] shorts) throws IOException {
+
+            }
+
+            public void writeObject(Object o) throws IOException {
+
+            }
+
+            public void writeData(Data data) throws IOException {
+
+            }
+
+            public byte[] toByteArray() {
+                return new byte[0];
+            }
+
+            public ByteOrder getByteOrder() {
+                return null;
+            }
+
+            public void write(int b) throws IOException {
+
+            }
+
+            public void write(byte[] b) throws IOException {
+
+            }
+
+            public void write(byte[] b, int off, int len) throws IOException {
+
+            }
+
+            public void writeBoolean(boolean v) throws IOException {
+
+            }
+
+            public void writeByte(int v) throws IOException {
+
+            }
+
+            public void writeShort(int v) throws IOException {
+
+            }
+
+            public void writeChar(int v) throws IOException {
+
+            }
+
+            public void writeInt(int v) throws IOException {
+
+            }
+
+            public void writeLong(long v) throws IOException {
+
+            }
+
+            public void writeFloat(float v) throws IOException {
+
+            }
+
+            public void writeDouble(double v) throws IOException {
+
+            }
+
+            public void writeBytes(String s) throws IOException {
+
+            }
+
+            public void writeChars(String s) throws IOException {
+
+            }
+
+            public void writeUTF(String s) throws IOException {
+
+            }
+        };
+        ByteArrayOutputStream byteArrayOutputStream =
+                new ByteArrayOutputStream(16384);
+        DeflaterOutputStream deflaterOutputStream =
+                new DeflaterOutputStream(byteArrayOutputStream);
+        Output output = new Output(deflaterOutputStream);
+        kryo.writeObject(output, pg3);
+        //  byte[] bb = output.toBytes();
+        output.close();
+
+        byte [] bytes = byteArrayOutputStream.toByteArray();
+        objectDataOutput.write(bytes);
+
 
 //        System.err.println("pg3: " + pg3.asText());
         //System.out.println("pg2:" +'\n' +  pg2.asText());
@@ -161,12 +289,123 @@ public class testYouku implements WebWindow{
 //        System.out.println("changedPage:" + changedPage.asText());
 
 
-
         //再拿第2页
         HtmlPage page1 = webClient.getPage(url);
 
-        SerializeUtil su1 = new SerializeUtil();
-        HtmlPage pgt = (HtmlPage) su1.unserialize(b);
+
+        ObjectDataInput objectDataInput = new ObjectDataInput() {
+            public byte[] readByteArray() throws IOException {
+                return new byte[0];
+            }
+
+            public char[] readCharArray() throws IOException {
+                return new char[0];
+            }
+
+            public int[] readIntArray() throws IOException {
+                return new int[0];
+            }
+
+            public long[] readLongArray() throws IOException {
+                return new long[0];
+            }
+
+            public double[] readDoubleArray() throws IOException {
+                return new double[0];
+            }
+
+            public float[] readFloatArray() throws IOException {
+                return new float[0];
+            }
+
+            public short[] readShortArray() throws IOException {
+                return new short[0];
+            }
+
+            public <T> T readObject() throws IOException {
+                return null;
+            }
+
+            public Data readData() throws IOException {
+                return null;
+            }
+
+            public ClassLoader getClassLoader() {
+                return null;
+            }
+
+            public ByteOrder getByteOrder() {
+                return null;
+            }
+
+            public void readFully(byte[] b) throws IOException {
+
+            }
+
+            public void readFully(byte[] b, int off, int len) throws IOException {
+
+            }
+
+            public int skipBytes(int n) throws IOException {
+                return 0;
+            }
+
+            public boolean readBoolean() throws IOException {
+                return false;
+            }
+
+            public byte readByte() throws IOException {
+                return 0;
+            }
+
+            public int readUnsignedByte() throws IOException {
+                return 0;
+            }
+
+            public short readShort() throws IOException {
+                return 0;
+            }
+
+            public int readUnsignedShort() throws IOException {
+                return 0;
+            }
+
+            public char readChar() throws IOException {
+                return 0;
+            }
+
+            public int readInt() throws IOException {
+                return 0;
+            }
+
+            public long readLong() throws IOException {
+                return 0;
+            }
+
+            public float readFloat() throws IOException {
+                return 0;
+            }
+
+            public double readDouble() throws IOException {
+                return 0;
+            }
+
+            public String readLine() throws IOException {
+                return null;
+            }
+
+            public String readUTF() throws IOException {
+                return null;
+            }
+        };
+
+        Input input = null;
+        // ByteArrayInputStream byteArrayInputStream=new ByteArrayInputStream(byteArrayOutputStream.toByteArray());
+        input = new Input(byteArrayOutputStream.toByteArray());
+        HtmlPage hp123 = kryo.readObject(input, HtmlPage.class);
+        input.close();
+
+        System.out.println("hp123:" + hp123.asText());
         page1 = pg3;
 //        System.out.println("page1: " + page1.asText());
         DomElement e2s = ((DomElement) page1.getByXPath(fistXpath.get(0)).get(0));
@@ -174,7 +413,7 @@ public class testYouku implements WebWindow{
 //      System.err.println("pg2s:" + pg2s.asText());
 
         currentPage = pg2s;
-        Object pss= currentPage.getEnclosingWindow().getScriptObject();
+        Object pss = currentPage.getEnclosingWindow().getScriptObject();
         currentPage.getEnclosingWindow().setEnclosedPage(currentPage);
         currentPage.getEnclosingWindow().setScriptObject(pss);
 
@@ -241,7 +480,6 @@ public class testYouku implements WebWindow{
         }*/
 
 
-
         //循环点击（一直往下一页点击）
 //        for (int i=0; i<elements.size();i++) {
 //            Object ps = currentPage.getEnclosingWindow().getScriptObject();
@@ -290,7 +528,6 @@ public class testYouku implements WebWindow{
 
 //        System.out.println( "\n"+"newPage1" + "\n" + newPage1.asText());
     }
-
 
 
     public String getName() {
@@ -373,7 +610,7 @@ public class testYouku implements WebWindow{
 
     }
 
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception {
         testYouku.testYouku();
     }
 }

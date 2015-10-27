@@ -3,10 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/HtmlUnit.iml" filepath="$PROJECT_DIR$/HtmlUnit.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ScriptTest/ScriptTest.iml" filepath="$PROJECT_DIR$/ScriptTest/ScriptTest.iml" />
       <module fileurl="file://$USER_HOME$/Desktop/FMBlankBlackList/gy.fm.blankblacklist.iml" filepath="$USER_HOME$/Desktop/FMBlankBlackList/gy.fm.blankblacklist.iml" />
-      <module fileurl="file://$USER_HOME$/Desktop/htmlunit-2.18/htmlunit-2.18.iml" filepath="$USER_HOME$/Desktop/htmlunit-2.18/htmlunit-2.18.iml" />
-      <module fileurl="file://$PROJECT_DIR$/untitled/untitled.iml" filepath="$PROJECT_DIR$/untitled/untitled.iml" />
     </modules>
   </component>
 </project>
