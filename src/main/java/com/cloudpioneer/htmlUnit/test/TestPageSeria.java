@@ -68,7 +68,7 @@ public class TestPageSeria {
         HtmlPage pac1  = getHtmlPage(html, "http://gz.hrss.gov.cn/col/col41/index.html", p11.getEnclosingWindow());
         //此时pg2还是第2页
         System.out.println("pg2: " + pg2.asText());
-//        System.out.println("pac1 " + pac1.asText());
+      System.out.println("pac1 " + pac1.asText());
 
 
 
