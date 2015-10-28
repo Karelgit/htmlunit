@@ -62,7 +62,6 @@ public class TestPageSeria {
 
         DomElement e2 = ((DomElement) page2.getByXPath(fistXpath.get(0)).get(0));
         HtmlPage pg2 = e2.click();
-        System.out.println("11");
         webClient.waitForBackgroundJavaScript(5000);
         System.out.println(pg2.asText());
 //        System.out.println(page.asText());
