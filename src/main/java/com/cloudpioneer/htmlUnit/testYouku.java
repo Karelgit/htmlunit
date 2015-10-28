@@ -1,36 +1,30 @@
 package com.cloudpioneer.htmlUnit;
 
-import com.cloudpioneer.htmlUnit.util.Student;
 import com.esotericsoftware.kryo.Kryo;
+import com.esotericsoftware.kryo.KryoSerializable;
 import com.esotericsoftware.kryo.Registration;
 import com.esotericsoftware.kryo.io.Input;
 import com.esotericsoftware.kryo.io.Output;
 import com.gargoylesoftware.htmlunit.*;
-import com.gargoylesoftware.htmlunit.html.DomElement;
-import com.gargoylesoftware.htmlunit.html.HtmlAnchor;
-import com.gargoylesoftware.htmlunit.html.HtmlDivision;
-import com.gargoylesoftware.htmlunit.html.HtmlPage;
+import com.gargoylesoftware.htmlunit.html.*;
+import com.gargoylesoftware.htmlunit.javascript.PostponedAction;
 import com.gargoylesoftware.htmlunit.javascript.background.JavaScriptJobManager;
-import com.hazelcast.nio.ObjectDataInput;
-import com.hazelcast.nio.ObjectDataOutput;
-import com.hazelcast.nio.serialization.Data;
-import com.hazelcast.nio.serialization.ObjectDataOutputStream;
+import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import sun.util.locale.LanguageTag;
 
-import java.io.*;
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.net.MalformedURLException;
 import java.net.URL;
-import java.nio.Buffer;
-import java.nio.ByteOrder;
-import java.util.*;
-import java.util.zip.DeflaterInputStream;
-import java.util.zip.DeflaterOutputStream;
-import java.util.zip.InflaterInputStream;
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
 
 /**
  * Created by Administrator on 2015/10/15.
  */
-public class testYouku implements WebWindow {
+public class testYouku implements WebWindow,KryoSerializable {
 
     // save the pop up window
     final static LinkedList<WebWindow> windows = new
@@ -69,11 +63,25 @@ public class testYouku implements WebWindow {
         return (HtmlPage) latestWindow.getEnclosedPage();
     }
 
+    private static HtmlPage getHtmlPage(String html, String url, WebWindow webWindow) {
+
+        try {
+            URL url1 = new URL(url);
+            StringWebResponse stringWebResponse = new StringWebResponse(html, url1);
+            return HTMLParser.parseHtml(stringWebResponse, webWindow);
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
 
     public static void testYouku() throws Exception {
 
+
         Kryo kryo = new Kryo();
-        Registration registration = kryo.register(HtmlPage.class);
+      //  Registration registration = kryo.register(HtmlPage.class);
 
         String zsUrl = "http://www.gzzs.gov.cn/NewOpen/NewOpenMList.aspx?cid=0&pid=62";
         String url = "http://gz.hrss.gov.cn/col/col41/index.html";
@@ -141,129 +149,17 @@ public class testYouku implements WebWindow {
         List<String> fistXpath = new LinkedList<String>();
         fistXpath.add("//*[@id=\"300\"]/table/tbody/tr/td/table/tbody/tr/td[8]/div");
 
-        //取得第二页
+        //取得第三页
         DomElement e2 = ((DomElement) page.getByXPath(fistXpath.get(0)).get(0));
         HtmlPage pg2 = e2.click();
         DomElement e3 = ((DomElement) page.getByXPath(fistXpath.get(0)).get(0));
         HtmlPage pg3 = e3.click();
-
-
-        ObjectDataOutput objectDataOutput = new ObjectDataOutput() {
-            public void writeByteArray(byte[] bytes) throws IOException {
-
-            }
-
-            public void writeCharArray(char[] chars) throws IOException {
-
-            }
-
-            public void writeIntArray(int[] ints) throws IOException {
-
-            }
-
-            public void writeLongArray(long[] longs) throws IOException {
-
-            }
-
-            public void writeDoubleArray(double[] doubles) throws IOException {
-
-            }
-
-            public void writeFloatArray(float[] floats) throws IOException {
-
-            }
-
-            public void writeShortArray(short[] shorts) throws IOException {
-
-            }
-
-            public void writeObject(Object o) throws IOException {
-
-            }
-
-            public void writeData(Data data) throws IOException {
-
-            }
-
-            public byte[] toByteArray() {
-                return new byte[0];
-            }
-
-            public ByteOrder getByteOrder() {
-                return null;
-            }
-
-            public void write(int b) throws IOException {
-
-            }
-
-            public void write(byte[] b) throws IOException {
-
-            }
-
-            public void write(byte[] b, int off, int len) throws IOException {
-
-            }
-
-            public void writeBoolean(boolean v) throws IOException {
-
-            }
-
-            public void writeByte(int v) throws IOException {
-
-            }
-
-            public void writeShort(int v) throws IOException {
-
-            }
-
-            public void writeChar(int v) throws IOException {
-
-            }
-
-            public void writeInt(int v) throws IOException {
-
-            }
-
-            public void writeLong(long v) throws IOException {
-
-            }
-
-            public void writeFloat(float v) throws IOException {
-
-            }
-
-            public void writeDouble(double v) throws IOException {
-
-            }
-
-            public void writeBytes(String s) throws IOException {
-
-            }
-
-            public void writeChars(String s) throws IOException {
-
-            }
-
-            public void writeUTF(String s) throws IOException {
-
-            }
-        };
-        ByteArrayOutputStream byteArrayOutputStream =
-                new ByteArrayOutputStream(16384);
-        DeflaterOutputStream deflaterOutputStream =
-                new DeflaterOutputStream(byteArrayOutputStream);
-        Output output = new Output(deflaterOutputStream);
-        kryo.writeObject(output, pg3);
-        //  byte[] bb = output.toBytes();
-        output.close();
-
-        byte [] bytes = byteArrayOutputStream.toByteArray();
-        objectDataOutput.write(bytes);
+        Output output = new Output(new ByteArrayOutputStream());
+        kryo.writeObject(output,pg3);
 
 
 //        System.err.println("pg3: " + pg3.asText());
-        //System.out.println("pg2:" +'\n' +  pg2.asText());
+        System.out.println("pg2:" +'\n' +  pg2.asText());
 
         /*for (int i=0; i<elements.size();i++) {
             DomElement element = (DomElement)page.getByXPath(elements.get(i)).get(0);
@@ -293,117 +189,9 @@ public class testYouku implements WebWindow {
         HtmlPage page1 = webClient.getPage(url);
 
 
-        ObjectDataInput objectDataInput = new ObjectDataInput() {
-            public byte[] readByteArray() throws IOException {
-                return new byte[0];
-            }
-
-            public char[] readCharArray() throws IOException {
-                return new char[0];
-            }
-
-            public int[] readIntArray() throws IOException {
-                return new int[0];
-            }
-
-            public long[] readLongArray() throws IOException {
-                return new long[0];
-            }
-
-            public double[] readDoubleArray() throws IOException {
-                return new double[0];
-            }
-
-            public float[] readFloatArray() throws IOException {
-                return new float[0];
-            }
-
-            public short[] readShortArray() throws IOException {
-                return new short[0];
-            }
-
-            public <T> T readObject() throws IOException {
-                return null;
-            }
-
-            public Data readData() throws IOException {
-                return null;
-            }
-
-            public ClassLoader getClassLoader() {
-                return null;
-            }
-
-            public ByteOrder getByteOrder() {
-                return null;
-            }
-
-            public void readFully(byte[] b) throws IOException {
-
-            }
-
-            public void readFully(byte[] b, int off, int len) throws IOException {
-
-            }
-
-            public int skipBytes(int n) throws IOException {
-                return 0;
-            }
-
-            public boolean readBoolean() throws IOException {
-                return false;
-            }
-
-            public byte readByte() throws IOException {
-                return 0;
-            }
-
-            public int readUnsignedByte() throws IOException {
-                return 0;
-            }
-
-            public short readShort() throws IOException {
-                return 0;
-            }
-
-            public int readUnsignedShort() throws IOException {
-                return 0;
-            }
-
-            public char readChar() throws IOException {
-                return 0;
-            }
-
-            public int readInt() throws IOException {
-                return 0;
-            }
-
-            public long readLong() throws IOException {
-                return 0;
-            }
-
-            public float readFloat() throws IOException {
-                return 0;
-            }
-
-            public double readDouble() throws IOException {
-                return 0;
-            }
-
-            public String readLine() throws IOException {
-                return null;
-            }
-
-            public String readUTF() throws IOException {
-                return null;
-            }
-        };
-
-        Input input = null;
-        // ByteArrayInputStream byteArrayInputStream=new ByteArrayInputStream(byteArrayOutputStream.toByteArray());
-        input = new Input(byteArrayOutputStream.toByteArray());
-        HtmlPage hp123 = kryo.readObject(input, HtmlPage.class);
-        input.close();
+        //反序列化
+        Input input = new Input(output.getBuffer());
+       HtmlPage hp123 =  kryo.readObject(input, pg3.getClass());
 
         System.out.println("hp123:" + hp123.asText());
         page1 = pg3;
@@ -612,6 +400,14 @@ public class testYouku implements WebWindow {
 
     public static void main(String[] args) throws Exception {
         testYouku.testYouku();
+    }
+
+    public void write(Kryo kryo, Output output) {
+
+    }
+
+    public void read(Kryo kryo, Input input) {
+
     }
 }
 
