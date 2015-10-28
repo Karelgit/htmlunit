@@ -47,23 +47,34 @@ public class TestPageSeria {
         webClient.getOptions().setThrowExceptionOnFailingStatusCode(true);
         webClient.getOptions().setTimeout(3600 * 1000);
         webClient.waitForBackgroundJavaScript(600 * 1000);
-//      webClient.waitForBackgroundJavaScript(600*1000);
         webClient.setAjaxController(new NicelyResynchronizingAjaxController());
 
         // 模拟浏览器打开一个目标网
-//        HtmlPage page = new HtmlPageSeria();
         HtmlPage page1 = webClient.getPage(url);
-        String html = page1.asXml().replaceFirst("<\\?xml version=\"1.0\" encoding=\"(.+)\"\\?>", "<!DOCTYPE html>");
-        HtmlPage page2  = getHtmlPage(html, "http://gz.hrss.gov.cn/col/col41/index.html", page1.getEnclosingWindow());
-
 
         List<String> fistXpath = new LinkedList<String>();
         fistXpath.add("//*[@id=\"300\"]/table/tbody/tr/td/table/tbody/tr/td[8]/div");
 
-        DomElement e2 = ((DomElement) page2.getByXPath(fistXpath.get(0)).get(0));
-        HtmlPage pg2 = e2.click();
+        DomElement e1 = ((DomElement) page1.getByXPath(fistXpath.get(0)).get(0));
+        HtmlPage pg2 = e1.click();
+        //得到第2页
+//        System.out.println("pg2: " + pg2.asText());
+
         webClient.waitForBackgroundJavaScript(5000);
-        System.out.println(pg2.asText());
-//        System.out.println(page.asText());
+
+        //得到第1页
+        HtmlPage p11 =webClient.getPage(url);
+        String html = pg2.asXml().replaceFirst("<\\?xml version=\"1.0\" encoding=\"(.+)\"\\?>", "<!DOCTYPE html>");
+        HtmlPage pac1  = getHtmlPage(html, "http://gz.hrss.gov.cn/col/col41/index.html", p11.getEnclosingWindow());
+        //此时pg2还是第2页
+        System.out.println("pg2: " + pg2.asText());
+//        System.out.println("pac1 " + pac1.asText());
+
+
+
+        DomElement e2 = ((DomElement) p11.getByXPath(fistXpath.get(0)).get(0));
+        HtmlPage pg3 = e2.click();
+        System.out.println("pg3: " + pg3.asText());
+//
     }
 }
