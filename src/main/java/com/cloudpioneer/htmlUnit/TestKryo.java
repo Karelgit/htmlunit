@@ -139,6 +139,12 @@ public class TestKryo implements WebWindow{
         System.out.println("hp: " + hp.asText());
     }
 
+    /**
+     *
+     * asdfjkasdjfakasdjfkajsdkfj
+     * @return
+     */
+
     public String getName() {
         return null;
     }
