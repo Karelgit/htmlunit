@@ -24,6 +24,7 @@
         <processorPath useClasspath="true" />
         <module name="gy.fm.blankblacklist" />
         <module name="HtmlUnit" />
+        <module name="htmlunit" />
       </profile>
       <profile default="false" name="Annotation profile for htmlunit-2.18" enabled="true">
         <sourceOutputDir name="target\generated-sources\annotations" />
@@ -31,18 +32,20 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
       </profile>
-      <profile default="false" name="Annotation profile for htmlunit" enabled="true">
+      <profile default="false" name="Annotation profile for htmlunit218" enabled="true">
         <sourceOutputDir name="target\generated-sources\annotations" />
         <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="htmlunit218" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="gy.fm.blankblacklist" target="1.5" />
-      <module name="htmlunit" target="1.7" />
+      <module name="htmlunit" target="1.5" />
       <module name="HtmlUnit" target="1.5" />
       <module name="htmlunit-2.18" target="1.7" />
+      <module name="htmlunit218" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

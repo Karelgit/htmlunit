@@ -13,23 +13,12 @@ import java.io.ObjectOutputStream;
  */
 public class Test {
         public static void main(String [] args) throws Exception{
-            StudentSeria ss = new StudentSeria("karel");
-            FileOutputStream fo = new FileOutputStream("data");
-            ObjectOutputStream so = new ObjectOutputStream(fo);
-            so.writeObject(ss);
-            so.close();
-        }
-}
+            Kryo kryo = new Kryo();
+            Family f = new Family();
+            f.setIdentity("afdf");
 
-
-
-
- /*    Kryo kryo = new Kryo();
-        Family f = new Family();
-        f.setIdentity("afdf");
-
-      //  Registration registration1 = kryo.register(Family.class);
-        Registration registration = kryo.register(Student.class);
+            Registration registration1 = kryo.register(Family.class);
+            Registration registration = kryo.register(Student.class);
 //序列化
             Output output = null;
             output = new Output(41);
@@ -44,4 +33,9 @@ public class Test {
             Student s = (Student) kryo.readObject(input, registration.getType());
             System.out.println(s.getName() + "," + s.getSex());
             input.close();
-    }*/
+    }
+}
+
+
+
+

@@ -78,36 +78,16 @@ public class testYouku implements WebWindow,KryoSerializable {
     }
 
     public static void testYouku() throws Exception {
-
-
         Kryo kryo = new Kryo();
       //  Registration registration = kryo.register(HtmlPage.class);
 
         String zsUrl = "http://www.gzzs.gov.cn/NewOpen/NewOpenMList.aspx?cid=0&pid=62";
         String url = "http://gz.hrss.gov.cn/col/col41/index.html";
-
-        // String a = "<a page=\"2\">178-101</a>";
-        // String url="http://www.baidu.com";
         // 模拟一个浏览器
         WebClient webClient = new WebClient();
 
-        //LogFactory.getFactory().setAttribute("org.apache.commons.logging.Log","org.apache.commons.logging.impl.NoOpLog");
-        //java.util.logging.Logger.getLogger("net.sourceforge.htmlunit").setLevel(java.util.logging.Level.OFF);
         webClient.getOptions().setThrowExceptionOnScriptError(false);
         webClient.getOptions().setThrowExceptionOnFailingStatusCode(false);
-        // final WebClient webClient=new
-        // WebClient(BrowserVersion.FIREFOX_10,"http://myproxyserver",8000);
-        // //使用代理
-        // final WebClient webClient2=new
-        // WebClient(BrowserVersion.INTERNET_EXPLORER_10);
-        // 设置webClient的相关参数
-//        webClient.getOptions().setJavaScriptEnabled(true);
-//        webClient.getOptions().setActiveXNative(false);
-//        webClient.getOptions().setCssEnabled(false);
-//        webClient.getOptions().setThrowExceptionOnScriptError(false);
-//        webClient.waitForBackgroundJavaScript(600*1000);
-//        webClient.setAjaxController(new NicelyResynchronizingAjaxController());
-
         webClient.getOptions().setJavaScriptEnabled(true);
         webClient.setJavaScriptTimeout(3600 * 1000);
         webClient.getOptions().setRedirectEnabled(true);
@@ -115,7 +95,6 @@ public class testYouku implements WebWindow,KryoSerializable {
         webClient.getOptions().setThrowExceptionOnFailingStatusCode(true);
         webClient.getOptions().setTimeout(3600 * 1000);
         webClient.waitForBackgroundJavaScript(600 * 1000);
-//      webClient.waitForBackgroundJavaScript(600*1000);
         webClient.setAjaxController(new NicelyResynchronizingAjaxController());
 
         // 模拟浏览器打开一个目标网址
@@ -130,10 +109,9 @@ public class testYouku implements WebWindow,KryoSerializable {
         elements.add("//*[@id=\"300\"]/table/tbody/tr/td/table/tbody/tr/td[4]/div");
         elements.add("//*[@id=\"300\"]/table/tbody/tr/td/table/tbody/tr/td[8]/div");
 
-        /*elements_1.add("/*//*[@id=\"300\"]/table/tbody/tr/td/table/tbody/tr/td[8]/div");
-        elements_1.add("/*//*[@id=\"300\"]/table/tbody/tr/td/table/tbody/tr/td[4]/div");*/
-        /*elements.add("html/body/form/div[3]/div/div[2]/div[2]/div/div/table/tbody/tr/td/a[9]");
-        elements.add("html/body/form/div[3]/div/div[2]/div[2]/div/div/table/tbody/tr/td/a[7]");
+
+        /*elements.add("html/body/form/div[3]/div/div[2]/div[2]/div/div/table/tbody/tr/td/a[5]");
+        elements.add("html/body/form/div[3]/div/div[2]/div[2]/div/div/table/tbody/tr/td/a[6]");
         elements.add("html/body/form/div[3]/div/div[2]/div[2]/div/div/table/tbody/tr/td/a[7]");
         elements.add("html/body/form/div[3]/div/div[2]/div[2]/div/div/table/tbody/tr/td/a[8]");
         elements.add("html/body/form/div[3]/div/div[2]/div[2]/div/div/table/tbody/tr/td/a[9]");
@@ -154,19 +132,14 @@ public class testYouku implements WebWindow,KryoSerializable {
         HtmlPage pg2 = e2.click();
         DomElement e3 = ((DomElement) page.getByXPath(fistXpath.get(0)).get(0));
         HtmlPage pg3 = e3.click();
+
+
         Output output = new Output(new ByteArrayOutputStream());
         kryo.writeObject(output,pg3);
 
 
 //        System.err.println("pg3: " + pg3.asText());
         System.out.println("pg2:" +'\n' +  pg2.asText());
-
-        /*for (int i=0; i<elements.size();i++) {
-            DomElement element = (DomElement)page.getByXPath(elements.get(i)).get(0);
-            p = element.click();
-            map.put(i, p);
-           // System.out.println("i=" + i + "\n\n\n" + map.get(i).asText());
-        }*/
 
         HtmlPage selectedPage = pg3;
         HtmlPage currentPage = pg3;
@@ -182,8 +155,6 @@ public class testYouku implements WebWindow,KryoSerializable {
 
         p = element.click();
         HtmlPage changedPage = p;
-//        System.out.println("changedPage:" + changedPage.asText());
-
 
         //再拿第2页
         HtmlPage page1 = webClient.getPage(url);
