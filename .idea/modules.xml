@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/HtmlUnit.iml" filepath="$PROJECT_DIR$/HtmlUnit.iml" />
       <module fileurl="file://$USER_HOME$/Desktop/FMBlankBlackList/gy.fm.blankblacklist.iml" filepath="$USER_HOME$/Desktop/FMBlankBlackList/gy.fm.blankblacklist.iml" />
-      <module fileurl="file://$USER_HOME$/Desktop/htmlunit-2.18/htmlunit-2.18/htmlunit218.iml" filepath="$USER_HOME$/Desktop/htmlunit-2.18/htmlunit-2.18/htmlunit218.iml" />
     </modules>
   </component>
 </project>
