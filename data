@@ -1,0 +1,295 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script language="javascript" src="/module/jslib/jquery/jquery.js"></script>
+
+<link href="/script/page.css" type=text/css rel=stylesheet>
+
+<title>贵州人力资源和社会保障网  新闻动态</title>
+<meta name="Keywords" content="内容管理、内容管理发布（CMS）系统、信息发布、新闻采编发系统、知识管理、知识门户、政府门户、教育门户、企业门户、竞争情报系统、抓取系统、信息采集、信息雷达系统、电子政务、电子政务解决方案、办公系统、OA、网站办公系统"><meta name='Generator' content='大汉版通'><meta name='Author' content='大汉网络'>
+<meta name='Maketime' content='2015-10-31 15:05:11'>
+<meta name="channel" content="新闻动态">
+<meta name="chnlcatalog" content="工作动态/新闻动态">
+<meta name="server" content="http://gz.hrss.gov.cn/col/col41/index.html,工作动态/新闻动态,">
+</head>
+<link href="/images/2/css_V1.6.css" rel="stylesheet" type="text/css" />
+<link href="/images/2/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/images/2/work.js"></script>
+<scripT>
+//通用切换 ID名(不带数字)道数、当前频道ID、频(数字)
+function setFocus(a,c,b){
+  if(!b){b=10;}//如果不指定频道数 默认10个去查找
+  for(i=1;i<b+1;i++){
+    if(document.getElementById(a+i)!=null){
+      if (i==c){
+        document.getElementById(a+i).style.display="block";
+        if(document.getElementById(a+'Info'+i)!=null){
+        document.getElementById(a+'Info'+i).style.display="block";
+        }
+      }else{
+        document.getElementById(a+i).style.display="none";
+        if(document.getElementById(a+'Info'+i)!=null){
+        document.getElementById(a+'Info'+i).style.display="none";
+        }
+      }
+    }
+  }//循环结束
+}
+//网站群导航所用的切换
+    </scripT>
+<body bgcolor="#f0f0f0">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="241" align="center" valign="top" background="/images/2/flashbr.jpg"><table width="1030" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td height="213"><script language='javascript' src='/script/0/1505111624063745.js'></script></td>
+        </tr>
+      </table>
+      <table width="1030" border="0" cellspacing="0" cellpadding="0" bgcolor="#f8d281">
+        <tr>
+          <td height="28"><script language='javascript' src='/script/0/1505111628387830.js'></script></td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="52" align="center" valign="middle" background="/images/2/navbr.jpg"><script language='javascript' src='/script/0/1505131608413898.js'></script></td>
+  </tr>
+</table>
+<div style="background:url(/images/2/cnbr.jpg) repeat-x #fff;">
+<div style="background:#fff; width:1030px; margin:0 auto;">
+<div style="height:10px"></div>
+<table width="1030" border="0" cellspacing="0" cellpadding="0" align="center" style="margin:0 auto;">
+  <tr>
+    <td align="left" valign="top">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" background="/images/2/tqbj.jpg">
+  <tr>
+    <td height="36" width="10">&nbsp;</td>
+    <td align="left" valign="middle">&nbsp;
+</td>
+    <td width="400" align="left" valign="middle"><script language='javascript' src='/script/0/1506071422285853.js'></script></td>
+  </tr>
+</table>
+        <table width="1030" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td height="10"></td>
+      </tr>
+    </table>
+<table width="1030" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td><table cellspacing="0" cellpadding="0" border="0"><tr><td><a href="/index.html" class="bt_link">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;首页</a></td><td><TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=0 BORDER=0>
+<TR>
+<TD> >> <a href="/col/col41/index.html" class="bt_link">工作动态</a></TD><TD> >> <a href="/col/col41/index.html" class="bt_link">新闻动态</a></TD>
+</TR></TABLE></td></tr></table>
+</td>
+      </tr>
+    </table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="21">&nbsp;</td>
+    <td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td>
+</td>
+      </tr>
+      <tr>
+        <td height="10"></td>
+      </tr>
+      <tr>
+        <td align="left" valign="top" style="border:#e3e3e3 1px solid;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td height="10"></td>
+          </tr>
+        </table>
+          <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="20"></td>
+            <td><div><span style="font-size:10.5pt; font-weight:bolder; color:#F00">新闻动态</span></div></td>
+            <td>&nbsp;</td>
+            <td width="2" bgcolor="#CCCCCC"></td>
+          </tr>
+          <tr>
+            <td colspan="4" height="5"></td>
+            </tr>
+          </table>
+          <table width="100%" border="0" cellspacing="0" cellpadding="0" height="3">
+            <tr>
+              <td width="10" height="3"></td>
+              <td width="634" style="background:#d90400"></td>
+              <td width="10"></td>
+            </tr>
+          </table>
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td height="10"></td>
+            </tr>
+          </table>
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="10"></td>
+              <td><div id="300"><div style="display:none;">&lt;datastore&gt;
+&lt;nextgroup&gt;&lt;![CDATA[&lt;a href=&quot;/module/jslib/jquery/jpage/dataproxy.jsp?page=1&amp;appid=1&amp;appid=1&amp;webid=1&amp;path='/'&amp;columnid=41&amp;unitid=300&amp;webname='&#36149;&#24030;&#20154;&#21147;&#36164;&#28304;&#21644;&#31038;&#20250;&#20445;&#38556;&#32593;'&amp;permissiontype=0&quot;&gt;&lt;/a&gt;]]&gt;&lt;/nextgroup&gt;
+&lt;recordset&gt;
+&lt;table width=&quot;100%&quot; border=&quot;0&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot; align=&quot;center&quot;&gt;&lt;/table&gt;&lt;record&gt;&lt;![CDATA[
+&lt;tr&gt;&lt;td height=&quot;28&quot; align=&quot;left&quot; valign=&quot;middle&quot; style=&quot;border-bottom:dashed 1px #ccc&quot;&gt;&lt;span style=&quot;padding-right:8px;&quot;&gt;&lt;img src='/picture/0/1505121003203479734.jpg' align='absmiddle' border='0'&gt;&lt;/span&gt;&lt;a  style=&quot;font-size:14px;&quot; href='/art/2015/10/31/art_41_22916.html' class='bt_link_w' title='&#20840;&#30465;&#31532;&#22235;&#27425;&#20107;&#19994;&#21333;&#20301;&#21516;&#27493;&#32771;&#35797;&#20030;&#34892;' target=&quot;_blank&quot;&gt;&#20840;&#30465;&#31532;&#22235;&#27425;&#20107;&#19994;&#21333;&#20301;&#21516;&#27493;&#32771;&#35797;&#20030;&#34892;&lt;/a&gt;&lt;/td&gt;&lt;td width=&quot;80&quot; align=&quot;center&quot; class=&quot;bt_time&quot; style=&quot;font-size:12px;border-bottom:dashed 1px #ccc&quot;&gt;2015-10-31&lt;/td&gt;&lt;/tr&gt;]]&gt;&lt;/record&gt;
+&lt;record&gt;&lt;![CDATA[
+&lt;tr&gt;&lt;td height=&quot;28&quot; align=&quot;left&quot; valign=&quot;middle&quot; style=&quot;border-bottom:dashed 1px #ccc&quot;&gt;&lt;span style=&quot;padding-right:8px;&quot;&gt;&lt;img src='/picture/0/1505121003203479734.jpg' align='absmiddle' border='0'&gt;&lt;/span&gt;&lt;a  style=&quot;font-size:14px;&quot; href='/art/2015/10/29/art_41_22918.html' class='bt_link_w' title='&#36149;&#24030;&#30465;&#25104;&#31435;&#21327;&#35843;&#21171;&#21160;&#20851;&#31995;&#19977;&#26041;&#22996;&#21592;&#20250;' target=&quot;_blank&quot;&gt;&#36149;&#24030;&#30465;&#25104;&#31435;&#21327;&#35843;&#21171;&#21160;&#20851;&#31995;&#19977;&#26041;&#22996;&#21592;&#20250;&lt;/a&gt;&lt;/td&gt;&lt;td width=&quot;80&quot; align=&quot;center&quot; class=&quot;bt_time&quot; style=&quot;font-size:12px;border-bottom:dashed 1px #ccc&quot;&gt;2015-10-29&lt;/td&gt;&lt;/tr&gt;]]&gt;&lt;/record&gt;
+&lt;record&gt;&lt;![CDATA[
+&lt;tr&gt;&lt;td height=&quot;28&quot; align=&quot;left&quot; valign=&quot;middle&quot; style=&quot;border-bottom:dashed 1px #ccc&quot;&gt;&lt;span style=&quot;padding-right:8px;&quot;&gt;&lt;img src='/picture/0/1505121003203479734.jpg' align='absmiddle' border='0'&gt;&lt;/span&gt;&lt;a  style=&quot;font-size:14px;&quot; href='/art/2015/10/28/art_41_22917.html' class='bt_link_w' title='&#36149;&#24030;&#30465;&#37096;&#32626;&#24066;&#65288;&#24030;&#65289;&#21644;&#30465;&#30452;&#26377;&#20851;&#37096;&#38376;&#31649;&#29702;&#22269;&#26377;&#20225;&#19994;&#36127;&#36131;&#20154;&#34218;&#37228;&#21046;&#24230;&#25913;&#38761;&#24037;&#20316;' target=&quot;_blank&quot;&gt;&#36149;&#24030;&#30465;&#37096;&#32626;&#24066;&#65288;&#24030;&#65289;&#21644;&#30465;&#30452;&#26377;&#20851;&#37096;&#38376;&#31649;&#29702;&#22269;&#26377;&#20225;&#19994;&#36127;&#36131;&#20154;&#34218;&#37228;&#21046;&#24230;&#25913;&#38761;&#24037;&#20316;&lt;/a&gt;&lt;/td&gt;&lt;td width=&quot;80&quot; align=&quot;center&quot; class=&quot;bt_time&quot; style=&quot;font-size:12px;border-bottom:dashed 1px #ccc&quot;&gt;2015-10-28&lt;/td&gt;&lt;/tr&gt;]]&gt;&lt;/record&gt;
+&lt;record&gt;&lt;![CDATA[
+&lt;tr&gt;&lt;td height=&quot;28&quot; align=&quot;left&quot; valign=&quot;middle&quot; style=&quot;border-bottom:dashed 1px #ccc&quot;&gt;&lt;span style=&quot;padding-right:8px;&quot;&gt;&lt;img src='/picture/0/1505121003203479734.jpg' align='absmiddle' border='0'&gt;&lt;/span&gt;&lt;a  style=&quot;font-size:14px;&quot; href='/art/2015/10/27/art_41_22864.html' class='bt_link_w' title='&#30465;&#20154;&#21147;&#36164;&#28304;&#31038;&#20250;&#20445;&#38556;&#21381;&#21484;&#24320;2015&#24180;&#31532;&#20108;&#27425;&#20840;&#38754;&#28145;&#21270;&#25913;&#38761;&#25512;&#36827;&#20250;' target=&quot;_blank&quot;&gt;&#30465;&#20154;&#21147;&#36164;&#28304;&#31038;&#20250;&#20445;&#38556;&#21381;&#21484;&#24320;2015&#24180;&#31532;&#20108;&#27425;&#20840;&#38754;&#28145;&#21270;&#25913;&#38761;&#25512;&#36827;&#20250;&lt;/a&gt;&lt;/td&gt;&lt;td width=&quot;80&quot; align=&quot;center&quot; class=&quot;bt_time&quot; style=&quot;font-size:12px;border-bottom:dashed 1px #ccc&quot;&gt;2015-10-27&lt;/td&gt;&lt;/tr&gt;]]&gt;&lt;/record&gt;
+&lt;record&gt;&lt;![CDATA[
+&lt;tr&gt;&lt;td height=&quot;28&quot; align=&quot;left&quot; valign=&quot;middle&quot; style=&quot;border-bottom:dashed 1px #ccc&quot;&gt;&lt;span style=&quot;padding-right:8px;&quot;&gt;&lt;img src='/picture/0/1505121003203479734.jpg' align='absmiddle' border='0'&gt;&lt;/span&gt;&lt;a  style=&quot;font-size:14px;&quot; href='/art/2015/10/23/art_41_22821.html' class='bt_link_w' title='&#20399;&#20029;&#27743;&#21040;&#23435;&#26071;&#38215;&#24320;&#23637;&#31034;&#33539;&#23567;&#22478;&#38215;&#24314;&#35774;&#23545;&#21475;&#24110;&#25206;&#24037;&#20316;&#35843;&#30740;' target=&quot;_blank&quot;&gt;&#20399;&#20029;&#27743;&#21040;&#23435;&#26071;&#38215;&#24320;&#23637;&#31034;&#33539;&#23567;&#22478;&#38215;&#24314;&#35774;&#23545;&#21475;&#24110;&#25206;&#24037;&#20316;&#35843;&#30740;&lt;/a&gt;&lt;/td&gt;&lt;td width=&quot;80&quot; align=&quot;center&quot; class=&quot;bt_time&quot; style=&quot;font-size:12px;border-bottom:dashed 1px #ccc&quot;&gt;2015-10-23&lt;/td&gt;&lt;/tr&gt;]]&gt;&lt;/record&gt;
+&lt;record&gt;&lt;![CDATA[
+&lt;tr&gt;&lt;td height=&quot;28&quot; align=&quot;left&quot; valign=&quot;middle&quot; style=&quot;border-bottom:dashed 1px #ccc&quot;&gt;&lt;span style=&quot;padding-right:8px;&quot;&gt;&lt;img src='/picture/0/1505121003203479734.jpg' align='absmiddle' border='0'&gt;&lt;/span&gt;&lt;a  style=&quot;font-size:14px;&quot; href='/art/2015/10/22/art_41_22809.html' class='bt_link_w' title='&#23380;&#38592;&#32536;&#20309;&#35199;&#21335;&#39134;&mdash;&mdash;&#25105;&#30465;&#21152;&#36895;&#20154;&#25165;&#38598;&#32858;&#28608;&#21169;&#20154;&#25165;&#21019;&#26032;&#21019;&#19994;&#25919;&#31574;&#35299;&#35835;' target=&quot;_blank&quot;&gt;&#23380;&#38592;&#32536;&#20309;&#35199;&#21335;&#39134;&mdash;&mdash;&#25105;&#30465;&#21152;&#36895;&#20154;&#25165;&#38598;&#32858;&#28608;&#21169;&#20154;&#25165;&#21019;&#26032;&#21019;&#19994;&#25919;&#31574;&#35299;&#35835;&lt;/a&gt;&lt;/td&gt;&lt;td width=&quot;80&quot; align=&quot;center&quot; class=&quot;bt_time&quot; style=&quot;font-size:12px;border-bottom:dashed 1px #ccc&quot;&gt;2015-10-22&lt;/td&gt;&lt;/tr&gt;]]&gt;&lt;/record&gt;
+&lt;record&gt;&lt;![CDATA[
+&lt;tr&gt;&lt;td height=&quot;28&quot; align=&quot;left&quot; valign=&quot;middle&quot; style=&quot;border-bottom:dashed 1px #ccc&quot;&gt;&lt;span style=&quot;padding-right:8px;&quot;&gt;&lt;img src='/picture/0/1505121003203479734.jpg' align='absmiddle' border='0'&gt;&lt;/span&gt;&lt;a  style=&quot;font-size:14px;&quot; href='/art/2015/10/21/art_41_22798.html' class='bt_link_w' title='&#21069;&#19977;&#23395;&#24230;&#23621;&#27665;&#25910;&#20837;&#23454;&#38469;&#22686;&#24133;7.7%' target=&quot;_blank&quot;&gt;&#21069;&#19977;&#23395;&#24230;&#23621;&#27665;&#25910;&#20837;&#23454;&#38469;&#22686;&#24133;7.7%&lt;/a&gt;&lt;/td&gt;&lt;td width=&quot;80&quot; align=&quot;center&quot; class=&quot;bt_time&quot; style=&quot;font-size:12px;border-bottom:dashed 1px #ccc&quot;&gt;2015-10-21&lt;/td&gt;&lt;/tr&gt;]]&gt;&lt;/record&gt;
+&lt;record&gt;&lt;![CDATA[
+&lt;tr&gt;&lt;td height=&quot;28&quot; align=&quot;left&quot; valign=&quot;middle&quot; style=&quot;border-bottom:dashed 1px #ccc&quot;&gt;&lt;span style=&quot;padding-right:8px;&quot;&gt;&lt;img src='/picture/0/1505121003203479734.jpg' align='absmiddle' border='0'&gt;&lt;/span&gt;&lt;a  style=&quot;font-size:14px;&quot; href='/art/2015/10/19/art_41_22749.html' class='bt_link_w' title='&#25307;&#32771;&#21521;&#22522;&#23618;&#20542;&#26012; &#20005;&#25171;&#20316;&#24330;&#34892;&#20026;&mdash;&mdash;&#22269;&#23478;&#20844;&#21153;&#21592;&#23616;&#32771;&#35797;&#24405;&#29992;&#21496;&#36127;&#36131;&#20154;&#31572;&#35760;&#32773;&#38382;' target=&quot;_blank&quot;&gt;&#25307;&#32771;&#21521;&#22522;&#23618;&#20542;&#26012; &#20005;&#25171;&#20316;&#24330;&#34892;&#20026;&mdash;&mdash;&#22269;&#23478;&#20844;&#21153;&#21592;&#23616;&#32771;&#35797;&#24405;&#29992;&#21496;&#36127;&#36131;&#20154;&#31572;&#35760;&#32773;&#38382;&lt;/a&gt;&lt;/td&gt;&lt;td width=&quot;80&quot; align=&quot;center&quot; class=&quot;bt_time&quot; style=&quot;font-size:12px;border-bottom:dashed 1px #ccc&quot;&gt;2015-10-19&lt;/td&gt;&lt;/tr&gt;]]&gt;&lt;/record&gt;
+&lt;record&gt;&lt;![CDATA[
+&lt;tr&gt;&lt;td height=&quot;28&quot; align=&quot;left&quot; valign=&quot;middle&quot; style=&quot;border-bottom:dashed 1px #ccc&quot;&gt;&lt;span style=&quot;padding-right:8px;&quot;&gt;&lt;img src='/picture/0/1505121003203479734.jpg' align='absmiddle' border='0'&gt;&lt;/span&gt;&lt;a  style=&quot;font-size:14px;&quot; href='/art/2015/10/18/art_41_22777.html' class='bt_link_w' title='&#20154;&#31038;&#37096;&#30563;&#26597;&#32452;&#26469;&#40660;&#30563;&#26597;&#35843;&#30740;&#20154;&#31038;&#24037;&#20316;' target=&quot;_blank&quot;&gt;&#20154;&#31038;&#37096;&#30563;&#26597;&#32452;&#26469;&#40660;&#30563;&#26597;&#35843;&#30740;&#20154;&#31038;&#24037;&#20316;&lt;/a&gt;&lt;/td&gt;&lt;td width=&quot;80&quot; align=&quot;center&quot; class=&quot;bt_time&quot; style=&quot;font-size:12px;border-bottom:dashed 1px #ccc&quot;&gt;2015-10-18&lt;/td&gt;&lt;/tr&gt;]]&gt;&lt;/record&gt;
+&lt;record&gt;&lt;![CDATA[
+&lt;tr&gt;&lt;td height=&quot;28&quot; align=&quot;left&quot; valign=&quot;middle&quot; style=&quot;border-bottom:dashed 1px #ccc&quot;&gt;&lt;span style=&quot;padding-right:8px;&quot;&gt;&lt;img src='/picture/0/1505121003203479734.jpg' align='absmiddle' border='0'&gt;&lt;/span&gt;&lt;a  style=&quot;font-size:14px;&quot; href='/art/2015/10/15/art_41_22707.html' class='bt_link_w' title='&#31532;20&#25209;&#20013;&#22269;&#21338;&#22763;&#21518;&#35199;&#37096;&#26381;&#21153;&#22242;&#65288;&#36149;&#24030;&#36981;&#20041;&#34892;&#65289;&#27963;&#21160;&#27491;&#24335;&#21551;&#21160;' target=&quot;_blank&quot;&gt;&#31532;20&#25209;&#20013;&#22269;&#21338;&#22763;&#21518;&#35199;&#37096;&#26381;&#21153;&#22242;&#65288;&#36149;&#24030;&#36981;&#20041;&#34892;&#65289;&#27963;&#21160;&#27491;&#24335;&#21551;&#21160;&lt;/a&gt;&lt;/td&gt;&lt;td width=&quot;80&quot; align=&quot;center&quot; class=&quot;bt_time&quot; style=&quot;font-size:12px;border-bottom:dashed 1px #ccc&quot;&gt;2015-10-15&lt;/td&gt;&lt;/tr&gt;]]&gt;&lt;/record&gt;
+&lt;record&gt;&lt;![CDATA[
+&lt;tr&gt;&lt;td height=&quot;28&quot; align=&quot;left&quot; valign=&quot;middle&quot; style=&quot;border-bottom:dashed 1px #ccc&quot;&gt;&lt;span style=&quot;padding-right:8px;&quot;&gt;&lt;img src='/picture/0/1505121003203479734.jpg' align='absmiddle' border='0'&gt;&lt;/span&gt;&lt;a  style=&quot;font-size:14px;&quot; href='/art/2015/10/12/art_41_22663.html' class='bt_link_w' title='&#20154;&#31038;&#37096;&#24320;&#23637;&#12298;&#25919;&#24220;&#24037;&#20316;&#25253;&#21578;&#12299;&#37327;&#21270;&#25351;&#26631;&#20219;&#21153;&#33853;&#23454;&#24773;&#20917;&#19987;&#39033;&#30563;&#26597;' target=&quot;_blank&quot;&gt;&#20154;&#31038;&#37096;&#24320;&#23637;&#12298;&#25919;&#24220;&#24037;&#20316;&#25253;&#21578;&#12299;&#37327;&#21270;&#25351;&#26631;&#20219;&#21153;&#33853;&#23454;&#24773;&#20917;&#19987;&#39033;&#30563;&#26597;&lt;/a&gt;&lt;/td&gt;&lt;td width=&quot;80&quot; align=&quot;center&quot; class=&quot;bt_time&quot; style=&quot;font-size:12px;border-bottom:dashed 1px #ccc&quot;&gt;2015-10-12&lt;/td&gt;&lt;/tr&gt;]]&gt;&lt;/record&gt;
+&lt;record&gt;&lt;![CDATA[
+&lt;tr&gt;&lt;td height=&quot;28&quot; align=&quot;left&quot; valign=&quot;middle&quot; style=&quot;border-bottom:dashed 1px #ccc&quot;&gt;&lt;span style=&quot;padding-right:8px;&quot;&gt;&lt;img src='/picture/0/1505121003203479734.jpg' align='absmiddle' border='0'&gt;&lt;/span&gt;&lt;a  style=&quot;font-size:14px;&quot; href='/art/2015/10/12/art_41_22661.html' class='bt_link_w' title='&#20154;&#31038;&#37096;&#21360;&#21457;&#36890;&#30693;&#20005;&#31105;&#36829;&#35268;&#35774;&#32622;&#32844;&#19994;&#36164;&#26684;' target=&quot;_blank&quot;&gt;&#20154;&#31038;&#37096;&#21360;&#21457;&#36890;&#30693;&#20005;&#31105;&#36829;&#35268;&#35774;&#32622;&#32844;&#19994;&#36164;&#26684;&lt;/a&gt;&lt;/td&gt;&lt;td width=&quot;80&quot; align=&quot;center&quot; class=&quot;bt_time&quot; style=&quot;font-size:12px;border-bottom:dashed 1px #ccc&quot;&gt;2015-10-12&lt;/td&gt;&lt;/tr&gt;]]&gt;&lt;/record&gt;
+&lt;record&gt;&lt;![CDATA[
+&lt;tr&gt;&lt;td height=&quot;28&quot; align=&quot;left&quot; valign=&quot;middle&quot; style=&quot;border-bottom:dashed 1px #ccc&quot;&gt;&lt;span style=&quot;padding-right:8px;&quot;&gt;&lt;img src='/picture/0/1505121003203479734.jpg' align='absmiddle' border='0'&gt;&lt;/span&gt;&lt;a  style=&quot;font-size:14px;&quot; href='/art/2015/10/12/art_41_22659.html' class='bt_link_w' title='&#38472;&#26195;&#20809;&#32452;&#38271;&#21040;&#31383;&#21475;&#26816;&#26597;&#25351;&#23548;&#24037;&#20316;' target=&quot;_blank&quot;&gt;&#38472;&#26195;&#20809;&#32452;&#38271;&#21040;&#31383;&#21475;&#26816;&#26597;&#25351;&#23548;&#24037;&#20316;&lt;/a&gt;&lt;/td&gt;&lt;td width=&quot;80&quot; align=&quot;center&quot; class=&quot;bt_time&quot; style=&quot;font-size:12px;border-bottom:dashed 1px #ccc&quot;&gt;2015-10-12&lt;/td&gt;&lt;/tr&gt;]]&gt;&lt;/record&gt;
+&lt;record&gt;&lt;![CDATA[
+&lt;tr&gt;&lt;td height=&quot;28&quot; align=&quot;left&quot; valign=&quot;middle&quot; style=&quot;border-bottom:dashed 1px #ccc&quot;&gt;&lt;span style=&quot;padding-right:8px;&quot;&gt;&lt;img src='/picture/0/1505121003203479734.jpg' align='absmiddle' border='0'&gt;&lt;/span&gt;&lt;a  style=&quot;font-size:14px;&quot; href='/art/2015/10/11/art_41_22648.html' class='bt_link_w' title='&#36149;&#38451;&#24066;&#28176;&#28176;&#25104;&#20026;&#21019;&#23458;&#30340;&#22823;&#26412;&#33829;' target=&quot;_blank&quot;&gt;&#36149;&#38451;&#24066;&#28176;&#28176;&#25104;&#20026;&#21019;&#23458;&#30340;&#22823;&#26412;&#33829;&lt;/a&gt;&lt;/td&gt;&lt;td width=&quot;80&quot; align=&quot;center&quot; class=&quot;bt_time&quot; style=&quot;font-size:12px;border-bottom:dashed 1px #ccc&quot;&gt;2015-10-11&lt;/td&gt;&lt;/tr&gt;]]&gt;&lt;/record&gt;
+&lt;record&gt;&lt;![CDATA[
+&lt;tr&gt;&lt;td height=&quot;28&quot; align=&quot;left&quot; valign=&quot;middle&quot; style=&quot;border-bottom:dashed 1px #ccc&quot;&gt;&lt;span style=&quot;padding-right:8px;&quot;&gt;&lt;img src='/picture/0/1505121003203479734.jpg' align='absmiddle' border='0'&gt;&lt;/span&gt;&lt;a  style=&quot;font-size:14px;&quot; href='/art/2015/10/10/art_41_22640.html' class='bt_link_w' title='&#35874;&#20025;&#38738;&#21103;&#21381;&#38271;&#21040;&#31383;&#21475;&#26816;&#26597;&#25351;&#23548;&#24037;&#20316;' target=&quot;_blank&quot;&gt;&#35874;&#20025;&#38738;&#21103;&#21381;&#38271;&#21040;&#31383;&#21475;&#26816;&#26597;&#25351;&#23548;&#24037;&#20316;&lt;/a&gt;&lt;/td&gt;&lt;td width=&quot;80&quot; align=&quot;center&quot; class=&quot;bt_time&quot; style=&quot;font-size:12px;border-bottom:dashed 1px #ccc&quot;&gt;2015-10-10&lt;/td&gt;&lt;/tr&gt;]]&gt;&lt;/record&gt;
+&lt;record&gt;&lt;![CDATA[
+&lt;tr&gt;&lt;td height=&quot;28&quot; align=&quot;left&quot; valign=&quot;middle&quot; style=&quot;border-bottom:dashed 1px #ccc&quot;&gt;&lt;span style=&quot;padding-right:8px;&quot;&gt;&lt;img src='/picture/0/1505121003203479734.jpg' align='absmiddle' border='0'&gt;&lt;/span&gt;&lt;a  style=&quot;font-size:14px;&quot; href='/art/2015/10/9/art_41_22635.html' class='bt_link_w' title='&#36149;&#24030;&#30465;&#20986;&#21488;&#20851;&#20110;&#36827;&#19968;&#27493;&#20570;&#22909;&#20026;&#20892;&#27665;&#24037;&#26381;&#21153;&#24037;&#20316;&#30340;&#23454;&#26045;&#24847;&#35265;' target=&quot;_blank&quot;&gt;&#36149;&#24030;&#30465;&#20986;&#21488;&#20851;&#20110;&#36827;&#19968;&#27493;&#20570;&#22909;&#20026;&#20892;&#27665;&#24037;&#26381;&#21153;&#24037;&#20316;&#30340;&#23454;&#26045;&#24847;&#35265;&lt;/a&gt;&lt;/td&gt;&lt;td width=&quot;80&quot; align=&quot;center&quot; class=&quot;bt_time&quot; style=&quot;font-size:12px;border-bottom:dashed 1px #ccc&quot;&gt;2015-10-09&lt;/td&gt;&lt;/tr&gt;]]&gt;&lt;/record&gt;
+&lt;record&gt;&lt;![CDATA[
+&lt;tr&gt;&lt;td height=&quot;28&quot; align=&quot;left&quot; valign=&quot;middle&quot; style=&quot;border-bottom:dashed 1px #ccc&quot;&gt;&lt;span style=&quot;padding-right:8px;&quot;&gt;&lt;img src='/picture/0/1505121003203479734.jpg' align='absmiddle' border='0'&gt;&lt;/span&gt;&lt;a  style=&quot;font-size:14px;&quot; href='/art/2015/10/8/art_41_22638.html' class='bt_link_w' title='&#22269;&#21153;&#38498;&#21360;&#21457;&#12298;&#20851;&#20110;&#21152;&#24555;&#26500;&#24314;&#22823;&#20247;&#21019;&#19994;&#19975;&#20247;&#21019;&#26032;&#25903;&#25745;&#24179;&#21488;&#30340;&#25351;&#23548;&#24847;&#35265;&#12299;' target=&quot;_blank&quot;&gt;&#22269;&#21153;&#38498;&#21360;&#21457;&#12298;&#20851;&#20110;&#21152;&#24555;&#26500;&#24314;&#22823;&#20247;&#21019;&#19994;&#19975;&#20247;&#21019;&#26032;&#25903;&#25745;&#24179;&#21488;&#30340;&#25351;&#23548;&#24847;&#35265;&#12299;&lt;/a&gt;&lt;/td&gt;&lt;td width=&quot;80&quot; align=&quot;center&quot; class=&quot;bt_time&quot; style=&quot;font-size:12px;border-bottom:dashed 1px #ccc&quot;&gt;2015-10-08&lt;/td&gt;&lt;/tr&gt;]]&gt;&lt;/record&gt;
+&lt;record&gt;&lt;![CDATA[
+&lt;tr&gt;&lt;td height=&quot;28&quot; align=&quot;left&quot; valign=&quot;middle&quot; style=&quot;border-bottom:dashed 1px #ccc&quot;&gt;&lt;span style=&quot;padding-right:8px;&quot;&gt;&lt;img src='/picture/0/1505121003203479734.jpg' align='absmiddle' border='0'&gt;&lt;/span&gt;&lt;a  style=&quot;font-size:14px;&quot; href='/art/2015/9/30/art_41_22559.html' class='bt_link_w' title='2015&ldquo;&#36149;&#24030;&#38134;&#34892;&#26479;&rdquo;&#36149;&#24030;&#38738;&#24180;&#21019;&#19994;&#21019;&#26032;&#22823;&#36187;&#20030;&#34892;&#20915;&#36187;' target=&quot;_blank&quot;&gt;2015&ldquo;&#36149;&#24030;&#38134;&#34892;&#26479;&rdquo;&#36149;&#24030;&#38738;&#24180;&#21019;&#19994;&#21019;&#26032;&#22823;&#36187;&#20030;&#34892;&#20915;&#36187;&lt;/a&gt;&lt;/td&gt;&lt;td width=&quot;80&quot; align=&quot;center&quot; class=&quot;bt_time&quot; style=&quot;font-size:12px;border-bottom:dashed 1px #ccc&quot;&gt;2015-09-30&lt;/td&gt;&lt;/tr&gt;]]&gt;&lt;/record&gt;
+&lt;record&gt;&lt;![CDATA[
+&lt;tr&gt;&lt;td height=&quot;28&quot; align=&quot;left&quot; valign=&quot;middle&quot; style=&quot;border-bottom:dashed 1px #ccc&quot;&gt;&lt;span style=&quot;padding-right:8px;&quot;&gt;&lt;img src='/picture/0/1505121003203479734.jpg' align='absmiddle' border='0'&gt;&lt;/span&gt;&lt;a  style=&quot;font-size:14px;&quot; href='/art/2015/9/30/art_41_22555.html' class='bt_link_w' title='&#30465;&#20154;&#21147;&#36164;&#28304;&#31038;&#20250;&#20445;&#38556;&#21381;&#25104;&#21151;&#25215;&#21150;2015&#24180;&#30465;&#25919;&#24220;&#22269;&#24198;&#25307;&#24453;&#20250;' target=&quot;_blank&quot;&gt;&#30465;&#20154;&#21147;&#36164;&#28304;&#31038;&#20250;&#20445;&#38556;&#21381;&#25104;&#21151;&#25215;&#21150;2015&#24180;&#30465;&#25919;&#24220;&#22269;&#24198;&#25307;&#24453;&#20250;&lt;/a&gt;&lt;/td&gt;&lt;td width=&quot;80&quot; align=&quot;center&quot; class=&quot;bt_time&quot; style=&quot;font-size:12px;border-bottom:dashed 1px #ccc&quot;&gt;2015-09-30&lt;/td&gt;&lt;/tr&gt;]]&gt;&lt;/record&gt;
+&lt;record&gt;&lt;![CDATA[
+&lt;tr&gt;&lt;td height=&quot;28&quot; align=&quot;left&quot; valign=&quot;middle&quot; style=&quot;border-bottom:dashed 1px #ccc&quot;&gt;&lt;span style=&quot;padding-right:8px;&quot;&gt;&lt;img src='/picture/0/1505121003203479734.jpg' align='absmiddle' border='0'&gt;&lt;/span&gt;&lt;a  style=&quot;font-size:14px;&quot; href='/art/2015/9/26/art_41_22520.html' class='bt_link_w' title='&#36149;&#24030;&#21019;&#19994;&#24102;&#21160;&#23601;&#19994;&#24037;&#20316;&#25104;&#25928;&#26174;&#33879;' target=&quot;_blank&quot;&gt;&#36149;&#24030;&#21019;&#19994;&#24102;&#21160;&#23601;&#19994;&#24037;&#20316;&#25104;&#25928;&#26174;&#33879;&lt;/a&gt;&lt;/td&gt;&lt;td width=&quot;80&quot; align=&quot;center&quot; class=&quot;bt_time&quot; style=&quot;font-size:12px;border-bottom:dashed 1px #ccc&quot;&gt;2015-09-26&lt;/td&gt;&lt;/tr&gt;]]&gt;&lt;/record&gt;
+&lt;record&gt;&lt;![CDATA[
+&lt;tr&gt;&lt;td height=&quot;28&quot; align=&quot;left&quot; valign=&quot;middle&quot; style=&quot;border-bottom:dashed 1px #ccc&quot;&gt;&lt;span style=&quot;padding-right:8px;&quot;&gt;&lt;img src='/picture/0/1505121003203479734.jpg' align='absmiddle' border='0'&gt;&lt;/span&gt;&lt;a  style=&quot;font-size:14px;&quot; href='/art/2015/9/26/art_41_22562.html' class='bt_link_w' title='&#38472;&#26195;&#20809;&#36208;&#35775;&#22256;&#38590;&#32676;&#20247;' target=&quot;_blank&quot;&gt;&#38472;&#26195;&#20809;&#36208;&#35775;&#22256;&#38590;&#32676;&#20247;&lt;/a&gt;&lt;/td&gt;&lt;td width=&quot;80&quot; align=&quot;center&quot; class=&quot;bt_time&quot; style=&quot;font-size:12px;border-bottom:dashed 1px #ccc&quot;&gt;2015-09-26&lt;/td&gt;&lt;/tr&gt;]]&gt;&lt;/record&gt;
+&lt;record&gt;&lt;![CDATA[
+&lt;tr&gt;&lt;td height=&quot;28&quot; align=&quot;left&quot; valign=&quot;middle&quot; style=&quot;border-bottom:dashed 1px #ccc&quot;&gt;&lt;span style=&quot;padding-right:8px;&quot;&gt;&lt;img src='/picture/0/1505121003203479734.jpg' align='absmiddle' border='0'&gt;&lt;/span&gt;&lt;a  style=&quot;font-size:14px;&quot; href='/art/2015/9/25/art_41_22546.html' class='bt_link_w' title='&#20840;&#22269;&#22522;&#23618;&#35843;&#35299;&#24037;&#20316;&#35268;&#33539;&#21270;&#24314;&#35774;&#29616;&#22330;&#20250;&#22312;&#20845;&#30424;&#27700;&#24066;&#21484;&#24320;' target=&quot;_blank&quot;&gt;&#20840;&#22269;&#22522;&#23618;&#35843;&#35299;&#24037;&#20316;&#35268;&#33539;&#21270;&#24314;&#35774;&#29616;&#22330;&#20250;&#22312;&#20845;&#30424;&#27700;&#24066;&#21484;&#24320;&lt;/a&gt;&lt;/td&gt;&lt;td width=&quot;80&quot; align=&quot;center&quot; class=&quot;bt_time&quot; style=&quot;font-size:12px;border-bottom:dashed 1px #ccc&quot;&gt;2015-09-25&lt;/td&gt;&lt;/tr&gt;]]&gt;&lt;/record&gt;
+&lt;record&gt;&lt;![CDATA[
+&lt;tr&gt;&lt;td height=&quot;28&quot; align=&quot;left&quot; valign=&quot;middle&quot; style=&quot;border-bottom:dashed 1px #ccc&quot;&gt;&lt;span style=&quot;padding-right:8px;&quot;&gt;&lt;img src='/picture/0/1505121003203479734.jpg' align='absmiddle' border='0'&gt;&lt;/span&gt;&lt;a  style=&quot;font-size:14px;&quot; href='/art/2015/9/21/art_41_22449.html' class='bt_link_w' title='&#22269;&#23478;&#30563;&#23548;&#32452;&#21040;&#25105;&#30465;&#24320;&#23637;&#24314;&#31569;&#20225;&#19994;&#21442;&#21152;&#24037;&#20260;&#20445;&#38505;&#24037;&#20316;&#30563;&#23548;' target=&quot;_blank&quot;&gt;&#22269;&#23478;&#30563;&#23548;&#32452;&#21040;&#25105;&#30465;&#24320;&#23637;&#24314;&#31569;&#20225;&#19994;&#21442;&#21152;&#24037;&#20260;&#20445;&#38505;&#24037;&#20316;&#30563;&#23548;&lt;/a&gt;&lt;/td&gt;&lt;td width=&quot;80&quot; align=&quot;center&quot; class=&quot;bt_time&quot; style=&quot;font-size:12px;border-bottom:dashed 1px #ccc&quot;&gt;2015-09-21&lt;/td&gt;&lt;/tr&gt;]]&gt;&lt;/record&gt;
+&lt;record&gt;&lt;![CDATA[
+&lt;tr&gt;&lt;td height=&quot;28&quot; align=&quot;left&quot; valign=&quot;middle&quot; style=&quot;border-bottom:dashed 1px #ccc&quot;&gt;&lt;span style=&quot;padding-right:8px;&quot;&gt;&lt;img src='/picture/0/1505121003203479734.jpg' align='absmiddle' border='0'&gt;&lt;/span&gt;&lt;a  style=&quot;font-size:14px;&quot; href='/art/2015/9/21/art_41_22448.html' class='bt_link_w' title='&#20170;&#24180;&#25105;&#30465;&#25919;&#27861;&#24178;&#35686;&#25307;&#24405;&#20030;&#34892;&#31508;&#35797;' target=&quot;_blank&quot;&gt;&#20170;&#24180;&#25105;&#30465;&#25919;&#27861;&#24178;&#35686;&#25307;&#24405;&#20030;&#34892;&#31508;&#35797;&lt;/a&gt;&lt;/td&gt;&lt;td width=&quot;80&quot; align=&quot;center&quot; class=&quot;bt_time&quot; style=&quot;font-size:12px;border-bottom:dashed 1px #ccc&quot;&gt;2015-09-21&lt;/td&gt;&lt;/tr&gt;]]&gt;&lt;/record&gt;
+&lt;record&gt;&lt;![CDATA[
+&lt;tr&gt;&lt;td height=&quot;28&quot; align=&quot;left&quot; valign=&quot;middle&quot; style=&quot;border-bottom:dashed 1px #ccc&quot;&gt;&lt;span style=&quot;padding-right:8px;&quot;&gt;&lt;img src='/picture/0/1505121003203479734.jpg' align='absmiddle' border='0'&gt;&lt;/span&gt;&lt;a  style=&quot;font-size:14px;&quot; href='/art/2015/9/18/art_41_22435.html' class='bt_link_w' title='&#36149;&#24030;&#20986;&#21488;&ldquo;&#38593;&#24402;&#20852;&#36149;&rdquo;&#35745;&#21010;&#23558;&#24341;&#23548;150&#19975;&#20892;&#27665;&#24037;&#36820;&#20065;&#21019;&#19994;&#23601;&#19994;' target=&quot;_blank&quot;&gt;&#36149;&#24030;&#20986;&#21488;&ldquo;&#38593;&#24402;&#20852;&#36149;&rdquo;&#35745;&#21010;&#23558;&#24341;&#23548;150&#19975;&#20892;&#27665;&#24037;&#36820;&#20065;&#21019;&#19994;&#23601;&#19994;&lt;/a&gt;&lt;/td&gt;&lt;td width=&quot;80&quot; align=&quot;center&quot; class=&quot;bt_time&quot; style=&quot;font-size:12px;border-bottom:dashed 1px #ccc&quot;&gt;2015-09-18&lt;/td&gt;&lt;/tr&gt;]]&gt;&lt;/record&gt;
+&lt;record&gt;&lt;![CDATA[
+&lt;tr&gt;&lt;td height=&quot;28&quot; align=&quot;left&quot; valign=&quot;middle&quot; style=&quot;border-bottom:dashed 1px #ccc&quot;&gt;&lt;span style=&quot;padding-right:8px;&quot;&gt;&lt;img src='/picture/0/1505121003203479734.jpg' align='absmiddle' border='0'&gt;&lt;/span&gt;&lt;a  style=&quot;font-size:14px;&quot; href='/art/2015/9/16/art_41_22389.html' class='bt_link_w' title='&#36149;&#24030;&#30465;&#20844;&#24067;2015&#24180;&#26368;&#20302;&#24037;&#36164;&#26631;&#20934;' target=&quot;_blank&quot;&gt;&#36149;&#24030;&#30465;&#20844;&#24067;2015&#24180;&#26368;&#20302;&#24037;&#36164;&#26631;&#20934;&lt;/a&gt;&lt;/td&gt;&lt;td width=&quot;80&quot; align=&quot;center&quot; class=&quot;bt_time&quot; style=&quot;font-size:12px;border-bottom:dashed 1px #ccc&quot;&gt;2015-09-16&lt;/td&gt;&lt;/tr&gt;]]&gt;&lt;/record&gt;
+&lt;record&gt;&lt;![CDATA[
+&lt;tr&gt;&lt;td height=&quot;28&quot; align=&quot;left&quot; valign=&quot;middle&quot; style=&quot;border-bottom:dashed 1px #ccc&quot;&gt;&lt;span style=&quot;padding-right:8px;&quot;&gt;&lt;img src='/picture/0/1505121003203479734.jpg' align='absmiddle' border='0'&gt;&lt;/span&gt;&lt;a  style=&quot;font-size:14px;&quot; href='/art/2015/9/14/art_41_22361.html' class='bt_link_w' title='&#20840;&#22269;&#20107;&#19994;&#21333;&#20301;&#20154;&#20107;&#21046;&#24230;&#25913;&#38761;&#22521;&#35757;&#29677;&#22312;&#36149;&#38451;&#20030;&#21150;' target=&quot;_blank&quot;&gt;&#20840;&#22269;&#20107;&#19994;&#21333;&#20301;&#20154;&#20107;&#21046;&#24230;&#25913;&#38761;&#22521;&#35757;&#29677;&#22312;&#36149;&#38451;&#20030;&#21150;&lt;/a&gt;&lt;/td&gt;&lt;td width=&quot;80&quot; align=&quot;center&quot; class=&quot;bt_time&quot; style=&quot;font-size:12px;border-bottom:dashed 1px #ccc&quot;&gt;2015-09-14&lt;/td&gt;&lt;/tr&gt;]]&gt;&lt;/record&gt;
+&lt;record&gt;&lt;![CDATA[
+&lt;tr&gt;&lt;td height=&quot;28&quot; align=&quot;left&quot; valign=&quot;middle&quot; style=&quot;border-bottom:dashed 1px #ccc&quot;&gt;&lt;span style=&quot;padding-right:8px;&quot;&gt;&lt;img src='/picture/0/1505121003203479734.jpg' align='absmiddle' border='0'&gt;&lt;/span&gt;&lt;a  style=&quot;font-size:14px;&quot; href='/art/2015/9/13/art_41_22362.html' class='bt_link_w' title='&#20154;&#31038;&#37096;&#31561;&#22235;&#37096;&#38376;&#21457;&#25991;&#35201;&#27714;&#24341;&#23548;&#36827;&#22478;&#33853;&#25143;&#20892;&#27665;&#21442;&#21152;&#22478;&#38215;&#21307;&#20445;' target=&quot;_blank&quot;&gt;&#20154;&#31038;&#37096;&#31561;&#22235;&#37096;&#38376;&#21457;&#25991;&#35201;&#27714;&#24341;&#23548;&#36827;&#22478;&#33853;&#25143;&#20892;&#27665;&#21442;&#21152;&#22478;&#38215;&#21307;&#20445;&lt;/a&gt;&lt;/td&gt;&lt;td width=&quot;80&quot; align=&quot;center&quot; class=&quot;bt_time&quot; style=&quot;font-size:12px;border-bottom:dashed 1px #ccc&quot;&gt;2015-09-13&lt;/td&gt;&lt;/tr&gt;]]&gt;&lt;/record&gt;
+&lt;record&gt;&lt;![CDATA[
+&lt;tr&gt;&lt;td height=&quot;28&quot; align=&quot;left&quot; valign=&quot;middle&quot; style=&quot;border-bottom:dashed 1px #ccc&quot;&gt;&lt;span style=&quot;padding-right:8px;&quot;&gt;&lt;img src='/picture/0/1505121003203479734.jpg' align='absmiddle' border='0'&gt;&lt;/span&gt;&lt;a  style=&quot;font-size:14px;&quot; href='/art/2015/9/10/art_41_22364.html' class='bt_link_w' title='&#20004;&#37096;&#22996;&#21484;&#24320;&#30005;&#35270;&#30005;&#35805;&#20250;&#20142;&#20986;&#20013;&#23567;&#23398;&#25945;&#24072;&#32844;&#31216;&#21046;&#24230;&#25913;&#38761;&#26102;&#38388;&#34920;' target=&quot;_blank&quot;&gt;&#20004;&#37096;&#22996;&#21484;&#24320;&#30005;&#35270;&#30005;&#35805;&#20250;&#20142;&#20986;&#20013;&#23567;&#23398;&#25945;&#24072;&#32844;&#31216;&#21046;&#24230;&#25913;&#38761;&#26102;&#38388;&#34920;&lt;/a&gt;&lt;/td&gt;&lt;td width=&quot;80&quot; align=&quot;center&quot; class=&quot;bt_time&quot; style=&quot;font-size:12px;border-bottom:dashed 1px #ccc&quot;&gt;2015-09-10&lt;/td&gt;&lt;/tr&gt;]]&gt;&lt;/record&gt;
+&lt;record&gt;&lt;![CDATA[
+&lt;tr&gt;&lt;td height=&quot;28&quot; align=&quot;left&quot; valign=&quot;middle&quot; style=&quot;border-bottom:dashed 1px #ccc&quot;&gt;&lt;span style=&quot;padding-right:8px;&quot;&gt;&lt;img src='/picture/0/1505121003203479734.jpg' align='absmiddle' border='0'&gt;&lt;/span&gt;&lt;a  style=&quot;font-size:14px;&quot; href='/art/2015/9/9/art_41_22363.html' class='bt_link_w' title='&#20154;&#31038;&#37096;&#21551;&#21160;2015&#24180;&#39640;&#26657;&#27605;&#19994;&#29983;&#23601;&#19994;&#26381;&#21153;&#26376;' target=&quot;_blank&quot;&gt;&#20154;&#31038;&#37096;&#21551;&#21160;2015&#24180;&#39640;&#26657;&#27605;&#19994;&#29983;&#23601;&#19994;&#26381;&#21153;&#26376;&lt;/a&gt;&lt;/td&gt;&lt;td width=&quot;80&quot; align=&quot;center&quot; class=&quot;bt_time&quot; style=&quot;font-size:12px;border-bottom:dashed 1px #ccc&quot;&gt;2015-09-09&lt;/td&gt;&lt;/tr&gt;]]&gt;&lt;/record&gt;
+&lt;record&gt;&lt;![CDATA[
+&lt;tr&gt;&lt;td height=&quot;28&quot; align=&quot;left&quot; valign=&quot;middle&quot; style=&quot;border-bottom:dashed 1px #ccc&quot;&gt;&lt;span style=&quot;padding-right:8px;&quot;&gt;&lt;img src='/picture/0/1505121003203479734.jpg' align='absmiddle' border='0'&gt;&lt;/span&gt;&lt;a  style=&quot;font-size:14px;&quot; href='/art/2015/9/8/art_41_22210.html' class='bt_link_w' title='&#36149;&#38451;&#30041;&#23398;&#24402;&#22269;&#21019;&#19994;&#22253;&#26469;&#20102;40&#20313;&#21482;&ldquo;&#28023;&#40863;&rdquo;' target=&quot;_blank&quot;&gt;&#36149;&#38451;&#30041;&#23398;&#24402;&#22269;&#21019;&#19994;&#22253;&#26469;&#20102;40&#20313;&#21482;&ldquo;&#28023;&#40863;&rdquo;&lt;/a&gt;&lt;/td&gt;&lt;td width=&quot;80&quot; align=&quot;center&quot; class=&quot;bt_time&quot; style=&quot;font-size:12px;border-bottom:dashed 1px #ccc&quot;&gt;2015-09-08&lt;/td&gt;&lt;/tr&gt;]]&gt;&lt;/record&gt;
+&lt;record&gt;&lt;![CDATA[
+&lt;tr&gt;&lt;td height=&quot;28&quot; align=&quot;left&quot; valign=&quot;middle&quot; style=&quot;border-bottom:dashed 1px #ccc&quot;&gt;&lt;span style=&quot;padding-right:8px;&quot;&gt;&lt;img src='/picture/0/1505121003203479734.jpg' align='absmiddle' border='0'&gt;&lt;/span&gt;&lt;a  style=&quot;font-size:14px;&quot; href='/art/2015/9/8/art_41_22209.html' class='bt_link_w' title='&#36149;&#24030;&#32039;&#25187;&#20135;&#19994;&#21457;&#23637;&#25171;&#36896;&#21019;&#19994;&#39318;&#36873;&#22320;' target=&quot;_blank&quot;&gt;&#36149;&#24030;&#32039;&#25187;&#20135;&#19994;&#21457;&#23637;&#25171;&#36896;&#21019;&#19994;&#39318;&#36873;&#22320;&lt;/a&gt;&lt;/td&gt;&lt;td width=&quot;80&quot; align=&quot;center&quot; class=&quot;bt_time&quot; style=&quot;font-size:12px;border-bottom:dashed 1px #ccc&quot;&gt;2015-09-08&lt;/td&gt;&lt;/tr&gt;]]&gt;&lt;/record&gt;
+&lt;record&gt;&lt;![CDATA[
+&lt;tr&gt;&lt;td height=&quot;28&quot; align=&quot;left&quot; valign=&quot;middle&quot; style=&quot;border-bottom:dashed 1px #ccc&quot;&gt;&lt;span style=&quot;padding-right:8px;&quot;&gt;&lt;img src='/picture/0/1505121003203479734.jpg' align='absmiddle' border='0'&gt;&lt;/span&gt;&lt;a  style=&quot;font-size:14px;&quot; href='/art/2015/9/8/art_41_22208.html' class='bt_link_w' title='&#30465;&#20154;&#21147;&#36164;&#28304;&#31038;&#20250;&#20445;&#38556;&#21381;&#24320;&#23637;&#31532;&#19977;&#23395;&#24230;&#20826;&#32452;&#20013;&#24515;&#32452;&#23398;&#20064;&#31995;&#21015;&#30740;&#35752;&#27963;&#21160;' target=&quot;_blank&quot;&gt;&#30465;&#20154;&#21147;&#36164;&#28304;&#31038;&#20250;&#20445;&#38556;&#21381;&#24320;&#23637;&#31532;&#19977;&#23395;&#24230;&#20826;&#32452;&#20013;&#24515;&#32452;&#23398;&#20064;&#31995;&#21015;&#30740;&#35752;&#27963;&#21160;&lt;/a&gt;&lt;/td&gt;&lt;td width=&quot;80&quot; align=&quot;center&quot; class=&quot;bt_time&quot; style=&quot;font-size:12px;border-bottom:dashed 1px #ccc&quot;&gt;2015-09-08&lt;/td&gt;&lt;/tr&gt;]]&gt;&lt;/record&gt;
+&lt;record&gt;&lt;![CDATA[
+&lt;tr&gt;&lt;td height=&quot;28&quot; align=&quot;left&quot; valign=&quot;middle&quot; style=&quot;border-bottom:dashed 1px #ccc&quot;&gt;&lt;span style=&quot;padding-right:8px;&quot;&gt;&lt;img src='/picture/0/1505121003203479734.jpg' align='absmiddle' border='0'&gt;&lt;/span&gt;&lt;a  style=&quot;font-size:14px;&quot; href='/art/2015/9/2/art_41_22167.html' class='bt_link_w' title='&#36149;&#24030;&#30465;&#20844;&#21153;&#21592;&#24179;&#26102;&#32771;&#26680;&#24037;&#20316;&#20250;&#35758;&#22312;&#36149;&#38451;&#21484;&#24320;' target=&quot;_blank&quot;&gt;&#36149;&#24030;&#30465;&#20844;&#21153;&#21592;&#24179;&#26102;&#32771;&#26680;&#24037;&#20316;&#20250;&#35758;&#22312;&#36149;&#38451;&#21484;&#24320;&lt;/a&gt;&lt;/td&gt;&lt;td width=&quot;80&quot; align=&quot;center&quot; class=&quot;bt_time&quot; style=&quot;font-size:12px;border-bottom:dashed 1px #ccc&quot;&gt;2015-09-02&lt;/td&gt;&lt;/tr&gt;]]&gt;&lt;/record&gt;
+&lt;record&gt;&lt;![CDATA[
+&lt;tr&gt;&lt;td height=&quot;28&quot; align=&quot;left&quot; valign=&quot;middle&quot; style=&quot;border-bottom:dashed 1px #ccc&quot;&gt;&lt;span style=&quot;padding-right:8px;&quot;&gt;&lt;img src='/picture/0/1505121003203479734.jpg' align='absmiddle' border='0'&gt;&lt;/span&gt;&lt;a  style=&quot;font-size:14px;&quot; href='/art/2015/9/2/art_41_22166.html' class='bt_link_w' title='&#30465;&#20154;&#21147;&#36164;&#28304;&#31038;&#20250;&#20445;&#38556;&#21381;&#24320;&#23637;&#32426;&#24565;&#25239;&#25112;&#32988;&#21033;70&#21608;&#24180;&#36208;&#35775;&#24944;&#38382;&#27963;&#21160;' target=&quot;_blank&quot;&gt;&#30465;&#20154;&#21147;&#36164;&#28304;&#31038;&#20250;&#20445;&#38556;&#21381;&#24320;&#23637;&#32426;&#24565;&#25239;&#25112;&#32988;&#21033;70&#21608;&#24180;&#36208;&#35775;&#24944;&#38382;&#27963;&#21160;&lt;/a&gt;&lt;/td&gt;&lt;td width=&quot;80&quot; align=&quot;center&quot; class=&quot;bt_time&quot; style=&quot;font-size:12px;border-bottom:dashed 1px #ccc&quot;&gt;2015-09-02&lt;/td&gt;&lt;/tr&gt;]]&gt;&lt;/record&gt;
+&lt;record&gt;&lt;![CDATA[
+&lt;tr&gt;&lt;td height=&quot;28&quot; align=&quot;left&quot; valign=&quot;middle&quot; style=&quot;border-bottom:dashed 1px #ccc&quot;&gt;&lt;span style=&quot;padding-right:8px;&quot;&gt;&lt;img src='/picture/0/1505121003203479734.jpg' align='absmiddle' border='0'&gt;&lt;/span&gt;&lt;a  style=&quot;font-size:14px;&quot; href='/art/2015/8/31/art_41_22109.html' class='bt_link_w' title='&#30465;&#20154;&#21147;&#36164;&#28304;&#31038;&#20250;&#20445;&#38556;&#21381;&#20030;&#21150;&#22806;&#22269;&#19987;&#23478;&#31649;&#29702;&#26381;&#21153;&#24037;&#20316;&#22521;&#35757;' target=&quot;_blank&quot;&gt;&#30465;&#20154;&#21147;&#36164;&#28304;&#31038;&#20250;&#20445;&#38556;&#21381;&#20030;&#21150;&#22806;&#22269;&#19987;&#23478;&#31649;&#29702;&#26381;&#21153;&#24037;&#20316;&#22521;&#35757;&lt;/a&gt;&lt;/td&gt;&lt;td width=&quot;80&quot; align=&quot;center&quot; class=&quot;bt_time&quot; style=&quot;font-size:12px;border-bottom:dashed 1px #ccc&quot;&gt;2015-08-31&lt;/td&gt;&lt;/tr&gt;]]&gt;&lt;/record&gt;
+&lt;record&gt;&lt;![CDATA[
+&lt;tr&gt;&lt;td height=&quot;28&quot; align=&quot;left&quot; valign=&quot;middle&quot; style=&quot;border-bottom:dashed 1px #ccc&quot;&gt;&lt;span style=&quot;padding-right:8px;&quot;&gt;&lt;img src='/picture/0/1505121003203479734.jpg' align='absmiddle' border='0'&gt;&lt;/span&gt;&lt;a  style=&quot;font-size:14px;&quot; href='/art/2015/8/31/art_41_22108.html' class='bt_link_w' title='&#26045;&#38271;&#20908;&#38472;&#26195;&#20809;&#21040;&#21381;&#39547;&#30465;&#25919;&#21153;&#26381;&#21153;&#20013;&#24515;&#31383;&#21475;&#26816;&#26597;&#25351;&#23548;&#24037;&#20316;' target=&quot;_blank&quot;&gt;&#26045;&#38271;&#20908;&#38472;&#26195;&#20809;&#21040;&#21381;&#39547;&#30465;&#25919;&#21153;&#26381;&#21153;&#20013;&#24515;&#31383;&#21475;&#26816;&#26597;&#25351;&#23548;&#24037;&#20316;&lt;/a&gt;&lt;/td&gt;&lt;td width=&quot;80&quot; align=&quot;center&quot; class=&quot;bt_time&quot; style=&quot;font-size:12px;border-bottom:dashed 1px #ccc&quot;&gt;2015-08-31&lt;/td&gt;&lt;/tr&gt;]]&gt;&lt;/record&gt;
+&lt;record&gt;&lt;![CDATA[
+&lt;tr&gt;&lt;td height=&quot;28&quot; align=&quot;left&quot; valign=&quot;middle&quot; style=&quot;border-bottom:dashed 1px #ccc&quot;&gt;&lt;span style=&quot;padding-right:8px;&quot;&gt;&lt;img src='/picture/0/1505121003203479734.jpg' align='absmiddle' border='0'&gt;&lt;/span&gt;&lt;a  style=&quot;font-size:14px;&quot; href='/art/2015/8/29/art_41_22770.html' class='bt_link_w' title='&ldquo;&#22235;&#22411;&rdquo;&#32844;&#38498;&#30427;&#24320;&#25945;&#32946;&#25206;&#36139;&#20043;&#33457;' target=&quot;_blank&quot;&gt;&ldquo;&#22235;&#22411;&rdquo;&#32844;&#38498;&#30427;&#24320;&#25945;&#32946;&#25206;&#36139;&#20043;&#33457;&lt;/a&gt;&lt;/td&gt;&lt;td width=&quot;80&quot; align=&quot;center&quot; class=&quot;bt_time&quot; style=&quot;font-size:12px;border-bottom:dashed 1px #ccc&quot;&gt;2015-08-29&lt;/td&gt;&lt;/tr&gt;]]&gt;&lt;/record&gt;
+&lt;record&gt;&lt;![CDATA[
+&lt;tr&gt;&lt;td height=&quot;28&quot; align=&quot;left&quot; valign=&quot;middle&quot; style=&quot;border-bottom:dashed 1px #ccc&quot;&gt;&lt;span style=&quot;padding-right:8px;&quot;&gt;&lt;img src='/picture/0/1505121003203479734.jpg' align='absmiddle' border='0'&gt;&lt;/span&gt;&lt;a  style=&quot;font-size:14px;&quot; href='/art/2015/8/28/art_41_22078.html' class='bt_link_w' title='&#26045;&#38271;&#20908;&#21103;&#21381;&#38271;&#12289;&#38472;&#26195;&#20809;&#32452;&#38271;&#19968;&#34892;&#36212;&#20851;&#23725;&#21439;&#26495;&#36149;&#20065;&#36208;&#35775;&#36139;&#22256;&#26449;&#36139;&#22256;&#25143;' target=&quot;_blank&quot;&gt;&#26045;&#38271;&#20908;&#21103;&#21381;&#38271;&#12289;&#38472;&#26195;&#20809;&#32452;&#38271;&#19968;&#34892;&#36212;&#20851;&#23725;&#21439;&#26495;&#36149;&#20065;&#36208;&#35775;&#36139;&#22256;&#26449;&#36139;&#22256;&#25143;&lt;/a&gt;&lt;/td&gt;&lt;td width=&quot;80&quot; align=&quot;center&quot; class=&quot;bt_time&quot; style=&quot;font-size:12px;border-bottom:dashed 1px #ccc&quot;&gt;2015-08-28&lt;/td&gt;&lt;/tr&gt;]]&gt;&lt;/record&gt;
+&lt;record&gt;&lt;![CDATA[
+&lt;tr&gt;&lt;td height=&quot;28&quot; align=&quot;left&quot; valign=&quot;middle&quot; style=&quot;border-bottom:dashed 1px #ccc&quot;&gt;&lt;span style=&quot;padding-right:8px;&quot;&gt;&lt;img src='/picture/0/1505121003203479734.jpg' align='absmiddle' border='0'&gt;&lt;/span&gt;&lt;a  style=&quot;font-size:14px;&quot; href='/art/2015/8/27/art_41_22080.html' class='bt_link_w' title='&#30465;&#20154;&#31038;&#21381;&#20844;&#24067;2014&#24180;&ldquo;&#19977;&#20844;&rdquo;&#32463;&#36153;  &#27604;&#19978;&#24180;&#20943;&#23569;188.3&#19975;&#20803;' target=&quot;_blank&quot;&gt;&#30465;&#20154;&#31038;&#21381;&#20844;&#24067;2014&#24180;&ldquo;&#19977;&#20844;&rdquo;&#32463;&#36153;  &#27604;&#19978;&#24180;&#20943;&#23569;188.3&#19975;&#20803;&lt;/a&gt;&lt;/td&gt;&lt;td width=&quot;80&quot; align=&quot;center&quot; class=&quot;bt_time&quot; style=&quot;font-size:12px;border-bottom:dashed 1px #ccc&quot;&gt;2015-08-27&lt;/td&gt;&lt;/tr&gt;]]&gt;&lt;/record&gt;
+&lt;record&gt;&lt;![CDATA[
+&lt;tr&gt;&lt;td height=&quot;28&quot; align=&quot;left&quot; valign=&quot;middle&quot; style=&quot;border-bottom:dashed 1px #ccc&quot;&gt;&lt;span style=&quot;padding-right:8px;&quot;&gt;&lt;img src='/picture/0/1505121003203479734.jpg' align='absmiddle' border='0'&gt;&lt;/span&gt;&lt;a  style=&quot;font-size:14px;&quot; href='/art/2015/8/26/art_41_22079.html' class='bt_link_w' title='&#25105;&#30465;&#25307;&#24405;351&#21517;&#25919;&#27861;&#24178;&#35686;    &#25253;&#21517;&#26102;&#38388;&#65306;8&#26376;27&#26085;&#33267;8&#26376;30&#26085;' target=&quot;_blank&quot;&gt;&#25105;&#30465;&#25307;&#24405;351&#21517;&#25919;&#27861;&#24178;&#35686;    &#25253;&#21517;&#26102;&#38388;&#65306;8&#26376;27&#26085;&#33267;8&#26376;30&#26085;&lt;/a&gt;&lt;/td&gt;&lt;td width=&quot;80&quot; align=&quot;center&quot; class=&quot;bt_time&quot; style=&quot;font-size:12px;border-bottom:dashed 1px #ccc&quot;&gt;2015-08-26&lt;/td&gt;&lt;/tr&gt;]]&gt;&lt;/record&gt;
+&lt;record&gt;&lt;![CDATA[
+&lt;tr&gt;&lt;td height=&quot;28&quot; align=&quot;left&quot; valign=&quot;middle&quot; style=&quot;border-bottom:dashed 1px #ccc&quot;&gt;&lt;span style=&quot;padding-right:8px;&quot;&gt;&lt;img src='/picture/0/1505121003203479734.jpg' align='absmiddle' border='0'&gt;&lt;/span&gt;&lt;a  style=&quot;font-size:14px;&quot; href='/art/2015/8/26/art_41_21983.html' class='bt_link_w' title='&#20154;&#31038;&#37096;&#21171;&#21160;&#20445;&#38556;&#30417;&#23519;&#27861;&#24459;&#21046;&#24230;&#22521;&#35757;&#29677;&#22312;&#36149;&#38451;&#24320;&#29677;' target=&quot;_blank&quot;&gt;&#20154;&#31038;&#37096;&#21171;&#21160;&#20445;&#38556;&#30417;&#23519;&#27861;&#24459;&#21046;&#24230;&#22521;&#35757;&#29677;&#22312;&#36149;&#38451;&#24320;&#29677;&lt;/a&gt;&lt;/td&gt;&lt;td width=&quot;80&quot; align=&quot;center&quot; class=&quot;bt_time&quot; style=&quot;font-size:12px;border-bottom:dashed 1px #ccc&quot;&gt;2015-08-26&lt;/td&gt;&lt;/tr&gt;]]&gt;&lt;/record&gt;
+&lt;record&gt;&lt;![CDATA[
+&lt;tr&gt;&lt;td height=&quot;28&quot; align=&quot;left&quot; valign=&quot;middle&quot; style=&quot;border-bottom:dashed 1px #ccc&quot;&gt;&lt;span style=&quot;padding-right:8px;&quot;&gt;&lt;img src='/picture/0/1505121003203479734.jpg' align='absmiddle' border='0'&gt;&lt;/span&gt;&lt;a  style=&quot;font-size:14px;&quot; href='/art/2015/8/25/art_41_21936.html' class='bt_link_w' title='&#25105;&#30465;&#21551;&#21160;&#22269;&#20225;&#36127;&#36131;&#20154;&#34218;&#37228;&#21046;&#24230;&#25913;&#38761;&#24037;&#20316;' target=&quot;_blank&quot;&gt;&#25105;&#30465;&#21551;&#21160;&#22269;&#20225;&#36127;&#36131;&#20154;&#34218;&#37228;&#21046;&#24230;&#25913;&#38761;&#24037;&#20316;&lt;/a&gt;&lt;/td&gt;&lt;td width=&quot;80&quot; align=&quot;center&quot; class=&quot;bt_time&quot; style=&quot;font-size:12px;border-bottom:dashed 1px #ccc&quot;&gt;2015-08-25&lt;/td&gt;&lt;/tr&gt;]]&gt;&lt;/record&gt;
+&lt;record&gt;&lt;![CDATA[
+&lt;tr&gt;&lt;td height=&quot;28&quot; align=&quot;left&quot; valign=&quot;middle&quot; style=&quot;border-bottom:dashed 1px #ccc&quot;&gt;&lt;span style=&quot;padding-right:8px;&quot;&gt;&lt;img src='/picture/0/1505121003203479734.jpg' align='absmiddle' border='0'&gt;&lt;/span&gt;&lt;a  style=&quot;font-size:14px;&quot; href='/art/2015/8/25/art_41_21935.html' class='bt_link_w' title='&#36149;&#24030;&#30465;&#28145;&#21270;&#22269;&#26377;&#20225;&#19994;&#36127;&#36131;&#20154;&#34218;&#37228;&#21046;&#24230;&#25913;&#38761;&#24037;&#20316;&#26280;&#35268;&#33539;&#22269;&#26377;&#20225;&#19994;&#36127;&#36131;&#20154;&#23653;&#32844;&#24453;&#36935;&#21644;&#19994;&#21153;&#25903;&#20986;&#24037;&#20316;&#30005;&#35270;&#30005;&#35805;&#20250;&#35758;&#22312;&#36149;&#38451;&#21484;&#24320;' target=&quot;_blank&quot;&gt;&#36149;&#24030;&#30465;&#28145;&#21270;&#22269;&#26377;&#20225;&#19994;&#36127;&#36131;&#20154;&#34218;&#37228;&#21046;&#24230;&#25913;&#38761;&#24037;&#20316;&#26280;&#35268;&#33539;&#22269;&#26377;&#20225;&#19994;&#36127;&#36131;&#20154;&#23653;&#32844;&#24453;&#36935;&#21644;&#19994;...&lt;/a&gt;&lt;/td&gt;&lt;td width=&quot;80&quot; align=&quot;center&quot; class=&quot;bt_time&quot; style=&quot;font-size:12px;border-bottom:dashed 1px #ccc&quot;&gt;2015-08-25&lt;/td&gt;&lt;/tr&gt;]]&gt;&lt;/record&gt;
+&lt;record&gt;&lt;![CDATA[
+&lt;tr&gt;&lt;td height=&quot;28&quot; align=&quot;left&quot; valign=&quot;middle&quot; style=&quot;border-bottom:dashed 1px #ccc&quot;&gt;&lt;span style=&quot;padding-right:8px;&quot;&gt;&lt;img src='/picture/0/1505121003203479734.jpg' align='absmiddle' border='0'&gt;&lt;/span&gt;&lt;a  style=&quot;font-size:14px;&quot; href='/art/2015/8/22/art_41_21985.html' class='bt_link_w' title='&#25105;&#21381;&#39547;&#30465;&#25919;&#21153;&#26381;&#21153;&#20013;&#24515;&#31383;&#21475;&#20248;&#21270;&#21150;&#20107;&#26381;&#21153;' target=&quot;_blank&quot;&gt;&#25105;&#21381;&#39547;&#30465;&#25919;&#21153;&#26381;&#21153;&#20013;&#24515;&#31383;&#21475;&#20248;&#21270;&#21150;&#20107;&#26381;&#21153;&lt;/a&gt;&lt;/td&gt;&lt;td width=&quot;80&quot; align=&quot;center&quot; class=&quot;bt_time&quot; style=&quot;font-size:12px;border-bottom:dashed 1px #ccc&quot;&gt;2015-08-22&lt;/td&gt;&lt;/tr&gt;]]&gt;&lt;/record&gt;
+&lt;/recordset&gt;
+&lt;/datastore&gt;</div></div><link rel="stylesheet" type="text/css" href="/module/jslib/jquery/jpage/theme/default/css/jpage.css"/><script language="javascript" src="/module/jslib/datepicker/WdatePicker.js"></script><script language="javascript" src="/module/jslib/jquery/cookie/jquery.cookie.js"></script><script language="javascript" src="/module/jslib/jquery/jpage/jquery.jpage.js"></script><script language="javascript">var param_300 = {col:1,appid:'1',webid:1,path:'/',columnid:41,sourceContentType:1,unitid:'300',webname:'贵州人力资源和社会保障网',permissiontype:0}; function jpage_300(){$('#jpageform_300 :input').each(function(){param_300[$(this).attr('name')]=$(this).val();});$('#300').jpage({themeName:'default',showMode:'full',totalRecord:1000,openCookies:false,dataBefore:'<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">',dataAfter:'</table>',groupSize:3,proxyUrl:'/module/jslib/jquery/jpage/dataproxy.jsp',perPage:15,barPosition:'bottom',ajaxParam:param_300});};$(function(){$('#300').jpage({themeName:'default',showMode:'full',totalRecord:685,openCookies:false,dataBefore:'<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">',dataStore:$('#300').children('div').html(),dataAfter:'</table>',groupSize:3,proxyUrl:'/module/jslib/jquery/jpage/dataproxy.jsp',perPage:15,barPosition:'bottom',ajaxParam:param_300});});</script></td>
+              <td width="10"></td>
+            </tr>
+          </table>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td height="10"></td>
+            </tr>
+          </table>
+  </td>
+      </tr>
+    </table></td>
+    <td width="10">&nbsp;</td>
+    <td width="321" align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td><table width="100%" border="0" cellspacing="0" cellpadding="0" style="border-left:#ecc4b8 1px solid; border-right:#ecc4b8 1px solid; border-bottom:#ecc4b8 1px solid;">
+              <tr>
+                <td width="5" height="37" background="/images/2/zwgk_05.jpg"></td>
+                <td align="left" valign="middle" background="/images/2/zwgk_05.jpg"><div>&nbsp;&nbsp;<span style="font-size:10.5pt; font-weight:bolder;">最新信息</span></div></td>
+                <td width="80" align="left" valign="middle" background="/images/2/zwgk_05.jpg"></td>
+                <td width="5" background="/images/2/zwgk_05.jpg"></td>
+              </tr>
+              <tr>
+                <td colspan="4"><script language=javascript src='/module/freshnews/freshnews.jsp?uid=477'></script></td>
+              </tr>
+            </table></td>
+          </tr>
+          <tr>
+            <td height="10"></td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+        </table></td>
+    <td width="21">&nbsp;</td>
+  </tr>
+</table>
+
+    
+    <table width="1030" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td height="10"></td>
+      </tr>
+    </table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="134" align="left" valign="top" background="/images/2/footbr.jpg"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td height="20"></td>
+      </tr>
+      <tr>
+        <td align="center" valign="middle"><script language='javascript' src='/script/0/1505131554096030.js'></script></td>
+      </tr>
+      <tr>
+        <td align="center" valign="middle"><script language='javascript' src='/script/0/1505131549415842.js'></script></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+
+
+</td>
+  </tr>
+</table>
+</div>
+</div>
+
+<a href='http://www.hanweb.com' style='display:none'>Produced By 大汉网络 大汉版通发布系统</a>
+
+</body>
+</html>

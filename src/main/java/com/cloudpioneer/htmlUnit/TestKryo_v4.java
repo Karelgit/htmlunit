@@ -1,27 +1,28 @@
 package com.cloudpioneer.htmlUnit;
 
-import com.cloudpioneer.htmlUnit.util.JSONUtil;
 import com.esotericsoftware.kryo.Kryo;
 import com.esotericsoftware.kryo.io.Input;
 import com.esotericsoftware.kryo.io.Output;
-import com.esotericsoftware.kryo.serializers.JavaSerializer;
 import com.gargoylesoftware.htmlunit.*;
 import com.gargoylesoftware.htmlunit.html.DomElement;
 import com.gargoylesoftware.htmlunit.html.HTMLParser;
 import com.gargoylesoftware.htmlunit.html.HtmlPage;
 import com.gargoylesoftware.htmlunit.javascript.background.JavaScriptJobManager;
-import org.apache.commons.codec.binary.Base64;
+import com.gargoylesoftware.htmlunit.javascript.host.html.HTMLDocument;
 
-import java.io.*;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.LinkedList;
 import java.util.List;
 
-/**
+/**通过String构造HtmlPage.结果是不能再次使用新生成的HtmlPage进行点击
  * Created by Administrator on 2015/10/15.
  */
-public class TestKryo_v2 implements WebWindow{
+public class TestKryo_v4 implements WebWindow{
 
     // save the pop up window
     final static LinkedList<WebWindow> windows = new LinkedList<WebWindow>();
@@ -40,13 +41,13 @@ public class TestKryo_v2 implements WebWindow{
     }
 
     public static void testYouku() throws IOException {
-        String zsUrl = "http://www.gzzs.gov.cn/NewOpen/NewOpenMList.aspx?cid=0&pid=62";
         String url = "http://gz.hrss.gov.cn/col/col41/index.html";
+        URL url1 = new URL("http://gz.hrss.gov.cn/col/col41/index.html");
         WebClient webClient = new WebClient();
         webClient.getOptions().setThrowExceptionOnScriptError(false);
         webClient.getOptions().setThrowExceptionOnFailingStatusCode(false);
         webClient.getOptions().setJavaScriptEnabled(true);
-        webClient.setJavaScriptTimeout(3600 * 1000);
+        webClient.setJavaScriptTimeout(0);
         webClient.getOptions().setRedirectEnabled(true);
         webClient.getOptions().setThrowExceptionOnScriptError(true);
         webClient.getOptions().setThrowExceptionOnFailingStatusCode(true);
@@ -81,19 +82,13 @@ public class TestKryo_v2 implements WebWindow{
             e.printStackTrace();
         }
 
-        //序列化HtmlPage
-        ByteArrayOutputStream bos = new ByteArrayOutputStream();
-        ObjectOutput out = null;
-        try { out = new ObjectOutputStream(bos);
-            out.writeObject(pg3);
-        } catch (Exception ex) {
-            ex.printStackTrace(System.out);
-        } finally {
-            out.close();
-            bos.close();
-        }
+        //Get page as html
+        String htmlBody = pg3.getWebResponse().getContentAsString();
 
-        byte [] b = bos.toByteArray();
+        //Save the response in a file
+        BufferedWriter bw = new BufferedWriter(new FileWriter(new File("data")));
+        bw.write(htmlBody);
+        bw.close();
 
         HtmlPage selectedPage = pg3;
         HtmlPage currentPage = pg3;
@@ -117,35 +112,10 @@ public class TestKryo_v2 implements WebWindow{
 //        System.out.println("pg4: " + changedPage.asText());
 
 
-
-        //反序列化
-        ByteArrayInputStream bis = new ByteArrayInputStream(b);
-        ObjectInput in = null;
-        try { in = new ObjectInputStream(bis);
-            HtmlPage dePage = ((HtmlPage) in.readObject());
-        } catch (Exception ex) {
-            ex.printStackTrace(System.out);
-        } finally {
-            out.close();
-            bos.close();
-        }
-
-
-        //反序列化
-       /* Kryo kryo1 = new Kryo();
-        kryo1.setReferences(false);
-        kryo1.register(HtmlPage.class, new JavaSerializer());
-        ByteArrayInputStream bais = new ByteArrayInputStream(new Base64().decode(seria));
-        Input input = new Input(bais);
-        HtmlPage hp = (HtmlPage)kryo1.readClassAndObject(input);
-        System.out.println("hp: " + hp.asText());*/
+        StringWebResponse response = new StringWebResponse(htmlBody,url1);
+        HtmlPage pageNew = HTMLParser.parseHtml(response,webClient.getCurrentWindow());
+        System.out.println("pageNew: " + pageNew.asText());
     }
-
-    /**
-     *
-     * asdfjkasdjfakasdjfkajsdkfj
-     * @return
-     */
 
     public String getName() {
         return null;
@@ -228,7 +198,7 @@ public class TestKryo_v2 implements WebWindow{
     }
 
     public static void main(String[] args) throws Exception {
-        TestKryo_v2.testYouku();
+        TestKryo_v4.testYouku();
     }
 
     public void write(Kryo kryo, Output output) {
