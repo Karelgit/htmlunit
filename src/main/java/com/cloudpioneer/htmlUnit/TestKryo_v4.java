@@ -8,7 +8,6 @@ import com.gargoylesoftware.htmlunit.html.DomElement;
 import com.gargoylesoftware.htmlunit.html.HTMLParser;
 import com.gargoylesoftware.htmlunit.html.HtmlPage;
 import com.gargoylesoftware.htmlunit.javascript.background.JavaScriptJobManager;
-import com.gargoylesoftware.htmlunit.javascript.host.html.HTMLDocument;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -47,7 +46,7 @@ public class TestKryo_v4 implements WebWindow{
         webClient.getOptions().setThrowExceptionOnScriptError(false);
         webClient.getOptions().setThrowExceptionOnFailingStatusCode(false);
         webClient.getOptions().setJavaScriptEnabled(true);
-        webClient.setJavaScriptTimeout(0);
+        webClient.setJavaScriptTimeout(3600*1000);
         webClient.getOptions().setRedirectEnabled(true);
         webClient.getOptions().setThrowExceptionOnScriptError(true);
         webClient.getOptions().setThrowExceptionOnFailingStatusCode(true);
@@ -82,8 +81,11 @@ public class TestKryo_v4 implements WebWindow{
             e.printStackTrace();
         }
 
+        Object ps1 = pg3.getEnclosingWindow().getScriptObject();
+
         //Get page as html
-        String htmlBody = pg3.getWebResponse().getContentAsString();
+        String htmlBody = pg3.asXml();
+        System.out.println("pg3 to xml:　" + "\n" + pg3.asXml());
 
         //Save the response in a file
         BufferedWriter bw = new BufferedWriter(new FileWriter(new File("data")));
@@ -102,18 +104,15 @@ public class TestKryo_v4 implements WebWindow{
 
         DomElement element = (DomElement) currentPage.getByXPath(elements.get(1)).get(0);
 
-        try {
-            p = element.click();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        p = element.click();
         HtmlPage changedPage = p;
 
-//        System.out.println("pg4: " + changedPage.asText());
+      System.out.println("pg4: " + changedPage.asText());
 
-
+        WebClient webClient1 = new WebClient();
+        webClient.waitForBackgroundJavaScript(5000);
         StringWebResponse response = new StringWebResponse(htmlBody,url1);
-        HtmlPage pageNew = HTMLParser.parseHtml(response,webClient.getCurrentWindow());
+        HtmlPage pageNew = HTMLParser.parseHtml(response,webClient1.getCurrentWindow());
         System.out.println("pageNew: " + pageNew.asText());
     }
 

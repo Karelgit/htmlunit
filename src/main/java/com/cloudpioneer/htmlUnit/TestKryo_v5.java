@@ -6,19 +6,17 @@ import com.esotericsoftware.kryo.io.Output;
 import com.gargoylesoftware.htmlunit.*;
 import com.gargoylesoftware.htmlunit.html.DomElement;
 import com.gargoylesoftware.htmlunit.html.HTMLParser;
+import com.gargoylesoftware.htmlunit.html.HtmlDivision;
 import com.gargoylesoftware.htmlunit.html.HtmlPage;
 import com.gargoylesoftware.htmlunit.javascript.background.JavaScriptJobManager;
 
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.LinkedList;
 import java.util.List;
 
-/**通过String构造HtmlPage.结果是不能再次使用新生成的HtmlPage进行点击
+/**
  * Created by Administrator on 2015/10/15.
  */
 public class TestKryo_v5 implements WebWindow{
@@ -81,6 +79,10 @@ public class TestKryo_v5 implements WebWindow{
             e.printStackTrace();
         }
 
+        Object ps1 = pg3.getEnclosingWindow().getScriptObject();
+
+        String html = pg3.asXml().replaceFirst("<\\?xml version=\"1.0\" encoding=\"(.+)\"\\?>", "<!DOCTYPE html>");
+        StringWebResponse response = new StringWebResponse(html,url1);
 
         HtmlPage selectedPage = pg3;
         HtmlPage currentPage = pg3;
@@ -103,7 +105,31 @@ public class TestKryo_v5 implements WebWindow{
 
 //        System.out.println("pg4: " + changedPage.asText());
 
+        webClient.waitForBackgroundJavaScript(1000);
+        WebClient webClient1 = new WebClient();
+        HtmlPage pageBakup = HTMLParser.parseHtml(response, webClient1.getCurrentWindow());
+        System.out.println("pageBackup:" + pageBakup.asText());
+
+
+
+
+
+        pageBakup.getEnclosingWindow().setEnclosedPage(pageBakup);
+        pageBakup.getEnclosingWindow().setScriptObject(ps1);
+        System.out.println(pageBakup == pg3);
+        DomElement element1 = (DomElement) pageBakup.getByXPath(elements.get(0)).get(0);
+        HtmlDivision hd = (HtmlDivision)pageBakup.getByXPath(elements.get(0)).get(0);
+
+        System.out.println("pageBakup: " + "\n" + pageBakup.asText());
+        HtmlPage changedPage1 = element1.click();
+        System.out.println("pgLast: " + "\n" + changedPage1.asText());
+
     }
+
+    /**
+     *
+     * @return
+     */
 
     public String getName() {
         return null;

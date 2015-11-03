@@ -81,6 +81,8 @@ public class TestKryo_v3 implements WebWindow{
             e.printStackTrace();
         }
 
+        Object ps1 = pg3.getEnclosingWindow().getScriptObject();
+
         String html = pg3.asXml().replaceFirst("<\\?xml version=\"1.0\" encoding=\"(.+)\"\\?>", "<!DOCTYPE html>");
         StringWebResponse response = new StringWebResponse(html,url1);
 
@@ -105,20 +107,23 @@ public class TestKryo_v3 implements WebWindow{
 
 //        System.out.println("pg4: " + changedPage.asText());
 
-
+        webClient.waitForBackgroundJavaScript(1000);
         WebClient webClient1 = new WebClient();
         HtmlPage pageBakup = HTMLParser.parseHtml(response, webClient1.getCurrentWindow());
-//      System.out.println("pageBackup:" + pageBakup.asText());
+        System.out.println("pageBackup:" + pageBakup.asText());
 
-        Object ps1 = pageBakup.getEnclosingWindow().getScriptObject();
+
+
+
+
         pageBakup.getEnclosingWindow().setEnclosedPage(pageBakup);
         pageBakup.getEnclosingWindow().setScriptObject(ps1);
-
-//      DomElement element1 = (DomElement) pageBakup.getByXPath(elements.get(0)).get(0);
+        System.out.println(pageBakup == pg3);
+        DomElement element1 = (DomElement) pageBakup.getByXPath(elements.get(0)).get(0);
         HtmlDivision hd = (HtmlDivision)pageBakup.getByXPath(elements.get(0)).get(0);
 
         System.out.println("pageBakup: " + "\n" + pageBakup.asText());
-        HtmlPage changedPage1 = hd.click();
+        HtmlPage changedPage1 = element1.click();
         System.out.println("pgLast: " + "\n" + changedPage1.asText());
 
     }
