@@ -113,7 +113,7 @@ public class TestKryo_v2 implements WebWindow{
         }
         HtmlPage changedPage = p;
 
-        System.out.println("pg4: " + changedPage.asText());
+  //      System.out.println("pg4: " + changedPage.asText());
 
 
 
