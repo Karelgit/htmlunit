@@ -109,10 +109,6 @@ public class TestKryo_v5 implements WebWindow{
         HtmlPage pageBakup = HTMLParser.parseHtml(response, webClient1.getCurrentWindow());
         System.out.println("pageBackup:" + pageBakup.asText());
 
-
-
-
-
         pageBakup.getEnclosingWindow().setEnclosedPage(pageBakup);
         pageBakup.getEnclosingWindow().setScriptObject(ps1);
         System.out.println(pageBakup == pg3);

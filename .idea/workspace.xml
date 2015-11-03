@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8c72c805-78a5-41e3-a99b-ea8abe3d1719" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cloudpioneer/htmlUnit/TestKryo_v5.java" afterPath="$PROJECT_DIR$/src/main/java/com/cloudpioneer/htmlUnit/TestKryo_v5.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="HtmlUnit.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -52,8 +53,8 @@
       <file leaf-file-name="TestKryo_v5.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/cloudpioneer/htmlUnit/TestKryo_v5.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.29234338">
-              <caret line="90" column="17" selection-start-line="90" selection-start-column="17" selection-end-line="90" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.4176334">
+              <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -73,7 +74,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/cloudpioneer/htmlUnit/TestKryo_v2.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+              <caret line="102" column="15" selection-start-line="101" selection-start-column="19" selection-end-line="102" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -788,7 +789,7 @@
       <workItem from="1445498917687" duration="125602000" />
       <workItem from="1446112474462" duration="8582000" />
       <workItem from="1446173857106" duration="47577000" />
-      <workItem from="1446542792607" duration="174000" />
+      <workItem from="1446542792607" duration="588000" />
     </task>
     <task id="LOCAL-00001" summary="gitosc初始化">
       <created>1445926133860</created>
@@ -814,18 +815,25 @@
       <option name="project" value="LOCAL" />
       <updated>1446460469013</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="11/02 18:33 TestKryo_v5构造新的WebResponse,不使用server返回的对象">
+      <created>1446543066611</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1446543066612</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="298920000" />
+    <option name="totallyTimeSpent" value="299334000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3762598" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34602463" sideWeight="0.50213677" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -833,7 +841,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3449048" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32839224" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15064102" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1650641" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -844,7 +852,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23052295" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3762598" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33146697" sideWeight="0.49786323" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32959402" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -1132,6 +1139,44 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="53" column="19" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#50554#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#10720#10978#0" expanded="false" />
+            <element signature="e#10977#10978#0" expanded="false" />
+            <element signature="e#11388#11389#0" expanded="false" />
+            <element signature="e#11419#11420#0" expanded="false" />
+            <element signature="e#26135#26136#0" expanded="false" />
+            <element signature="e#26171#26172#0" expanded="false" />
+            <element signature="e#39741#39742#0" expanded="false" />
+            <element signature="e#39790#39791#0" expanded="false" />
+            <element signature="e#40487#40488#0" expanded="false" />
+            <element signature="e#40528#40529#0" expanded="false" />
+            <element signature="e#41350#41351#0" expanded="false" />
+            <element signature="e#41404#41405#0" expanded="false" />
+            <element signature="e#42647#42648#0" expanded="false" />
+            <element signature="e#42710#42711#0" expanded="false" />
+            <element signature="e#43697#43698#0" expanded="false" />
+            <element signature="e#43767#43768#0" expanded="false" />
+            <element signature="e#44809#44810#0" expanded="false" />
+            <element signature="e#44885#44886#0" expanded="false" />
+            <element signature="e#49156#49157#0" expanded="false" />
+            <element signature="e#49218#49219#0" expanded="false" />
+            <element signature="e#49296#49297#0" expanded="false" />
+            <element signature="e#49357#49358#0" expanded="false" />
+            <element signature="e#49424#49425#0" expanded="false" />
+            <element signature="e#49488#49489#0" expanded="false" />
+            <element signature="e#49592#49593#0" expanded="false" />
+            <element signature="e#49661#49662#0" expanded="false" />
+            <element signature="e#49724#49725#0" expanded="false" />
+            <element signature="e#49770#49771#0" expanded="false" />
+            <element signature="e#50019#50020#0" expanded="false" />
+            <element signature="e#50080#50081#0" expanded="false" />
+            <element signature="e#50160#50161#0" expanded="false" />
+            <element signature="e#50224#50225#0" expanded="false" />
+            <element signature="e#50280#50281#0" expanded="false" />
+            <element signature="e#50334#50335#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1181,6 +1226,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="116" column="34" selection-start-line="116" selection-start-column="34" selection-end-line="116" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1277,15 +1323,15 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cloudpioneer/htmlUnit/TestKryo_v2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+          <caret line="102" column="15" selection-start-line="101" selection-start-column="19" selection-end-line="102" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cloudpioneer/htmlUnit/TestKryo_v5.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29234338">
-          <caret line="90" column="17" selection-start-line="90" selection-start-column="17" selection-end-line="90" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.4176334">
+          <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
           <folding />
         </state>
       </provider>
