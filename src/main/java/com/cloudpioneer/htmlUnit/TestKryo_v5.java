@@ -88,8 +88,7 @@ public class TestKryo_v5 implements WebWindow{
         HtmlPage currentPage = pg3;
         HtmlPage p = null;
 
-        //page可以持久化
-        //先拿第4页
+        //保存page,先拿第4页
         Object ps = currentPage.getEnclosingWindow().getScriptObject();
         currentPage.getEnclosingWindow().setEnclosedPage(currentPage);
         currentPage.getEnclosingWindow().setScriptObject(ps);
