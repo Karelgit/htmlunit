@@ -102,7 +102,7 @@ public class TestKryo_v5 implements WebWindow{
         }
         HtmlPage changedPage = p;
 
-//        System.out.println("pg4: " + changedPage.asText());
+        System.out.println("pg4: " + changedPage.asText());
 
         webClient.waitForBackgroundJavaScript(1000);
         WebClient webClient1 = new WebClient();
