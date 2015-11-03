@@ -69,7 +69,7 @@ public class TestKryo_v2 implements WebWindow{
         List<String> fistXpath = new LinkedList<String>();
         fistXpath.add("//*[@id=\"300\"]/table/tbody/tr/td/table/tbody/tr/td[8]/div");
 
-        //取得第三页
+        //取得第3页
         HtmlPage pg2 = null;
         HtmlPage pg3 = null;
         try {
@@ -99,7 +99,6 @@ public class TestKryo_v2 implements WebWindow{
         HtmlPage currentPage = pg3;
         HtmlPage p = null;
 
-        //page可以持久化
         //先拿第4页
         Object ps = currentPage.getEnclosingWindow().getScriptObject();
         currentPage.getEnclosingWindow().setEnclosedPage(currentPage);
@@ -114,7 +113,7 @@ public class TestKryo_v2 implements WebWindow{
         }
         HtmlPage changedPage = p;
 
-//        System.out.println("pg4: " + changedPage.asText());
+  //      System.out.println("pg4: " + changedPage.asText());
 
 
 
