@@ -115,8 +115,6 @@ public class TestKryo_v2 implements WebWindow{
 
         System.out.println("pg4: " + changedPage.asText());
 
-
-
         //反序列化
         ByteArrayInputStream bis = new ByteArrayInputStream(b);
         ObjectInput in = null;

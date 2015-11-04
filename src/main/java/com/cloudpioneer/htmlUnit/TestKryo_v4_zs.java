@@ -6,20 +6,22 @@ import com.esotericsoftware.kryo.io.Output;
 import com.gargoylesoftware.htmlunit.*;
 import com.gargoylesoftware.htmlunit.html.DomElement;
 import com.gargoylesoftware.htmlunit.html.HTMLParser;
-import com.gargoylesoftware.htmlunit.html.HtmlDivision;
 import com.gargoylesoftware.htmlunit.html.HtmlPage;
 import com.gargoylesoftware.htmlunit.javascript.background.JavaScriptJobManager;
 
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.LinkedList;
 import java.util.List;
 
-/**
+/**通过String构造HtmlPage.结果是不能再次使用新生成的HtmlPage进行点击
  * Created by Administrator on 2015/10/15.
  */
-public class TestKryo_v5 implements WebWindow{
+public class TestKryo_v4_zs implements WebWindow{
 
     // save the pop up window
     final static LinkedList<WebWindow> windows = new LinkedList<WebWindow>();
@@ -38,13 +40,12 @@ public class TestKryo_v5 implements WebWindow{
     }
 
     public static void testYouku() throws IOException {
-        String url = "http://gz.hrss.gov.cn/col/col41/index.html";
-        URL url1 = new URL("http://gz.hrss.gov.cn/col/col41/index.html");
+        String url = "http://www.gzzs.gov.cn/NewOpen/NewOpenML.aspx?pid=62";
         WebClient webClient = new WebClient();
         webClient.getOptions().setThrowExceptionOnScriptError(false);
         webClient.getOptions().setThrowExceptionOnFailingStatusCode(false);
         webClient.getOptions().setJavaScriptEnabled(true);
-        webClient.setJavaScriptTimeout(3600 * 1000);
+        webClient.setJavaScriptTimeout(3600*1000);
         webClient.getOptions().setRedirectEnabled(true);
         webClient.getOptions().setThrowExceptionOnScriptError(true);
         webClient.getOptions().setThrowExceptionOnFailingStatusCode(true);
@@ -61,62 +62,40 @@ public class TestKryo_v5 implements WebWindow{
         webClient.setJavaScriptTimeout(0);
 
         List<String> elements = new LinkedList<String>();
-        elements.add("//*[@id=\"300\"]/table/tbody/tr/td/table/tbody/tr/td[4]/div");
-        elements.add("//*[@id=\"300\"]/table/tbody/tr/td/table/tbody/tr/td[8]/div");
+        /*elements.add("/*//*[@id=\"300\"]/table/tbody/tr/td/table/tbody/tr/td[4]/div");
+        elements.add("/*//*[@id=\"300\"]/table/tbody/tr/td/table/tbody/tr/td[8]/div");*/
+        elements.add("//*[@id=\"AdvancePages1_lnkbtnPre\"]");
+        elements.add("//*[@id=\"AdvancePages1_lnkbtnNext\"]");
 
-        List<String> fistXpath = new LinkedList<String>();
-        fistXpath.add("//*[@id=\"300\"]/table/tbody/tr/td/table/tbody/tr/td[8]/div");
+        List<String> firstXpath = new LinkedList<String>();
+        firstXpath.add("html/body/form/div[3]/div/div[2]/div[2]/div/div/table/tbody/tr/td/a[2]");
 
         //取得第三页
         HtmlPage pg2 = null;
-        HtmlPage pg3 = null;
-        Object ps1 = null;
+        System.out.println("size: " + page.getByXPath(firstXpath.get(0)).size());
         try {
-            DomElement e2 = ((DomElement) page.getByXPath(fistXpath.get(0)).get(0));
+            DomElement e2 = (DomElement) page.getByXPath(firstXpath.get(0)).get(0);
             pg2 = e2.click();
-            DomElement e3 = ((DomElement) page.getByXPath(fistXpath.get(0)).get(0));
-            pg3 = e3.click();
-            ps1 = pg3.getEnclosingWindow().getScriptObject();
         } catch (IOException e) {
             e.printStackTrace();
         }
 
-        String html = pg3.asXml().replaceFirst("<\\?xml version=\"1.0\" encoding=\"(.+)\"\\?>", "<!DOCTYPE html>");
-        StringWebResponse response = new StringWebResponse(html,url1);
+        System.out.println("pg2:　" + "\n" + pg2.asText());
 
-        HtmlPage currentPage = pg3;
-        HtmlPage p = null;
-
-        //保存page,先拿第4页
-        pg3.getEnclosingWindow().setEnclosedPage(pg3);
-        pg3.getEnclosingWindow().setScriptObject(ps1);
+        HtmlPage currentPage = pg2;
+        //page可以持久化
+        //先拿第4页
+        Object ps = currentPage.getEnclosingWindow().getScriptObject();
+        currentPage.getEnclosingWindow().setEnclosedPage(currentPage);
+        currentPage.getEnclosingWindow().setScriptObject(ps);
 
         DomElement element = (DomElement) currentPage.getByXPath(elements.get(1)).get(0);
 
-        try {
-            p = element.click();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        HtmlPage pg4 = p;
+        HtmlPage changedPage = element.click();
 
-        System.out.println("pg4: " + "\n" + pg4.asText());
-        System.out.println(pg3 == pg4);
-
-
-     /*   pg4.getEnclosingWindow().setEnclosedPage(pg4);
-        pg4.getEnclosingWindow().setScriptObject(ps1);
-        DomElement element1 = (DomElement) pg4.getByXPath(elements.get(0)).get(0);
-
-        HtmlPage pg5 = element1.click();
-        System.out.println("pg5: " + "\n" + pg5.asText());*/
+      System.out.println("pg3: " + changedPage.asText());
 
     }
-
-    /**
-     *
-     * @return
-     */
 
     public String getName() {
         return null;
@@ -199,7 +178,7 @@ public class TestKryo_v5 implements WebWindow{
     }
 
     public static void main(String[] args) throws Exception {
-        TestKryo_v5.testYouku();
+        TestKryo_v4_zs.testYouku();
     }
 
     public void write(Kryo kryo, Output output) {

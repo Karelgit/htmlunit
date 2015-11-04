@@ -11,7 +11,7 @@
     <meta name="Keywords" content="内容管理、内容管理发布（CMS）系统、信息发布、新闻采编发系统、知识管理、知识门户、政府门户、教育门户、企业门户、竞争情报系统、抓取系统、信息采集、信息雷达系统、电子政务、电子政务解决方案、办公系统、OA、网站办公系统"/>
     <meta name="Generator" content="大汉版通"/>
     <meta name="Author" content="大汉网络"/>
-    <meta name="Maketime" content="2015-10-31 15:05:11"/>
+    <meta name="Maketime" content="2015-11-04 11:22:14"/>
     <meta name="channel" content="新闻动态"/>
     <meta name="chnlcatalog" content="工作动态/新闻动态"/>
     <meta name="server" content="http://gz.hrss.gov.cn/col/col41/index.html,工作动态/新闻动态,"/>
@@ -509,6 +509,19 @@ function setFocus(a,c,b){
                                                     <span style="padding-right:8px;">
                                                       <img src="/picture/0/1505121003203479734.jpg" align="absmiddle" border="0"/>
                                                     </span>
+                                                    <a style="font-size:14px;" href="/art/2015/9/10/art_41_22364.html" class="bt_link_w" title="两部委召开电视电话会亮出中小学教师职称制度改革时间表" target="_blank">
+                                                      两部委召开电视电话会亮出中小学教师职称制度改革时间表
+                                                    </a>
+                                                  </td>
+                                                  <td width="80" align="center" class="bt_time" style="font-size:12px;border-bottom:dashed 1px #ccc">
+                                                    2015-09-10
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td height="28" align="left" valign="middle" style="border-bottom:dashed 1px #ccc">
+                                                    <span style="padding-right:8px;">
+                                                      <img src="/picture/0/1505121003203479734.jpg" align="absmiddle" border="0"/>
+                                                    </span>
                                                     <a style="font-size:14px;" href="/art/2015/9/9/art_41_22363.html" class="bt_link_w" title="人社部启动2015年高校毕业生就业服务月" target="_blank">
                                                       人社部启动2015年高校毕业生就业服务月
                                                     </a>
@@ -686,19 +699,6 @@ function setFocus(a,c,b){
                                                     2015-08-25
                                                   </td>
                                                 </tr>
-                                                <tr>
-                                                  <td height="28" align="left" valign="middle" style="border-bottom:dashed 1px #ccc">
-                                                    <span style="padding-right:8px;">
-                                                      <img src="/picture/0/1505121003203479734.jpg" align="absmiddle" border="0"/>
-                                                    </span>
-                                                    <a style="font-size:14px;" href="/art/2015/8/25/art_41_21935.html" class="bt_link_w" title="贵州省深化国有企业负责人薪酬制度改革工作暨规范国有企业负责人履职待遇和业务支出工作电视电话会议在贵阳召开" target="_blank">
-                                                      贵州省深化国有企业负责人薪酬制度改革工作暨规范国有企业负责人履职待遇和业...
-                                                    </a>
-                                                  </td>
-                                                  <td width="80" align="center" class="bt_time" style="font-size:12px;border-bottom:dashed 1px #ccc">
-                                                    2015-08-25
-                                                  </td>
-                                                </tr>
                                               </tbody>
                                             </table>
                                           </div>
@@ -785,7 +785,7 @@ function setFocus(a,c,b){
                                                           </div>
                                                         </td>
                                                         <td valign="middle" class="default_pgSearchInfo">
-                                                          检索到 686 条记录，显示第 
+                                                          检索到 687 条记录，显示第 
                                                           <span class="default_pgStartRecord">
                                                             31
                                                           </span>
@@ -812,7 +812,7 @@ function setFocus(a,c,b){
                                         </script>
                                         <script language="javascript">
 //<![CDATA[
-var param_300 = {col:1,appid:'1',webid:1,path:'/',columnid:41,sourceContentType:1,unitid:'300',webname:'贵州人力资源和社会保障网',permissiontype:0}; function jpage_300(){$('#jpageform_300 :input').each(function(){param_300[$(this).attr('name')]=$(this).val();});$('#300').jpage({themeName:'default',showMode:'full',totalRecord:1000,openCookies:false,dataBefore:'<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">',dataAfter:'</table>',groupSize:3,proxyUrl:'/module/jslib/jquery/jpage/dataproxy.jsp',perPage:15,barPosition:'bottom',ajaxParam:param_300});};$(function(){$('#300').jpage({themeName:'default',showMode:'full',totalRecord:685,openCookies:false,dataBefore:'<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">',dataStore:$('#300').children('div').html(),dataAfter:'</table>',groupSize:3,proxyUrl:'/module/jslib/jquery/jpage/dataproxy.jsp',perPage:15,barPosition:'bottom',ajaxParam:param_300});});
+var param_300 = {col:1,appid:'1',webid:1,path:'/',columnid:41,sourceContentType:1,unitid:'300',webname:'贵州人力资源和社会保障网',permissiontype:0}; function jpage_300(){$('#jpageform_300 :input').each(function(){param_300[$(this).attr('name')]=$(this).val();});$('#300').jpage({themeName:'default',showMode:'full',totalRecord:1000,openCookies:false,dataBefore:'<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">',dataAfter:'</table>',groupSize:3,proxyUrl:'/module/jslib/jquery/jpage/dataproxy.jsp',perPage:15,barPosition:'bottom',ajaxParam:param_300});};$(function(){$('#300').jpage({themeName:'default',showMode:'full',totalRecord:687,openCookies:false,dataBefore:'<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">',dataStore:$('#300').children('div').html(),dataAfter:'</table>',groupSize:3,proxyUrl:'/module/jslib/jquery/jpage/dataproxy.jsp',perPage:15,barPosition:'bottom',ajaxParam:param_300});});
 //]]>
                                         </script>
                                       </td>
@@ -861,6 +861,48 @@ var param_300 = {col:1,appid:'1',webid:1,path:'/',columnid:41,sourceContentType:
                                         </script>
                                         <table width="100%" cellspacing="0" cellpadding="0" border="0">
                                           <tbody>
+                                            <tr>
+                                              <td style="">
+                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                  <tbody>
+                                                    <tr>
+                                                      <td width="20" height="30" align="center" valign="middle">
+                                                        <img src="/picture/0/1505121003203479734.jpg" border="0"/>
+                                                      </td>
+                                                      <td style="font-size:12px; color:#000">
+                                                        <a href="/art/2015/11/3/art_41_22959.html" class="bt_link_w" title="省人力资源社会保障厅深入学习贯彻党的十八届五中全会精神" target="_blank">
+                                                          省人力资源社会保障厅深入学习贯彻...
+                                                        </a>
+                                                      </td>
+                                                      <td width="80">
+                                                        2015-11-03
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td style="">
+                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                  <tbody>
+                                                    <tr>
+                                                      <td width="20" height="30" align="center" valign="middle">
+                                                        <img src="/picture/0/1505121003203479734.jpg" border="0"/>
+                                                      </td>
+                                                      <td style="font-size:12px; color:#000">
+                                                        <a href="/art/2015/11/3/art_29_22937.html" class="bt_link_w" title="省本级参保企业申领2014年度失业保险稳岗补贴资格公示（一）" target="_blank">
+                                                          省本级参保企业申领2014年度失...
+                                                        </a>
+                                                      </td>
+                                                      <td width="80">
+                                                        2015-11-03
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                              </td>
+                                            </tr>
                                             <tr>
                                               <td style="">
                                                 <table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -1191,48 +1233,6 @@ var param_300 = {col:1,appid:'1',webid:1,path:'/',columnid:41,sourceContentType:
                                                       </td>
                                                       <td width="80">
                                                         2015-10-20
-                                                      </td>
-                                                    </tr>
-                                                  </tbody>
-                                                </table>
-                                              </td>
-                                            </tr>
-                                            <tr>
-                                              <td style="">
-                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                                                  <tbody>
-                                                    <tr>
-                                                      <td width="20" height="30" align="center" valign="middle">
-                                                        <img src="/picture/0/1505121003203479734.jpg" border="0"/>
-                                                      </td>
-                                                      <td style="font-size:12px; color:#000">
-                                                        <a href="/art/2015/10/20/art_36_22874.html" class="bt_link_w" title="省人力资源社会保障厅省财政厅关于进一步做好失业保险支持企业稳定岗位工作有关问题的通知" target="_blank">
-                                                          省人力资源社会保障厅省财政厅关于...
-                                                        </a>
-                                                      </td>
-                                                      <td width="80">
-                                                        2015-10-20
-                                                      </td>
-                                                    </tr>
-                                                  </tbody>
-                                                </table>
-                                              </td>
-                                            </tr>
-                                            <tr>
-                                              <td style="">
-                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                                                  <tbody>
-                                                    <tr>
-                                                      <td width="20" height="30" align="center" valign="middle">
-                                                        <img src="/picture/0/1505121003203479734.jpg" border="0"/>
-                                                      </td>
-                                                      <td style="font-size:12px; color:#000">
-                                                        <a href="/art/2015/10/19/art_41_22749.html" class="bt_link_w" title="招考向基层倾斜 严打作弊行为——国家公务员局考试录用司负责人答记者问" target="_blank">
-                                                          招考向基层倾斜 严打作弊行为——...
-                                                        </a>
-                                                      </td>
-                                                      <td width="80">
-                                                        2015-10-19
                                                       </td>
                                                     </tr>
                                                   </tbody>
