@@ -45,6 +45,7 @@
       <module name="HtmlUnit" target="1.5" />
       <module name="htmlunit-2.18" target="1.7" />
       <module name="htmlunit218" target="1.7" />
+      <module name="ThreadPoolTest" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
