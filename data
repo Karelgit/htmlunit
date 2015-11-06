@@ -1,0 +1,1402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <script language="javascript" src="/module/jslib/jquery/jquery.js">
+    </script>
+    <link href="/script/page.css" type="text/css" rel="stylesheet"/>
+    <title>
+      贵州人力资源和社会保障网  新闻动态
+    </title>
+    <meta name="Keywords" content="内容管理、内容管理发布（CMS）系统、信息发布、新闻采编发系统、知识管理、知识门户、政府门户、教育门户、企业门户、竞争情报系统、抓取系统、信息采集、信息雷达系统、电子政务、电子政务解决方案、办公系统、OA、网站办公系统"/>
+    <meta name="Generator" content="大汉版通"/>
+    <meta name="Author" content="大汉网络"/>
+    <meta name="Maketime" content="2015-11-04 11:22:14"/>
+    <meta name="channel" content="新闻动态"/>
+    <meta name="chnlcatalog" content="工作动态/新闻动态"/>
+    <meta name="server" content="http://gz.hrss.gov.cn/col/col41/index.html,工作动态/新闻动态,"/>
+    <link href="/images/2/css_V1.6.css" rel="stylesheet" type="text/css"/>
+    <link href="/images/2/main.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="/images/2/work.js">
+    </script>
+    <script>
+//<![CDATA[
+
+//通用切换 ID名(不带数字)道数、当前频道ID、频(数字)
+function setFocus(a,c,b){
+  if(!b){b=10;}//如果不指定频道数 默认10个去查找
+  for(i=1;i<b+1;i++){
+    if(document.getElementById(a+i)!=null){
+      if (i==c){
+        document.getElementById(a+i).style.display="block";
+        if(document.getElementById(a+'Info'+i)!=null){
+        document.getElementById(a+'Info'+i).style.display="block";
+        }
+      }else{
+        document.getElementById(a+i).style.display="none";
+        if(document.getElementById(a+'Info'+i)!=null){
+        document.getElementById(a+'Info'+i).style.display="none";
+        }
+      }
+    }
+  }//循环结束
+}
+//网站群导航所用的切换
+    
+//]]>
+    </script>
+    <link href="/module/jslib/datepicker/skin/WdatePicker.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body bgcolor="#f0f0f0">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tbody>
+        <tr>
+          <td height="241" align="center" valign="top" background="/images/2/flashbr.jpg">
+            <table width="1030" border="0" cellspacing="0" cellpadding="0">
+              <tbody>
+                <tr>
+                  <td height="213">
+                    <script language="javascript" src="/script/0/1505111624063745.js">
+                    </script>
+                    <div>
+                      <div id="cp_box" style="display: block;">
+                        <object id="FlashID" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="1030" height="213">
+                          <param name="movie" value="/flash/0/1505111619207358.swf"/>
+                          <param name="quality" value="high"/>
+                          <param name="wmode" value="transparent"/>
+                          <param name="swfversion" value="9.0.45.0"/>
+                          <!-- 此 param 标签提示使用 Flash Player 6.0 r65 和更高版本的用户下载最新版本的 Flash Player。如果您不想让用户看到该提示，请将其删除。 -->                          <param name="expressinstall" value="Scripts/expressInstall.swf"/>
+                          <!-- 下一个对象标签用于非 IE 浏览器。所以使用 IECC 将其从 IE 隐藏。 -->                          <object type="application/x-shockwave-flash" data="/flash/0/1505111619207358.swf" width="1030" height="213">
+                            <!--<![endif]-->                            <param name="quality" value="high"/>
+                            <param name="wmode" value="transparent"/>
+                            <param name="swfversion" value="9.0.45.0"/>
+                            <param name="expressinstall" value="/flash/0/1505111619207358.swf"/>
+                            <!-- 浏览器将以下替代内容显示给使用 Flash Player 6.0 和更低版本的用户。 -->                            <div>
+                              <h4>
+                                此页面上的内容需要较新版本的 Adobe Flash Player。
+                              </h4>
+                              <p>
+                                <a href="http://www.adobe.com/go/getflashplayer">
+                                  <img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="获取 Adobe Flash Player"/>
+                                </a>
+                              </p>
+                            </div>
+                          </object>
+                          <!--<![endif]-->                        </object>
+                      </div>
+                      <div id="wap_box" style="display: none; background: url(/picture/0/1506231525381539834.jpg) no-repeat center top; width: 1030px; height: 213px;">
+                      </div>
+                      <script type="text/javascript" src="/script/0/1506231113106962.js">
+                      </script>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table width="1030" border="0" cellspacing="0" cellpadding="0" bgcolor="#f8d281">
+              <tbody>
+                <tr>
+                  <td height="28">
+                    <script language="javascript" src="/script/0/1505111628387830.js">
+                    </script>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="dfnav f14 fyh" style="background:#f8d281">
+                      <tbody>
+                        <tr>
+                          <td width="117" height="28"/>
+                          <td width="184" class="dfnav f14 fyh ">
+                            贵州人力资源社会保障网群：
+                          </td>
+                          <td width="10"/>
+                          <td align="left" valign="middle">
+                            <a href="http://gz.hrss.gov.cn">
+                              省主站 
+                            </a>
+                            · 
+                            <a href="http://gzgy.lss.gov.cn/" target="_blank">
+                              贵阳市
+                            </a>
+                             · 
+                            <a href="http://www.zyrs.gov.cn/index.html" target="_blank">
+                              遵义市
+                            </a>
+                             · 
+                            <a href="http://gzas.lss.gov.cn" target="_blank">
+                              安顺市
+                            </a>
+                             ·
+                            <a href="http://rsj.gzlps.gov.cn" target="_blank">
+                               六盘水市
+                            </a>
+                             · 
+                            <a href="http://gzbj.lss.gov.cn" target="_blank">
+                              毕节市
+                            </a>
+                             · 
+                            <a href="http://gztr.lss.gov.cn" target="_blank">
+                              铜仁市
+                            </a>
+                             · 
+                            <a href="http://gzqdn.lss.gov.cn" target="_blank">
+                              黔东南州
+                            </a>
+                             ·
+                            <a href="http://gzqn.lss.gov.cn" target="_blank">
+                               黔南州
+                            </a>
+                             · 
+                            <a href="http://www.qxnrsj.gov.cn" target="_blank">
+                              黔西南州
+                            </a>
+                          </td>
+                          <td width="25"/>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tbody>
+        <tr>
+          <td height="52" align="center" valign="middle" background="/images/2/navbr.jpg">
+            <script language="javascript" src="/script/0/1505131608413898.js">
+            </script>
+            <ul id="navul">
+              <li id="nav01">
+                <a style="font-weight:bold" href="http://gz.hrss.gov.cn/" onfocus="this.blur()">
+                  网站首页
+                </a>
+              </li>
+              <li id="nav02">
+                <a style="font-weight:bold" href="/col/col41/index.html" onfocus="this.blur()">
+                  工作动态 
+                </a>
+                <ul>
+                  <li>
+                    <a href="/col/col41/index.html" target="_blank" onfocus="this.blur()">
+                      新闻动态
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/col/col43/index.html" target="_blank" onfocus="this.blur()">
+                      市州动态 
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li id="nav03">
+                <a style="font-weight:bold" href="/col/col3/index.html" onfocus="this.blur()">
+                  政务公开
+                </a>
+                <ul>
+                  <li>
+                    <a href="/col/col298/index.html" target="_blank" onfocus="this.blur()">
+                      组织机构
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/col/col29/index.html" target="_blank" onfocus="this.blur()">
+                      公告公示
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/col/col36/index.html" target="_blank" onfocus="this.blur()">
+                      政策文件 
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/col/col31/index.html" target="_blank" onfocus="this.blur()">
+                      规划计划
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/col/col13/index.html" target="_blank" onfocus="this.blur()">
+                      社保信息
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/col/col32/index.html" target="_blank" onfocus="this.blur()">
+                      统计信息
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/col/col33/index.html" target="_blank" onfocus="this.blur()">
+                      财政信息
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/col/col38/index.html" target="_blank" onfocus="this.blur()">
+                      人事信息
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/col/col306/index.html" target="_blank" onfocus="this.blur()">
+                      行政权力清单
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/col/col27/index.html" target="_blank" onfocus="this.blur()">
+                      公开承诺
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/col/col35/index.html" target="_blank" onfocus="this.blur()">
+                      新闻发布
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li id="nav04">
+                <a style="font-weight:bold" href="/col/col5/index.html" onfocus="this.blur()">
+                  在线服务
+                </a>
+                <ul>
+                  <li>
+                    <a href="http://www.gzegn.gov.cn/permissionitem/1170934890500804468.jspx" target="_blank" onfocus="this.blur()">
+                      审批办事
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/col/col65/index.html" target="_blank" onfocus="this.blur()">
+                      部门服务
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/col/col146/index.html" target="_blank" onfocus="this.blur()">
+                      便民服务
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li id="nav05">
+                <a style="font-weight:bold" href="/col/col6/index.html" onfocus="this.blur()">
+                  互动交流
+                </a>
+                <ul>
+                  <li>
+                    <a href="/col/col71/index.html" target="_blank" onfocus="this.blur()">
+                      网上调查
+                    </a>
+                  </li>
+                  <li>
+                    <a href="http://weibo.com/u/3266161980?s=6cm7D0" target="_blank" onfocus="this.blur()">
+                      政务微博
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/col/col74/index.html" target="_blank" onfocus="this.blur()">
+                      网上征集
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/jact/front/front_main.action?sysid=1" target="_blank" onfocus="this.blur()">
+                      厅长信箱
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li id="nav06">
+                <a style="font-weight:bold" href="/col/col75/index.html" target="_blank" onfocus="this.blur()">
+                  专题专栏
+                </a>
+              </li>
+              <li id="nav07">
+                <a style="font-weight:bold" href="/art/2014/9/3/art_121_12279.html" target="_blank" onfocus="this.blur()">
+                  监督投诉
+                </a>
+                <ul>
+                  <li>
+                    <a href="/col/col250/index.html" target="_blank" onfocus="this.blur()">
+                      举报电话
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/jact/front/front_main?sysid=4" target="_blank" onfocus="this.blur()">
+                      劳动维权
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div style="background:url(/images/2/cnbr.jpg) repeat-x #fff;">
+      <div style="background:#fff; width:1030px; margin:0 auto;">
+        <div style="height:10px">
+        </div>
+        <table width="1030" border="0" cellspacing="0" cellpadding="0" align="center" style="margin:0 auto;">
+          <tbody>
+            <tr>
+              <td align="left" valign="top">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" background="/images/2/tqbj.jpg">
+                  <tbody>
+                    <tr>
+                      <td height="36" width="10">
+                         
+                      </td>
+                      <td align="left" valign="middle">
+                         
+
+                      </td>
+                      <td width="400" align="left" valign="middle">
+                        <script language="javascript" src="/script/0/1506071422285853.js">
+                        </script>
+                        <form method="get" action="/jsearch/search.do?" target="_blank" onsubmit="return(checkFormdh());" style="margin:0px auto;" id="Formdh">
+                          <input id="pos" type="hidden" name="pos" value="title,content" style="display:none"/>
+                          <table border="0" cellspacing="0" cellpadding="0" width="100%" align="right">
+                            <tbody>
+                              <tr>
+                                <td align="center">
+                                  <table border="0" cellspacing="0" cellpadding="0" align="right" height="24" width="100%">
+                                    <tbody>
+                                      <tr>
+                                        <td align="right" valign="middle" style="font-size:14px; font-weight:bold">
+                                          站内检索：
+                                        </td>
+                                        <td align="center" width="180">
+                                          <input id="hotwords" style="width:170px;height:16px;border:#dcdcdc 1px solid;" name="q" type="text"/>
+                                        </td>
+                                        <td width="60" align="center">
+                                          <input style="border:none" src="/picture/0/1506061723146132766.jpg" width="54" height="20" type="image" name="image"/>
+                                        </td>
+                                        <td width="30"/>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <div style="display: none">
+                            <input type="hidden" name="pagemode" value="result"/>
+                            <input type="hidden" name="appid" value="1,41"/>
+                            <input type="hidden" name="od" value="1"/>
+                            <input type="hidden" name="tmp_od" value="0"/>
+                            <input type="hidden" name="style" value="1"/>
+                            <input type="hidden" name="ck" value="o"/>
+                            <input type="hidden" name="webid" value=""/>
+                          </div>
+                        </form>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table width="1030" border="0" cellspacing="0" cellpadding="0">
+                  <tbody>
+                    <tr>
+                      <td height="10"/>
+                    </tr>
+                  </tbody>
+                </table>
+                <table width="1030" border="0" cellspacing="0" cellpadding="0">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <table cellspacing="0" cellpadding="0" border="0">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <a href="/index.html" class="bt_link">
+                                        首页
+                                </a>
+                              </td>
+                              <td>
+                                <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                  <tbody>
+                                    <tr>
+                                      <td>
+                                         &gt;&gt; 
+                                        <a href="/col/col41/index.html" class="bt_link">
+                                          工作动态
+                                        </a>
+                                      </td>
+                                      <td>
+                                         &gt;&gt; 
+                                        <a href="/col/col41/index.html" class="bt_link">
+                                          新闻动态
+                                        </a>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tbody>
+                    <tr>
+                      <td width="21">
+                         
+                      </td>
+                      <td align="left" valign="top">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tbody>
+                            <tr>
+                              <td/>
+                            </tr>
+                            <tr>
+                              <td height="10"/>
+                            </tr>
+                            <tr>
+                              <td align="left" valign="top" style="border:#e3e3e3 1px solid;">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                  <tbody>
+                                    <tr>
+                                      <td height="10"/>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                <table border="0" cellspacing="0" cellpadding="0">
+                                  <tbody>
+                                    <tr>
+                                      <td width="20"/>
+                                      <td>
+                                        <div>
+                                          <span style="font-size:10.5pt; font-weight:bolder; color:#F00">
+                                            新闻动态
+                                          </span>
+                                        </div>
+                                      </td>
+                                      <td>
+                                         
+                                      </td>
+                                      <td width="2" bgcolor="#CCCCCC"/>
+                                    </tr>
+                                    <tr>
+                                      <td colspan="4" height="5"/>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0" height="3">
+                                  <tbody>
+                                    <tr>
+                                      <td width="10" height="3"/>
+                                      <td width="634" style="background:#d90400"/>
+                                      <td width="10"/>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                  <tbody>
+                                    <tr>
+                                      <td height="10"/>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                  <tbody>
+                                    <tr>
+                                      <td width="10"/>
+                                      <td>
+                                        <div id="300" class="">
+                                          <div class="default_pgContainer">
+                                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                              <tbody>
+                                                <tr>
+                                                  <td height="28" align="left" valign="middle" style="border-bottom:dashed 1px #ccc">
+                                                    <span style="padding-right:8px;">
+                                                      <img src="/picture/0/1505121003203479734.jpg" align="absmiddle" border="0"/>
+                                                    </span>
+                                                    <a style="font-size:14px;" href="/art/2015/9/10/art_41_22364.html" class="bt_link_w" title="两部委召开电视电话会亮出中小学教师职称制度改革时间表" target="_blank">
+                                                      两部委召开电视电话会亮出中小学教师职称制度改革时间表
+                                                    </a>
+                                                  </td>
+                                                  <td width="80" align="center" class="bt_time" style="font-size:12px;border-bottom:dashed 1px #ccc">
+                                                    2015-09-10
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td height="28" align="left" valign="middle" style="border-bottom:dashed 1px #ccc">
+                                                    <span style="padding-right:8px;">
+                                                      <img src="/picture/0/1505121003203479734.jpg" align="absmiddle" border="0"/>
+                                                    </span>
+                                                    <a style="font-size:14px;" href="/art/2015/9/9/art_41_22363.html" class="bt_link_w" title="人社部启动2015年高校毕业生就业服务月" target="_blank">
+                                                      人社部启动2015年高校毕业生就业服务月
+                                                    </a>
+                                                  </td>
+                                                  <td width="80" align="center" class="bt_time" style="font-size:12px;border-bottom:dashed 1px #ccc">
+                                                    2015-09-09
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td height="28" align="left" valign="middle" style="border-bottom:dashed 1px #ccc">
+                                                    <span style="padding-right:8px;">
+                                                      <img src="/picture/0/1505121003203479734.jpg" align="absmiddle" border="0"/>
+                                                    </span>
+                                                    <a style="font-size:14px;" href="/art/2015/9/8/art_41_22210.html" class="bt_link_w" title="贵阳留学归国创业园来了40余只“海龟”" target="_blank">
+                                                      贵阳留学归国创业园来了40余只“海龟”
+                                                    </a>
+                                                  </td>
+                                                  <td width="80" align="center" class="bt_time" style="font-size:12px;border-bottom:dashed 1px #ccc">
+                                                    2015-09-08
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td height="28" align="left" valign="middle" style="border-bottom:dashed 1px #ccc">
+                                                    <span style="padding-right:8px;">
+                                                      <img src="/picture/0/1505121003203479734.jpg" align="absmiddle" border="0"/>
+                                                    </span>
+                                                    <a style="font-size:14px;" href="/art/2015/9/8/art_41_22209.html" class="bt_link_w" title="贵州紧扣产业发展打造创业首选地" target="_blank">
+                                                      贵州紧扣产业发展打造创业首选地
+                                                    </a>
+                                                  </td>
+                                                  <td width="80" align="center" class="bt_time" style="font-size:12px;border-bottom:dashed 1px #ccc">
+                                                    2015-09-08
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td height="28" align="left" valign="middle" style="border-bottom:dashed 1px #ccc">
+                                                    <span style="padding-right:8px;">
+                                                      <img src="/picture/0/1505121003203479734.jpg" align="absmiddle" border="0"/>
+                                                    </span>
+                                                    <a style="font-size:14px;" href="/art/2015/9/8/art_41_22208.html" class="bt_link_w" title="省人力资源社会保障厅开展第三季度党组中心组学习系列研讨活动" target="_blank">
+                                                      省人力资源社会保障厅开展第三季度党组中心组学习系列研讨活动
+                                                    </a>
+                                                  </td>
+                                                  <td width="80" align="center" class="bt_time" style="font-size:12px;border-bottom:dashed 1px #ccc">
+                                                    2015-09-08
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td height="28" align="left" valign="middle" style="border-bottom:dashed 1px #ccc">
+                                                    <span style="padding-right:8px;">
+                                                      <img src="/picture/0/1505121003203479734.jpg" align="absmiddle" border="0"/>
+                                                    </span>
+                                                    <a style="font-size:14px;" href="/art/2015/9/2/art_41_22167.html" class="bt_link_w" title="贵州省公务员平时考核工作会议在贵阳召开" target="_blank">
+                                                      贵州省公务员平时考核工作会议在贵阳召开
+                                                    </a>
+                                                  </td>
+                                                  <td width="80" align="center" class="bt_time" style="font-size:12px;border-bottom:dashed 1px #ccc">
+                                                    2015-09-02
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td height="28" align="left" valign="middle" style="border-bottom:dashed 1px #ccc">
+                                                    <span style="padding-right:8px;">
+                                                      <img src="/picture/0/1505121003203479734.jpg" align="absmiddle" border="0"/>
+                                                    </span>
+                                                    <a style="font-size:14px;" href="/art/2015/9/2/art_41_22166.html" class="bt_link_w" title="省人力资源社会保障厅开展纪念抗战胜利70周年走访慰问活动" target="_blank">
+                                                      省人力资源社会保障厅开展纪念抗战胜利70周年走访慰问活动
+                                                    </a>
+                                                  </td>
+                                                  <td width="80" align="center" class="bt_time" style="font-size:12px;border-bottom:dashed 1px #ccc">
+                                                    2015-09-02
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td height="28" align="left" valign="middle" style="border-bottom:dashed 1px #ccc">
+                                                    <span style="padding-right:8px;">
+                                                      <img src="/picture/0/1505121003203479734.jpg" align="absmiddle" border="0"/>
+                                                    </span>
+                                                    <a style="font-size:14px;" href="/art/2015/8/31/art_41_22109.html" class="bt_link_w" title="省人力资源社会保障厅举办外国专家管理服务工作培训" target="_blank">
+                                                      省人力资源社会保障厅举办外国专家管理服务工作培训
+                                                    </a>
+                                                  </td>
+                                                  <td width="80" align="center" class="bt_time" style="font-size:12px;border-bottom:dashed 1px #ccc">
+                                                    2015-08-31
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td height="28" align="left" valign="middle" style="border-bottom:dashed 1px #ccc">
+                                                    <span style="padding-right:8px;">
+                                                      <img src="/picture/0/1505121003203479734.jpg" align="absmiddle" border="0"/>
+                                                    </span>
+                                                    <a style="font-size:14px;" href="/art/2015/8/31/art_41_22108.html" class="bt_link_w" title="施长冬陈晓光到厅驻省政务服务中心窗口检查指导工作" target="_blank">
+                                                      施长冬陈晓光到厅驻省政务服务中心窗口检查指导工作
+                                                    </a>
+                                                  </td>
+                                                  <td width="80" align="center" class="bt_time" style="font-size:12px;border-bottom:dashed 1px #ccc">
+                                                    2015-08-31
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td height="28" align="left" valign="middle" style="border-bottom:dashed 1px #ccc">
+                                                    <span style="padding-right:8px;">
+                                                      <img src="/picture/0/1505121003203479734.jpg" align="absmiddle" border="0"/>
+                                                    </span>
+                                                    <a style="font-size:14px;" href="/art/2015/8/29/art_41_22770.html" class="bt_link_w" title="“四型”职院盛开教育扶贫之花" target="_blank">
+                                                      “四型”职院盛开教育扶贫之花
+                                                    </a>
+                                                  </td>
+                                                  <td width="80" align="center" class="bt_time" style="font-size:12px;border-bottom:dashed 1px #ccc">
+                                                    2015-08-29
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td height="28" align="left" valign="middle" style="border-bottom:dashed 1px #ccc">
+                                                    <span style="padding-right:8px;">
+                                                      <img src="/picture/0/1505121003203479734.jpg" align="absmiddle" border="0"/>
+                                                    </span>
+                                                    <a style="font-size:14px;" href="/art/2015/8/28/art_41_22078.html" class="bt_link_w" title="施长冬副厅长、陈晓光组长一行赴关岭县板贵乡走访贫困村贫困户" target="_blank">
+                                                      施长冬副厅长、陈晓光组长一行赴关岭县板贵乡走访贫困村贫困户
+                                                    </a>
+                                                  </td>
+                                                  <td width="80" align="center" class="bt_time" style="font-size:12px;border-bottom:dashed 1px #ccc">
+                                                    2015-08-28
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td height="28" align="left" valign="middle" style="border-bottom:dashed 1px #ccc">
+                                                    <span style="padding-right:8px;">
+                                                      <img src="/picture/0/1505121003203479734.jpg" align="absmiddle" border="0"/>
+                                                    </span>
+                                                    <a style="font-size:14px;" href="/art/2015/8/27/art_41_22080.html" class="bt_link_w" title="省人社厅公布2014年“三公”经费  比上年减少188.3万元" target="_blank">
+                                                      省人社厅公布2014年“三公”经费  比上年减少188.3万元
+                                                    </a>
+                                                  </td>
+                                                  <td width="80" align="center" class="bt_time" style="font-size:12px;border-bottom:dashed 1px #ccc">
+                                                    2015-08-27
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td height="28" align="left" valign="middle" style="border-bottom:dashed 1px #ccc">
+                                                    <span style="padding-right:8px;">
+                                                      <img src="/picture/0/1505121003203479734.jpg" align="absmiddle" border="0"/>
+                                                    </span>
+                                                    <a style="font-size:14px;" href="/art/2015/8/26/art_41_22079.html" class="bt_link_w" title="我省招录351名政法干警    报名时间：8月27日至8月30日" target="_blank">
+                                                      我省招录351名政法干警    报名时间：8月27日至8月30日
+                                                    </a>
+                                                  </td>
+                                                  <td width="80" align="center" class="bt_time" style="font-size:12px;border-bottom:dashed 1px #ccc">
+                                                    2015-08-26
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td height="28" align="left" valign="middle" style="border-bottom:dashed 1px #ccc">
+                                                    <span style="padding-right:8px;">
+                                                      <img src="/picture/0/1505121003203479734.jpg" align="absmiddle" border="0"/>
+                                                    </span>
+                                                    <a style="font-size:14px;" href="/art/2015/8/26/art_41_21983.html" class="bt_link_w" title="人社部劳动保障监察法律制度培训班在贵阳开班" target="_blank">
+                                                      人社部劳动保障监察法律制度培训班在贵阳开班
+                                                    </a>
+                                                  </td>
+                                                  <td width="80" align="center" class="bt_time" style="font-size:12px;border-bottom:dashed 1px #ccc">
+                                                    2015-08-26
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td height="28" align="left" valign="middle" style="border-bottom:dashed 1px #ccc">
+                                                    <span style="padding-right:8px;">
+                                                      <img src="/picture/0/1505121003203479734.jpg" align="absmiddle" border="0"/>
+                                                    </span>
+                                                    <a style="font-size:14px;" href="/art/2015/8/25/art_41_21936.html" class="bt_link_w" title="我省启动国企负责人薪酬制度改革工作" target="_blank">
+                                                      我省启动国企负责人薪酬制度改革工作
+                                                    </a>
+                                                  </td>
+                                                  <td width="80" align="center" class="bt_time" style="font-size:12px;border-bottom:dashed 1px #ccc">
+                                                    2015-08-25
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </div>
+                                          <table width="100%" border="0" cellpadding="0" cellspacing="0" class="default_pgToolbar">
+                                            <tbody>
+                                              <tr>
+                                                <td>
+                                                  <table border="0" cellspadding="0" cellspacing="0" class="default_pgPanel">
+                                                    <tbody>
+                                                      <tr>
+                                                        <td valign="middle">
+                                                          <select class="default_pgPerPage" title="每页显示条数" value="15">
+                                                            <option value="15" selected="selected">
+                                                              15
+                                                            </option>
+                                                            <option value="5">
+                                                              5
+                                                            </option>
+                                                            <option value="10">
+                                                              10
+                                                            </option>
+                                                            <option value="15">
+                                                              15
+                                                            </option>
+                                                            <option value="20">
+                                                              20
+                                                            </option>
+                                                            <option value="25">
+                                                              25
+                                                            </option>
+                                                            <option value="40">
+                                                              40
+                                                            </option>
+                                                          </select>
+                                                           
+                                                        </td>
+                                                        <td valign="middle">
+                                                          <div class="default_separator">
+                                                          </div>
+                                                        </td>
+                                                        <td valign="middle">
+                                                          <div class="default_pgBtn default_pgFirst" title="首页">
+                                                          </div>
+                                                        </td>
+                                                        <td valign="middle">
+                                                          <div class="default_pgBtn default_pgPrev" title="上页">
+                                                          </div>
+                                                        </td>
+                                                        <td valign="middle" width="10" align="left">
+                                                          <div class="default_separator">
+                                                          </div>
+                                                        </td>
+                                                        <td valign="middle">
+                                                          第 
+                                                          <input class="default_pgCurrentPage" type="text" value="3" title="页码"/>
+                                                           页 / 共 
+                                                          <span class="default_pgTotalPage">
+                                                            46
+                                                          </span>
+                                                           页
+                                                        </td>
+                                                        <td valign="middle" width="10" align="right">
+                                                          <div class="default_separator">
+                                                          </div>
+                                                        </td>
+                                                        <td valign="middle">
+                                                          <div class="default_pgBtn default_pgNext" title="下页">
+                                                          </div>
+                                                        </td>
+                                                        <td valign="middle">
+                                                          <div class="default_pgBtn default_pgLast" title="尾页">
+                                                          </div>
+                                                        </td>
+                                                        <td valign="middle">
+                                                          <div class="default_separator">
+                                                          </div>
+                                                        </td>
+                                                        <td valign="middle">
+                                                          <div class="default_pgBtn default_pgRefresh" title="刷新">
+                                                          </div>
+                                                        </td>
+                                                        <td valign="middle" width="10" align="left">
+                                                          <div class="default_separator">
+                                                          </div>
+                                                        </td>
+                                                        <td valign="middle" class="default_pgSearchInfo">
+                                                          检索到 687 条记录，显示第 
+                                                          <span class="default_pgStartRecord">
+                                                            31
+                                                          </span>
+                                                           条 - 第 
+                                                          <span class="default_pgEndRecord">
+                                                            45
+                                                          </span>
+                                                           条记录
+                                                        </td>
+                                                      </tr>
+                                                    </tbody>
+                                                  </table>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </div>
+                                        <link rel="stylesheet" type="text/css" href="/module/jslib/jquery/jpage/theme/default/css/jpage.css"/>
+                                        <script language="javascript" src="/module/jslib/datepicker/WdatePicker.js">
+                                        </script>
+                                        <script language="javascript" src="/module/jslib/jquery/cookie/jquery.cookie.js">
+                                        </script>
+                                        <script language="javascript" src="/module/jslib/jquery/jpage/jquery.jpage.js">
+                                        </script>
+                                        <script language="javascript">
+//<![CDATA[
+var param_300 = {col:1,appid:'1',webid:1,path:'/',columnid:41,sourceContentType:1,unitid:'300',webname:'贵州人力资源和社会保障网',permissiontype:0}; function jpage_300(){$('#jpageform_300 :input').each(function(){param_300[$(this).attr('name')]=$(this).val();});$('#300').jpage({themeName:'default',showMode:'full',totalRecord:1000,openCookies:false,dataBefore:'<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">',dataAfter:'</table>',groupSize:3,proxyUrl:'/module/jslib/jquery/jpage/dataproxy.jsp',perPage:15,barPosition:'bottom',ajaxParam:param_300});};$(function(){$('#300').jpage({themeName:'default',showMode:'full',totalRecord:687,openCookies:false,dataBefore:'<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">',dataStore:$('#300').children('div').html(),dataAfter:'</table>',groupSize:3,proxyUrl:'/module/jslib/jquery/jpage/dataproxy.jsp',perPage:15,barPosition:'bottom',ajaxParam:param_300});});
+//]]>
+                                        </script>
+                                      </td>
+                                      <td width="10"/>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                  <tbody>
+                                    <tr>
+                                      <td height="10"/>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                      <td width="10">
+                         
+                      </td>
+                      <td width="321" align="left" valign="top">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0" style="border-left:#ecc4b8 1px solid; border-right:#ecc4b8 1px solid; border-bottom:#ecc4b8 1px solid;">
+                                  <tbody>
+                                    <tr>
+                                      <td width="5" height="37" background="/images/2/zwgk_05.jpg"/>
+                                      <td align="left" valign="middle" background="/images/2/zwgk_05.jpg">
+                                        <div>
+                                            
+                                          <span style="font-size:10.5pt; font-weight:bolder;">
+                                            最新信息
+                                          </span>
+                                        </div>
+                                      </td>
+                                      <td width="80" align="left" valign="middle" background="/images/2/zwgk_05.jpg"/>
+                                      <td width="5" background="/images/2/zwgk_05.jpg"/>
+                                    </tr>
+                                    <tr>
+                                      <td colspan="4">
+                                        <script language="javascript" src="/module/freshnews/freshnews.jsp?uid=477">
+                                        </script>
+                                        <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                          <tbody>
+                                            <tr>
+                                              <td style="">
+                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                  <tbody>
+                                                    <tr>
+                                                      <td width="20" height="30" align="center" valign="middle">
+                                                        <img src="/picture/0/1505121003203479734.jpg" border="0"/>
+                                                      </td>
+                                                      <td style="font-size:12px; color:#000">
+                                                        <a href="/art/2015/11/3/art_41_22959.html" class="bt_link_w" title="省人力资源社会保障厅深入学习贯彻党的十八届五中全会精神" target="_blank">
+                                                          省人力资源社会保障厅深入学习贯彻...
+                                                        </a>
+                                                      </td>
+                                                      <td width="80">
+                                                        2015-11-03
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td style="">
+                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                  <tbody>
+                                                    <tr>
+                                                      <td width="20" height="30" align="center" valign="middle">
+                                                        <img src="/picture/0/1505121003203479734.jpg" border="0"/>
+                                                      </td>
+                                                      <td style="font-size:12px; color:#000">
+                                                        <a href="/art/2015/11/3/art_29_22937.html" class="bt_link_w" title="省本级参保企业申领2014年度失业保险稳岗补贴资格公示（一）" target="_blank">
+                                                          省本级参保企业申领2014年度失...
+                                                        </a>
+                                                      </td>
+                                                      <td width="80">
+                                                        2015-11-03
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td style="">
+                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                  <tbody>
+                                                    <tr>
+                                                      <td width="20" height="30" align="center" valign="middle">
+                                                        <img src="/picture/0/1505121003203479734.jpg" border="0"/>
+                                                      </td>
+                                                      <td style="font-size:12px; color:#000">
+                                                        <a href="/art/2015/11/2/art_31_22928.html" class="bt_link_w" title="测试使用信息" target="_blank">
+                                                          测试使用信息
+                                                        </a>
+                                                      </td>
+                                                      <td width="80">
+                                                        2015-11-02
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td style="">
+                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                  <tbody>
+                                                    <tr>
+                                                      <td width="20" height="30" align="center" valign="middle">
+                                                        <img src="/picture/0/1505121003203479734.jpg" border="0"/>
+                                                      </td>
+                                                      <td style="font-size:12px; color:#000">
+                                                        <a href="/art/2015/11/2/art_29_22921.html" class="bt_link_w" title="贵州省2014年度“百人领军人才”“千人创新创业人才”建议人选公示" target="_blank">
+                                                          贵州省2014年度“百人领军人才...
+                                                        </a>
+                                                      </td>
+                                                      <td width="80">
+                                                        2015-11-02
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td style="">
+                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                  <tbody>
+                                                    <tr>
+                                                      <td width="20" height="30" align="center" valign="middle">
+                                                        <img src="/picture/0/1505121003203479734.jpg" border="0"/>
+                                                      </td>
+                                                      <td style="font-size:12px; color:#000">
+                                                        <a href="/art/2015/10/31/art_41_22916.html" class="bt_link_w" title="全省第四次事业单位同步考试举行" target="_blank">
+                                                          全省第四次事业单位同步考试举行
+                                                        </a>
+                                                      </td>
+                                                      <td width="80">
+                                                        2015-10-31
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td style="">
+                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                  <tbody>
+                                                    <tr>
+                                                      <td width="20" height="30" align="center" valign="middle">
+                                                        <img src="/picture/0/1505121003203479734.jpg" border="0"/>
+                                                      </td>
+                                                      <td style="font-size:12px; color:#000">
+                                                        <a href="/art/2015/10/31/art_41_22915.html" class="bt_link_w" title="夏一庆厅长带队赴安顺市调研" target="_blank">
+                                                          夏一庆厅长带队赴安顺市调研
+                                                        </a>
+                                                      </td>
+                                                      <td width="80">
+                                                        2015-10-31
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td style="">
+                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                  <tbody>
+                                                    <tr>
+                                                      <td width="20" height="30" align="center" valign="middle">
+                                                        <img src="/picture/0/1505121003203479734.jpg" border="0"/>
+                                                      </td>
+                                                      <td style="font-size:12px; color:#000">
+                                                        <a href="/art/2015/10/29/art_29_22897.html" class="bt_link_w" title="2015年贵州省图书资料、文物博物、群众文化、艺术职称未通过政策性审查人员名单公示" target="_blank">
+                                                          2015年贵州省图书资料、文物博...
+                                                        </a>
+                                                      </td>
+                                                      <td width="80">
+                                                        2015-10-29
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td style="">
+                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                  <tbody>
+                                                    <tr>
+                                                      <td width="20" height="30" align="center" valign="middle">
+                                                        <img src="/picture/0/1505121003203479734.jpg" border="0"/>
+                                                      </td>
+                                                      <td style="font-size:12px; color:#000">
+                                                        <a href="/art/2015/10/29/art_41_22918.html" class="bt_link_w" title="贵州省成立协调劳动关系三方委员会" target="_blank">
+                                                          贵州省成立协调劳动关系三方委员会
+                                                        </a>
+                                                      </td>
+                                                      <td width="80">
+                                                        2015-10-29
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td style="">
+                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                  <tbody>
+                                                    <tr>
+                                                      <td width="20" height="30" align="center" valign="middle">
+                                                        <img src="/picture/0/1505121003203479734.jpg" border="0"/>
+                                                      </td>
+                                                      <td style="font-size:12px; color:#000">
+                                                        <a href="/art/2015/10/29/art_29_22881.html" class="bt_link_w" title="关于公布2015年城镇新增就业实名制推进程度电话抽查号码的通知" target="_blank">
+                                                          关于公布2015年城镇新增就业实...
+                                                        </a>
+                                                      </td>
+                                                      <td width="80">
+                                                        2015-10-29
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td style="">
+                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                  <tbody>
+                                                    <tr>
+                                                      <td width="20" height="30" align="center" valign="middle">
+                                                        <img src="/picture/0/1505121003203479734.jpg" border="0"/>
+                                                      </td>
+                                                      <td style="font-size:12px; color:#000">
+                                                        <a href="/art/2015/10/28/art_41_22917.html" class="bt_link_w" title="贵州省部署市（州）和省直有关部门管理国有企业负责人薪酬制度改革工作" target="_blank">
+                                                          贵州省部署市（州）和省直有关部门...
+                                                        </a>
+                                                      </td>
+                                                      <td width="80">
+                                                        2015-10-28
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td style="">
+                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                  <tbody>
+                                                    <tr>
+                                                      <td width="20" height="30" align="center" valign="middle">
+                                                        <img src="/picture/0/1505121003203479734.jpg" border="0"/>
+                                                      </td>
+                                                      <td style="font-size:12px; color:#000">
+                                                        <a href="/art/2015/10/27/art_41_22864.html" class="bt_link_w" title="省人力资源社会保障厅召开2015年第二次全面深化改革推进会" target="_blank">
+                                                          省人力资源社会保障厅召开2015...
+                                                        </a>
+                                                      </td>
+                                                      <td width="80">
+                                                        2015-10-27
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td style="">
+                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                  <tbody>
+                                                    <tr>
+                                                      <td width="20" height="30" align="center" valign="middle">
+                                                        <img src="/picture/0/1505121003203479734.jpg" border="0"/>
+                                                      </td>
+                                                      <td style="font-size:12px; color:#000">
+                                                        <a href="/art/2015/10/23/art_41_22821.html" class="bt_link_w" title="侯丽江到宋旗镇开展示范小城镇建设对口帮扶工作调研" target="_blank">
+                                                          侯丽江到宋旗镇开展示范小城镇建设...
+                                                        </a>
+                                                      </td>
+                                                      <td width="80">
+                                                        2015-10-23
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td style="">
+                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                  <tbody>
+                                                    <tr>
+                                                      <td width="20" height="30" align="center" valign="middle">
+                                                        <img src="/picture/0/1505121003203479734.jpg" border="0"/>
+                                                      </td>
+                                                      <td style="font-size:12px; color:#000">
+                                                        <a href="/art/2015/10/22/art_43_22813.html" class="bt_link_w" title="黔南州：创新创业  人才引领" target="_blank">
+                                                          黔南州：创新创业  人才引领
+                                                        </a>
+                                                      </td>
+                                                      <td width="80">
+                                                        2015-10-22
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td style="">
+                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                  <tbody>
+                                                    <tr>
+                                                      <td width="20" height="30" align="center" valign="middle">
+                                                        <img src="/picture/0/1505121003203479734.jpg" border="0"/>
+                                                      </td>
+                                                      <td style="font-size:12px; color:#000">
+                                                        <a href="/art/2015/10/22/art_41_22809.html" class="bt_link_w" title="孔雀缘何西南飞——我省加速人才集聚激励人才创新创业政策解读" target="_blank">
+                                                          孔雀缘何西南飞——我省加速人才集...
+                                                        </a>
+                                                      </td>
+                                                      <td width="80">
+                                                        2015-10-22
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td style="">
+                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                  <tbody>
+                                                    <tr>
+                                                      <td width="20" height="30" align="center" valign="middle">
+                                                        <img src="/picture/0/1505121003203479734.jpg" border="0"/>
+                                                      </td>
+                                                      <td style="font-size:12px; color:#000">
+                                                        <a href="/art/2015/10/21/art_41_22798.html" class="bt_link_w" title="前三季度居民收入实际增幅7.7%" target="_blank">
+                                                          前三季度居民收入实际增幅7.7%
+                                                        </a>
+                                                      </td>
+                                                      <td width="80">
+                                                        2015-10-21
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td style="">
+                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                  <tbody>
+                                                    <tr>
+                                                      <td width="20" height="30" align="center" valign="middle">
+                                                        <img src="/picture/0/1505121003203479734.jpg" border="0"/>
+                                                      </td>
+                                                      <td style="font-size:12px; color:#000">
+                                                        <a href="/art/2015/10/21/art_43_22812.html" class="bt_link_w" title="六盘水市：“1234”服务体系推进大众创业万众创新" target="_blank">
+                                                          六盘水市：“1234”服务体系推...
+                                                        </a>
+                                                      </td>
+                                                      <td width="80">
+                                                        2015-10-21
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td style="">
+                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                  <tbody>
+                                                    <tr>
+                                                      <td width="20" height="30" align="center" valign="middle">
+                                                        <img src="/picture/0/1505121003203479734.jpg" border="0"/>
+                                                      </td>
+                                                      <td style="font-size:12px; color:#000">
+                                                        <a href="/art/2015/10/20/art_43_22811.html" class="bt_link_w" title="贵安新区：“四个抓手”推进大众创业万众创新" target="_blank">
+                                                          贵安新区：“四个抓手”推进大众创...
+                                                        </a>
+                                                      </td>
+                                                      <td width="80">
+                                                        2015-10-20
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td style="">
+                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                  <tbody>
+                                                    <tr>
+                                                      <td width="20" height="30" align="center" valign="middle">
+                                                        <img src="/picture/0/1505121003203479734.jpg" border="0"/>
+                                                      </td>
+                                                      <td style="font-size:12px; color:#000">
+                                                        <a href="/art/2015/10/20/art_37_22769.html" class="bt_link_w" title="贵州省人力资源和社会保障厅关于印发《精准帮扶留守儿童困境儿童家庭劳动力返乡创业就业工作方案》的通知" target="_blank">
+                                                          贵州省人力资源和社会保障厅关于印...
+                                                        </a>
+                                                      </td>
+                                                      <td width="80">
+                                                        2015-10-20
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td height="10"/>
+                            </tr>
+                            <tr>
+                              <td/>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                      <td width="21">
+                         
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table width="1030" border="0" cellspacing="0" cellpadding="0">
+                  <tbody>
+                    <tr>
+                      <td height="10"/>
+                    </tr>
+                  </tbody>
+                </table>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tbody>
+                    <tr>
+                      <td height="134" align="left" valign="top" background="/images/2/footbr.jpg">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tbody>
+                            <tr>
+                              <td height="20"/>
+                            </tr>
+                            <tr>
+                              <td align="center" valign="middle">
+                                <script language="javascript" src="/script/0/1505131554096030.js">
+                                </script>
+                                <table width="320" border="0" cellspacing="0" cellpadding="0">
+                                  <tbody>
+                                    <tr>
+                                      <td height="30" width="80" align="center" valign="middle">
+                                        <a href="/col/col139/index.html" target="_blank" style="font-size:12px; color:#000">
+                                          网站地图
+                                        </a>
+                                      </td>
+                                      <td width="5" align="center" valign="middle">
+                                        |
+                                      </td>
+                                      <td width="80" align="center" valign="middle">
+                                        <a href="/col/col140/index.html" target="_blank" style="font-size:12px; color:#000">
+                                          版权说明
+                                        </a>
+                                      </td>
+                                      <td width="5" align="center" valign="middle">
+                                        |
+                                      </td>
+                                      <td width="80" align="center" valign="middle">
+                                        <a href="/col/col9/index.html" target="_blank" style="font-size:12px; color:#000">
+                                          隐私说明
+                                        </a>
+                                      </td>
+                                      <td width="5" align="center" valign="middle">
+                                        |
+                                      </td>
+                                      <td width="80" align="center" valign="middle">
+                                        <a href="/col/col237/index.html" target="_blank" style="font-size:12px; color:#000">
+                                          RSS订阅
+                                        </a>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="center" valign="middle">
+                                <script language="javascript" src="/script/0/1505131549415842.js">
+                                </script>
+                                <table width="650" border="0" cellspacing="0" cellpadding="0">
+                                  <tbody>
+                                    <tr>
+                                      <td rowspan="5">
+                                        <script type="text/javascript">
+//<![CDATA[
+document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/24/000/0000/60100725/CA240000000601007250002.js' type='text/javascript'%3E%3C/script%3E"));
+//]]>
+                                        </script>
+                                        <span id="_ideConac">
+                                          <a href="//bszs.conac.cn/sitename?method=show&amp;id=094A4304323217AFE053012819AC7B12" target="_blank">
+                                            <img id="imgConac" vspace="0" hspace="0" border="0" src="//dcs.conac.cn/image/red.png" data-bd-imgshare-binded="1"/>
+                                          </a>
+                                        </span>
+                                        <script src="http://dcs.conac.cn/js/24/000/0000/60100725/CA240000000601007250002.js" type="text/javascript">
+                                        </script>
+                                        <span id="_ideConac">
+                                        </span>
+                                      </td>
+                                      <td width="15" rowspan="5"/>
+                                      <td align="left" style="font-size:12px; color:#000">
+                                        主办单位：贵州省人力资源和社会保障厅
+                                      </td>
+                                      <td width="10"/>
+                                      <td align="left" style="font-size:12px; color:#000">
+                                        技术支持：贵州省人力资源社会保障信息中心
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td colspan="3" width="10px"/>
+                                    </tr>
+                                    <tr>
+                                      <td align="left" style="font-size:12px; color:#000">
+                                        地址：贵州省贵阳市延安中路20号
+                                      </td>
+                                      <td/>
+                                      <td align="left" style="font-size:12px; color:#000">
+                                        邮编：550001
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td colspan="3" width="10px"/>
+                                    </tr>
+                                    <tr>
+                                      <td align="left" style="font-size:12px; color:#000">
+                                        备案号：京ICP备09079694号 
+                                      </td>
+                                      <td/>
+                                      <td align="left" style="font-size:12px; color:#000">
+                                        电子邮箱：gzhrss_gov@sina.com
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <a href="http://www.hanweb.com" style="display:none">
+      Produced By 大汉网络 大汉版通发布系统
+    </a>
+    <div id="_my97DP" style="position: absolute; top: -1970px; left: -1970px;">
+      <iframe style="width: 186px; height: 968px;" src="/module/jslib/datepicker/My97DatePicker.htm" frameborder="0" border="0" scrolling="no">
+      </iframe>
+    </div>
+  </body>
+</html>

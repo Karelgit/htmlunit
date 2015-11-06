@@ -1,18 +1,16 @@
 package com.cloudpioneer.htmlUnit;
 
-import com.cloudpioneer.htmlUnit.util.JSONUtil;
 import com.esotericsoftware.kryo.Kryo;
 import com.esotericsoftware.kryo.io.Input;
 import com.esotericsoftware.kryo.io.Output;
-import com.esotericsoftware.kryo.serializers.JavaSerializer;
 import com.gargoylesoftware.htmlunit.*;
 import com.gargoylesoftware.htmlunit.html.DomElement;
 import com.gargoylesoftware.htmlunit.html.HTMLParser;
+import com.gargoylesoftware.htmlunit.html.HtmlDivision;
 import com.gargoylesoftware.htmlunit.html.HtmlPage;
 import com.gargoylesoftware.htmlunit.javascript.background.JavaScriptJobManager;
-import org.apache.commons.codec.binary.Base64;
 
-import java.io.*;
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.LinkedList;
@@ -21,7 +19,7 @@ import java.util.List;
 /**
  * Created by Administrator on 2015/10/15.
  */
-public class TestKryo_v2 implements WebWindow{
+public class TestKryo_v5 implements WebWindow{
 
     // save the pop up window
     final static LinkedList<WebWindow> windows = new LinkedList<WebWindow>();
@@ -40,8 +38,8 @@ public class TestKryo_v2 implements WebWindow{
     }
 
     public static void testYouku() throws IOException {
-        String zsUrl = "http://www.gzzs.gov.cn/NewOpen/NewOpenMList.aspx?cid=0&pid=62";
         String url = "http://gz.hrss.gov.cn/col/col41/index.html";
+        URL url1 = new URL("http://gz.hrss.gov.cn/col/col41/index.html");
         WebClient webClient = new WebClient();
         webClient.getOptions().setThrowExceptionOnScriptError(false);
         webClient.getOptions().setThrowExceptionOnFailingStatusCode(false);
@@ -69,40 +67,29 @@ public class TestKryo_v2 implements WebWindow{
         List<String> fistXpath = new LinkedList<String>();
         fistXpath.add("//*[@id=\"300\"]/table/tbody/tr/td/table/tbody/tr/td[8]/div");
 
-        //取得第3页
+        //取得第三页
         HtmlPage pg2 = null;
         HtmlPage pg3 = null;
+        Object ps1 = null;
         try {
             DomElement e2 = ((DomElement) page.getByXPath(fistXpath.get(0)).get(0));
             pg2 = e2.click();
             DomElement e3 = ((DomElement) page.getByXPath(fistXpath.get(0)).get(0));
             pg3 = e3.click();
+            ps1 = pg3.getEnclosingWindow().getScriptObject();
         } catch (IOException e) {
             e.printStackTrace();
         }
 
-        //序列化HtmlPage
-        ByteArrayOutputStream bos = new ByteArrayOutputStream();
-        ObjectOutput out = null;
-        try { out = new ObjectOutputStream(bos);
-            out.writeObject(pg3);
-        } catch (Exception ex) {
-            ex.printStackTrace(System.out);
-        } finally {
-            out.close();
-            bos.close();
-        }
+        String html = pg3.asXml().replaceFirst("<\\?xml version=\"1.0\" encoding=\"(.+)\"\\?>", "<!DOCTYPE html>");
+        StringWebResponse response = new StringWebResponse(html,url1);
 
-        byte [] b = bos.toByteArray();
-
-        HtmlPage selectedPage = pg3;
         HtmlPage currentPage = pg3;
         HtmlPage p = null;
 
-        //先拿第4页
-        Object ps = currentPage.getEnclosingWindow().getScriptObject();
-        currentPage.getEnclosingWindow().setEnclosedPage(currentPage);
-        currentPage.getEnclosingWindow().setScriptObject(ps);
+        //保存page,先拿第4页
+        pg3.getEnclosingWindow().setEnclosedPage(pg3);
+        pg3.getEnclosingWindow().setScriptObject(ps1);
 
         DomElement element = (DomElement) currentPage.getByXPath(elements.get(1)).get(0);
 
@@ -111,36 +98,23 @@ public class TestKryo_v2 implements WebWindow{
         } catch (IOException e) {
             e.printStackTrace();
         }
-        HtmlPage changedPage = p;
+        HtmlPage pg4 = p;
 
-        System.out.println("pg4: " + changedPage.asText());
-
-        //反序列化
-        ByteArrayInputStream bis = new ByteArrayInputStream(b);
-        ObjectInput in = null;
-        try { in = new ObjectInputStream(bis);
-            HtmlPage dePage = ((HtmlPage) in.readObject());
-        } catch (Exception ex) {
-            ex.printStackTrace(System.out);
-        } finally {
-            out.close();
-            bos.close();
-        }
+        System.out.println("pg4: " + "\n" + pg4.asText());
+        System.out.println(pg3 == pg4);
 
 
-        //反序列化
-       /* Kryo kryo1 = new Kryo();
-        kryo1.setReferences(false);
-        kryo1.register(HtmlPage.class, new JavaSerializer());
-        ByteArrayInputStream bais = new ByteArrayInputStream(new Base64().decode(seria));
-        Input input = new Input(bais);
-        HtmlPage hp = (HtmlPage)kryo1.readClassAndObject(input);
-        System.out.println("hp: " + hp.asText());*/
+     /*   pg4.getEnclosingWindow().setEnclosedPage(pg4);
+        pg4.getEnclosingWindow().setScriptObject(ps1);
+        DomElement element1 = (DomElement) pg4.getByXPath(elements.get(0)).get(0);
+
+        HtmlPage pg5 = element1.click();
+        System.out.println("pg5: " + "\n" + pg5.asText());*/
+
     }
 
     /**
      *
-     * asdfjkasdjfakasdjfkajsdkfj
      * @return
      */
 
@@ -225,7 +199,7 @@ public class TestKryo_v2 implements WebWindow{
     }
 
     public static void main(String[] args) throws Exception {
-        TestKryo_v2.testYouku();
+        TestKryo_v5.testYouku();
     }
 
     public void write(Kryo kryo, Output output) {

@@ -51,8 +51,8 @@ public class TestPageSeria {
         HtmlPage page1 = webClient.getPage(url);
 
         List<String> fistXpath = new LinkedList<String>();
-        fistXpath.add("//*[@id=\"300\"]/table/tbody/tr/td/table/tbody/tr/td[4]/div");
-        fistXpath.add("//*[@id=\"300\"]/table/tbody/tr/td/table/tbody/tr/td[8]/div");
+        fistXpath.add("/[@id=\"300\"]/table/tbody/tr/td/table/tbody/tr/td[4]/div");
+        fistXpath.add("/[@id=\"300\"]/table/tbody/tr/td/table/tbody/tr/td[8]/div");
 
         DomElement e1 = ((DomElement) page1.getByXPath(fistXpath.get(1)).get(0));
         HtmlPage pg2 = e1.click();
