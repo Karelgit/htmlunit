@@ -19,7 +19,9 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * Created by Administrator on 2015/10/15.
+ * 针对钟山区政府上下页点击，initPage是第三页，点击上一页到第二页，此时的initPage还是第三页，
+ * 没有出现Ajax出现的随着点击initPage变化的情况
+ * Created by Karel on 2015/11/16.
  */
 public class TestKryo_v2 implements WebWindow{
 
@@ -41,7 +43,7 @@ public class TestKryo_v2 implements WebWindow{
 
     public static void testYouku() throws IOException {
         String zsUrl = "http://www.gzzs.gov.cn/NewOpen/NewOpenMList.aspx?cid=0&pid=62";
-        String url = "http://gz.hrss.gov.cn/col/col41/index.html";
+       // String url = "http://gz.hrss.gov.cn/col/col41/index.html";
         WebClient webClient = new WebClient();
         webClient.getOptions().setThrowExceptionOnScriptError(false);
         webClient.getOptions().setThrowExceptionOnFailingStatusCode(false);
@@ -55,7 +57,7 @@ public class TestKryo_v2 implements WebWindow{
         webClient.setAjaxController(new NicelyResynchronizingAjaxController());
         HtmlPage page = null;
         try {
-            page = webClient.getPage(url);
+            page = webClient.getPage(zsUrl);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -63,11 +65,11 @@ public class TestKryo_v2 implements WebWindow{
         webClient.setJavaScriptTimeout(0);
 
         List<String> elements = new LinkedList<String>();
-        elements.add("//*[@id=\"300\"]/table/tbody/tr/td/table/tbody/tr/td[4]/div");
-        elements.add("//*[@id=\"300\"]/table/tbody/tr/td/table/tbody/tr/td[8]/div");
+        elements.add("//*[@id=\"AdvancePages1_lnkbtnPre\"]");
+        elements.add("//*[@id=\"AdvancePages1_lnkbtnNext\"]");
 
         List<String> fistXpath = new LinkedList<String>();
-        fistXpath.add("//*[@id=\"300\"]/table/tbody/tr/td/table/tbody/tr/td[8]/div");
+        fistXpath.add("//*[@id=\"AdvancePages1_lnkbtnNext\"]");
 
         //取得第3页
         HtmlPage pg2 = null;
@@ -81,7 +83,19 @@ public class TestKryo_v2 implements WebWindow{
             e.printStackTrace();
         }
 
-        //序列化HtmlPage
+        System.out.println("pg3" + "\n" + pg3.asText());
+
+        Object ps = pg3.getEnclosingWindow().getScriptObject();
+        pg3.getEnclosingWindow().setEnclosedPage(pg3);
+        pg3.getEnclosingWindow().setScriptObject(ps);
+
+        DomElement e_page2 = (DomElement) pg3.getByXPath(elements.get(0)).get(0);
+        HtmlPage htmlPage2 = e_page2.click();
+        System.out.println("ought to be page2:" + "\n" + htmlPage2.asText());
+
+        System.out.println("pg3 after something:" + pg3.asText());
+
+        /*//序列化HtmlPage
         ByteArrayOutputStream bos = new ByteArrayOutputStream();
         ObjectOutput out = null;
         try { out = new ObjectOutputStream(bos);
@@ -126,7 +140,7 @@ public class TestKryo_v2 implements WebWindow{
             out.close();
             bos.close();
         }
-
+*/
 
         //反序列化
        /* Kryo kryo1 = new Kryo();
@@ -140,7 +154,6 @@ public class TestKryo_v2 implements WebWindow{
 
     /**
      *
-     * asdfjkasdjfakasdjfkajsdkfj
      * @return
      */
 
@@ -199,7 +212,6 @@ public class TestKryo_v2 implements WebWindow{
     public void setInnerWidth(int i) {
 
     }
-
     public int getOuterWidth() {
         return 0;
     }

@@ -9,6 +9,7 @@ import com.gargoylesoftware.htmlunit.html.HTMLParser;
 import com.gargoylesoftware.htmlunit.html.HtmlPage;
 import com.gargoylesoftware.htmlunit.javascript.background.JavaScriptJobManager;
 
+import javax.xml.bind.SchemaOutputResolver;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
@@ -40,7 +41,8 @@ public class TestKryo_v4_zs implements WebWindow{
     }
 
     public static void testYouku() throws IOException {
-        String url = "http://www.gzzs.gov.cn/NewOpen/NewOpenML.aspx?pid=62";
+//        String url = "http://www.gzzs.gov.cn/NewOpen/NewOpenML.aspx?pid=62";
+        String url = "http://www.duyun.gov.cn/fzlm/hdmb/xxgkml/xxgklb/index.shtml?organId=2,082&id=1";
         WebClient webClient = new WebClient();
         webClient.getOptions().setThrowExceptionOnScriptError(false);
         webClient.getOptions().setThrowExceptionOnFailingStatusCode(false);
@@ -64,15 +66,15 @@ public class TestKryo_v4_zs implements WebWindow{
         List<String> elements = new LinkedList<String>();
         /*elements.add("/*//*[@id=\"300\"]/table/tbody/tr/td/table/tbody/tr/td[4]/div");
         elements.add("/*//*[@id=\"300\"]/table/tbody/tr/td/table/tbody/tr/td[8]/div");*/
-        elements.add("//*[@id=\"AdvancePages1_lnkbtnPre\"]");
-        elements.add("//*[@id=\"AdvancePages1_lnkbtnNext\"]");
+        elements.add("//*[@id=\"page\"]/span[3]");
+        elements.add("//*[@id=\"page\"]/span[4]");
 
         List<String> firstXpath = new LinkedList<String>();
-        firstXpath.add("html/body/form/div[3]/div/div[2]/div[2]/div/div/table/tbody/tr/td/a[2]");
+        firstXpath.add("//*[@id=\"page\"]/span[4]");
 
         //取得第三页
         HtmlPage pg2 = null;
-        System.out.println("size: " + page.getByXPath(firstXpath.get(0)).size());
+//        System.out.println("size: " + page.getByXPath(firstXpath.get(0)).size());
         try {
             DomElement e2 = (DomElement) page.getByXPath(firstXpath.get(0)).get(0);
             pg2 = e2.click();
@@ -80,20 +82,20 @@ public class TestKryo_v4_zs implements WebWindow{
             e.printStackTrace();
         }
 
-        System.out.println("pg2:　" + "\n" + pg2.asText());
-
-        HtmlPage currentPage = pg2;
-        //page可以持久化
-        //先拿第4页
-        Object ps = currentPage.getEnclosingWindow().getScriptObject();
-        currentPage.getEnclosingWindow().setEnclosedPage(currentPage);
-        currentPage.getEnclosingWindow().setScriptObject(ps);
-
-        DomElement element = (DomElement) currentPage.getByXPath(elements.get(1)).get(0);
-
-        HtmlPage changedPage = element.click();
-
-      System.out.println("pg3: " + changedPage.asText());
+//        System.out.println("pg2:　" + "\n" + pg2.asText());
+//        System.out.println("initPge:" + "\n" + page.asText());
+//        HtmlPage currentPage = pg2;
+//        //page可以持久化
+//        //先拿第4页
+//        Object ps = currentPage.getEnclosingWindow().getScriptObject();
+//        currentPage.getEnclosingWindow().setEnclosedPage(currentPage);
+//        currentPage.getEnclosingWindow().setScriptObject(ps);
+//
+//        DomElement element = (DomElement) currentPage.getByXPath(elements.get(1)).get(0);
+//
+//        HtmlPage changedPage = element.click();
+//
+//      System.out.println("pg3: " + changedPage.asText());
 
     }
 
