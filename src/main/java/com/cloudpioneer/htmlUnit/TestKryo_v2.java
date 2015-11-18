@@ -21,12 +21,12 @@ import java.util.List;
 /**
  * 针对钟山区政府上下页点击，initPage是第三页，点击上一页到第二页，此时的initPage还是第三页，
  * 没有出现Ajax出现的随着点击initPage变化的情况
- * Created by Karel on 2015/11/16.
- */
-public class TestKryo_v2 implements WebWindow{
+    * Created by Karel on 2015/11/16.
+            */
+    public class TestKryo_v2 implements WebWindow{
 
-    // save the pop up window
-    final static LinkedList<WebWindow> windows = new LinkedList<WebWindow>();
+        // save the pop up window
+        final static LinkedList<WebWindow> windows = new LinkedList<WebWindow>();
     private static HtmlPage getHtmlPage(String html, String url, WebWindow webWindow) {
 
         try {

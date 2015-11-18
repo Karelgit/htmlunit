@@ -23,6 +23,14 @@ public class TestKryo_IndexCircle   {
         return flag;
     }
 
+    //刚触发的页面，便签队列均未执行
+    public static boolean noTagsExecuted(HtmlPage hp)    {
+        Boolean flag = true;
+        for(int i=0; i<hp.getTagList().size(); i++) {
+            flag = flag &&(hp.getTagList().get(i).getStatus() == 0);
+        }
+        return flag;
+    }
     //给每个HtmlPage页面设置备选标签列表
     public static List<Tag> initTagList()    {
         List<Tag> tagList = new ArrayList<Tag>();
@@ -39,9 +47,7 @@ public class TestKryo_IndexCircle   {
     }
 
     //点击标签，t为HtmlPage页面待选标签中马上执行的标签
-    public static HtmlPage excuteTag(List<Tag> currentTagList, HtmlPage hp,int t) throws IOException  {
-        hp.getTagList().get(t).setStatus(1);
-        currentTagList = hp.getTagList();
+    public static HtmlPage executeTag(HtmlPage hp,int t) throws IOException  {
         DomElement element = (DomElement) hp.getByXPath(hp.getTagList().get(t).getXpath()).get(0);
         HtmlPage page = element.click();
         return page;
@@ -51,7 +57,7 @@ public class TestKryo_IndexCircle   {
     public static void printPageNo(HtmlPage hp) {
         String pNoXpath = "//*[@id=\"300\"]/table/tbody/tr/td/table/tbody/tr/td[6]/input";
         DomElement pageNo1 = (DomElement) hp.getByXPath(pNoXpath).get(0);
-        System.out.println("第" + pageNo1.getAttribute("value").toString()+"页" + "\n");
+        System.out.println("第" + pageNo1.getAttribute("value").toString()+"页");
     }
 
     //标签队列执行完毕，当前节点出栈，下一节点入栈
@@ -66,7 +72,7 @@ public class TestKryo_IndexCircle   {
      *
      */
 
-    public static void alterTagStatus(HtmlPage hp,List<Tag> currentTagList,int current_j,int j)   {
+    public static void setTagStatus(HtmlPage hp,List<Tag> currentTagList,int current_j,int j)   {
         if(current_j == j) {
             //如果这个页面的便签队列未全部执行结束，把最近的执行情况初始化indexPage
             hp.setTagList(currentTagList);
@@ -74,6 +80,7 @@ public class TestKryo_IndexCircle   {
             //如果子节点有一个已全部执行结束，把最近的执行情况初始化indexPage，并把此标签执行status设为2
             hp.setTagList(currentTagList);
             hp.getTagList().get(current_j).setStatus(2);
+
         }
     }
 
@@ -123,53 +130,83 @@ public class TestKryo_IndexCircle   {
         List<Tag> currentTagList1 = initTagList();
         List<Tag> currentTagList2 = initTagList();
         arrayStack.push(index);
+
         while (!arrayStack.isEmpty()) {
             //通过初始化webClient进行访问，得到HtmlPage对象
             HtmlPage indexPage = webClient.getPage(url);
-            webClient.waitForBackgroundJavaScript(500);
-            webClient.setJavaScriptTimeout(0);
 
-            alterTagStatus(indexPage, currentTagList, current_j, j);
+            setTagStatus(indexPage, currentTagList, current_j, j);
             if (!allTagsExecuted(indexPage)) {
-                HtmlPage hp = excuteTag(currentTagList, indexPage, j);
-                printPageNo(hp);
+                indexPage.getTagList().get(j).setStatus(1);
+                currentTagList = indexPage.getTagList();
+                HtmlPage hp1 = executeTag(indexPage, j);
+                printPageNo(hp1);
 
+                setTagStatus(hp1, currentTagList1, current_k, k);
 
-                if (!allTagsExecuted(hp)) {
-                    HtmlPage hp2 = excuteTag(currentTagList2, hp, k);
+                if(current_j == j)  {
+                    hp1.setTagList(currentTagList1);
+                    if(noTagsExecuted(hp1)) {
+                        arrayStack.push(hp1);
+                    }
+                }else {
+                    arrayStack.push(hp1);
+                    hp1.setTagList(initTagList());
+                    k = 0;
+                }
+
+                if (!allTagsExecuted(hp1)) {
+                    hp1.getTagList().get(k).setStatus(1);
+                    currentTagList1 = hp1.getTagList();
+                    HtmlPage hp2 = executeTag(hp1, k);
                     printPageNo(hp2);
 
-                    if (current_j == j) {
-                        hp2.setTagList(currentTagList1);
+                    if (current_k == k) {
+                        hp2.setTagList(currentTagList2);
+                        if(noTagsExecuted(hp2)) {
+                            arrayStack.push(hp2);
+                        }
                     } else {
-                        hp.setTagList(initTagList());
-                        k = 0;
+                        arrayStack.push(hp2);
+                        hp2.setTagList(initTagList());
+                        m = 0;
                     }
 
                     if (!allTagsExecuted(hp2)) {
-                        if (m < initTagList().size()) {
-                            HtmlPage hp1 = excuteTag(currentTagList1, hp, m);
-                            printPageNo(hp1);
-                            //第三层为叶子节点，把新得到的第三层的page收集
-                            pageBox.add(hp1);
-                            current_m = m;
-                            m++;
-                            hp.getTagList().get(current_m).setStatus(2);
-                        }
+                        hp2.getTagList().get(m).setStatus(1);
+                        currentTagList2 = hp2.getTagList();
+                        HtmlPage hp3 = executeTag(hp2, m);
+                        printPageNo(hp3);
+                        //第三层为叶子节点，把新得到的第三层的page收集
+                        pageBox.add(hp3);
                         current_m = m;
+                        m++;
+                        hp2.getTagList().get(current_m).setStatus(2);
+                        current_k = k;
                     } else {
                         HtmlPage popPage = (HtmlPage) arrayStack.pop();
                         pageBox.add(popPage);
-                        if (j + 1 == initTagList().size()) {
+                        if (k + 1 <= initTagList().size()) {
+                            k++;
+                        }
+                    }
+                    current_j = j;
+                } else {
+                    HtmlPage popPage = (HtmlPage) arrayStack.pop();
+                    pageBox.add(popPage);
+                    if (j + 1 == initTagList().size()) {
+                            arrayStack.pop();
                             break;
                         } else {
                             j++;
-                            arrayStack.push(hp);
-                        }
                     }
-                } else {
+
                 }
             }
+        }
+        System.out.println("pageBox页面有：" + "\n");
+        for (HtmlPage htmlPage : pageBox) {
+            printPageNo(htmlPage);
         }
     }
 
