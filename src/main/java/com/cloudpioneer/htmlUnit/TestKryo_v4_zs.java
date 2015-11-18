@@ -22,7 +22,7 @@ import java.util.List;
 /**通过String构造HtmlPage.结果是不能再次使用新生成的HtmlPage进行点击
  * Created by Administrator on 2015/10/15.
  */
-public class TestKryo_v4_zs implements WebWindow{
+public class TestKryo_v4_zs {
 
     // save the pop up window
     final static LinkedList<WebWindow> windows = new LinkedList<WebWindow>();
@@ -40,9 +40,14 @@ public class TestKryo_v4_zs implements WebWindow{
         return null;
     }
 
+    //打印HtmlPage的页码
+    public static void printPageNo(HtmlPage hp) {
+        String pNoXpath = "html/body/form/div[3]/div/div[2]/div[2]/div/div/table/tbody/tr/td/span[1]";
+        DomElement pageNo1 = (DomElement) hp.getByXPath(pNoXpath).get(0);
+        System.out.println("第" + pageNo1.getAttribute("id").toString() + "页");
+    }
     public static void testYouku() throws IOException {
-//        String url = "http://www.gzzs.gov.cn/NewOpen/NewOpenML.aspx?pid=62";
-        String url = "http://www.duyun.gov.cn/fzlm/hdmb/xxgkml/xxgklb/index.shtml?organId=2,082&id=1";
+        String url = "http://www.gzzs.gov.cn/NewOpen/NewOpenML.aspx?pid=62";
         WebClient webClient = new WebClient();
         webClient.getOptions().setThrowExceptionOnScriptError(false);
         webClient.getOptions().setThrowExceptionOnFailingStatusCode(false);
@@ -66,11 +71,11 @@ public class TestKryo_v4_zs implements WebWindow{
         List<String> elements = new LinkedList<String>();
         /*elements.add("/*//*[@id=\"300\"]/table/tbody/tr/td/table/tbody/tr/td[4]/div");
         elements.add("/*//*[@id=\"300\"]/table/tbody/tr/td/table/tbody/tr/td[8]/div");*/
-        elements.add("//*[@id=\"page\"]/span[3]");
-        elements.add("//*[@id=\"page\"]/span[4]");
+        elements.add("html/body/form/div[3]/div/div[2]/div[2]/div/div/table/tbody/tr/td/a[5]");
+        elements.add("html/body/form/div[3]/div/div[2]/div[2]/div/div/table/tbody/tr/td/a[6]");
 
         List<String> firstXpath = new LinkedList<String>();
-        firstXpath.add("//*[@id=\"page\"]/span[4]");
+        firstXpath.add("html/body/form/div[3]/div/div[2]/div[2]/div/div/table/tbody/tr/td/a[5]");
 
         //取得第三页
         HtmlPage pg2 = null;
@@ -78,118 +83,17 @@ public class TestKryo_v4_zs implements WebWindow{
         try {
             DomElement e2 = (DomElement) page.getByXPath(firstXpath.get(0)).get(0);
             pg2 = e2.click();
+            printPageNo(pg2);
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-//        System.out.println("pg2:　" + "\n" + pg2.asText());
-//        System.out.println("initPge:" + "\n" + page.asText());
-//        HtmlPage currentPage = pg2;
-//        //page可以持久化
-//        //先拿第4页
-//        Object ps = currentPage.getEnclosingWindow().getScriptObject();
-//        currentPage.getEnclosingWindow().setEnclosedPage(currentPage);
-//        currentPage.getEnclosingWindow().setScriptObject(ps);
-//
-//        DomElement element = (DomElement) currentPage.getByXPath(elements.get(1)).get(0);
-//
-//        HtmlPage changedPage = element.click();
-//
-//      System.out.println("pg3: " + changedPage.asText());
-
-    }
-
-    public String getName() {
-        return null;
-    }
-
-    public void setName(String s) {
-
-    }
-
-    public Page getEnclosedPage() {
-        return null;
-    }
-
-    public void setEnclosedPage(Page page) {
-
-    }
-
-    public WebWindow getParentWindow() {
-        return null;
-    }
-
-    public WebWindow getTopWindow() {
-        return null;
-    }
-
-    public WebClient getWebClient() {
-        return null;
-    }
-
-    public History getHistory() {
-        return null;
-    }
-
-    public void setScriptObject(Object o) {
-
-    }
-
-    public Object getScriptObject() {
-        return null;
-    }
-
-    public JavaScriptJobManager getJobManager() {
-        return null;
-    }
-
-    public boolean isClosed() {
-        return false;
-    }
-
-    public int getInnerWidth() {
-        return 0;
-    }
-
-    public void setInnerWidth(int i) {
-
-    }
-
-    public int getOuterWidth() {
-        return 0;
-    }
-
-    public void setOuterWidth(int i) {
-
-    }
-
-    public int getInnerHeight() {
-        return 0;
-    }
-
-    public void setInnerHeight(int i) {
-
-    }
-
-    public int getOuterHeight() {
-        return 0;
-    }
-
-    public void setOuterHeight(int i) {
-
     }
 
     public static void main(String[] args) throws Exception {
         TestKryo_v4_zs.testYouku();
     }
 
-    public void write(Kryo kryo, Output output) {
 
-    }
-
-    public void read(Kryo kryo, Input input) {
-
-    }
 }
 
 

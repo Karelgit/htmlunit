@@ -31,9 +31,25 @@
         <processorPath useClasspath="true" />
         <module name="htmlunit" />
       </profile>
+      <profile default="false" name="Annotation profile for htmlunit-2.18" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="htmlunit-2.18" />
+      </profile>
+      <profile default="false" name="Annotation profile for spark.webcrawler" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="spark.webcrawler" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.7">
-      <module name="HtmlUnit" target="1.7" />
+      <module name="HtmlUnit" target="1.5" />
+      <module name="htmlunit-2.18" target="1.7" />
+      <module name="spark.webcrawler" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>
