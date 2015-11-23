@@ -23,7 +23,7 @@ public class RecursiveTest   {
      * m,叶子节点TagList循环控制
      */
     public static int m = 0;
-    public static int k = 4;
+    public static int k = 3;
 
     //判断一个页面中子标签是否全部已经执行
     public static boolean allTagsExecuted(List<Tag> tagList)    {
@@ -97,7 +97,6 @@ public class RecursiveTest   {
             }else   {
                 HtmlPage popPage = (HtmlPage) arrayStack.pop();
                 loopBlock.get(k+1).setParam(loopBlock.get(k+1).getParam()+1);
-
             }
         }else {
             while(!arrayStack.isEmpty())    {
@@ -118,15 +117,12 @@ public class RecursiveTest   {
                             arrayStack.push(childPage);
                         }
                     }else {
-                        //判断当前节点已经执行完毕，切换到兄弟节点，初始化兄弟节点下所有标签状况
                         arrayStack.push(childPage);
-                        for(int i=k-1; i>0; i--)  {
-                            tagListBlock.put(i, initTagList());
-                            Param param = new Param();
-                            param.setParam(0);
-                            param.setCurrentParam(0);
-                            loopBlock.put(i,param);
-                        }
+                        tagListBlock.put(k - 1, initTagList());
+                        Param param = new Param();
+                        param.setParam(0);
+                        param.setCurrentParam(0);
+                        loopBlock.put(k-1,param);
                     }
 
                     recursive(childPage,k-1,m,loopBlock,tagListBlock,pageBox,arrayStack,webClient);
@@ -135,12 +131,13 @@ public class RecursiveTest   {
                     }else {
                         m++;
                     }
-                  //  loopBlock.get(k).setCurrentParam(loopBlock.get(k).getParam());
+                    //loopBlock.get(k).setCurrentParam(loopBlock.get(k).getParam());
                 } else   {
                     HtmlPage popPage = (HtmlPage) arrayStack.pop();
                     pageBox.add(popPage);
-                    loopBlock.get(k+1).setParam(loopBlock.get(k+1).getParam()+1);
-                    k++;
+                    if (loopBlock.get(k).getParam() + 1 <= initTagList().size()) {
+                        loopBlock.get(k).setParam(loopBlock.get(k).getParam()+1);
+                    }
                 }
             }
         }
@@ -171,6 +168,10 @@ public class RecursiveTest   {
         //到每一层，如果当前节点里面的备选标签status=2,进行页面的收集到pageBox
         List<HtmlPage> pageBox = new ArrayList<HtmlPage>();
 
+
+
+
+
         List<Tag> currentList = initTagList();
         arrayStack.push(index);
         Map<Integer,List<Tag>> tagListBlock = new HashMap<Integer,List<Tag>>();
@@ -178,12 +179,12 @@ public class RecursiveTest   {
 
 
         //初始化标签列表
-        for(int j=0; j<k-1; j++)  {
-          tagListBlock.put(j+1, initTagList());
+        for(int j=0; j<2; j++)  {
+          tagListBlock.put(j + 1, initTagList());
         }
 
         //初始化循环变量
-        for(int n=0; n<k-1; n++)  {
+        for(int n=0; n<2; n++)  {
             Param param = new Param();
             param.setCurrentParam(0);
             param.setParam(0);
